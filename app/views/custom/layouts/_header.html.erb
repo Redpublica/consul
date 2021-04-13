@@ -1,0 +1,87 @@
+<header>
+
+
+
+  <div id="offcanvas-full-screen" class="offcanvas-full-screen" data-off-canvas data-transition="overlap">
+  <div class="offcanvas-full-screen-inner">
+    <button class="offcanvas-full-screen-close" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+
+    <ul class="offcanvas-full-screen-menu">
+    <li>
+    <%= link_to t("layouts.header.tabloid"), admin_root_path %>
+    </li>
+    <li>
+    <%= link_to t("layouts.header.advertisement"), admin_root_path %>
+    </li>
+    <li>
+    <%= link_to t("layouts.header.announces"), admin_root_path %>
+    </li>
+    <li>
+    <%= link_to t("layouts.header.attention"), admin_root_path %>
+    </li>
+    <li>
+    <%= link_to t("layouts.header.enroll"), admin_root_path %>
+    </li>
+    <li>
+    <%= link_to t("layouts.header.be_one"), admin_root_path %>
+    </li>
+    <li>
+    <%= link_to t("layouts.header.download"), admin_root_path %>
+    </li>
+    </ul>
+  </div>
+</div>
+
+<div class="off-canvas-content" data-off-canvas-content>
+
+<div class="row">
+<div class="top-bar">
+
+
+<h1 class="top-bar-title">
+<%= link_to root_path, accesskey: "0" do %>
+  <%= image_tag(image_path_for("logo_header.png"), class: "float-left", alt: setting["org_name"]) %>
+  <% end %>
+  </h1>
+
+  <div class="top-bar-social">
+  <%= link_to root_path, accesskey: "0" do %>
+    <%= image_tag(image_path_for("facebook-logo.png"), class: "float-left", alt: setting["org_name"]) %>
+    <% end %>
+    <%= link_to root_path, accesskey: "0" do %>
+      <%= image_tag(image_path_for("instagram-logo.png"), class: "float-left", alt: setting["org_name"]) %>
+      <% end %>
+      <%= link_to root_path, accesskey: "0" do %>
+        <%= image_tag(image_path_for("twitter-logo.png"), class: "float-left", alt: setting["org_name"]) %>
+        <% end %>
+        <%= link_to root_path, accesskey: "0" do %>
+          <%= image_tag(image_path_for("envelope-simple.png"), class: "float-left", alt: setting["org_name"]) %>
+        <% end %>
+      </div>
+
+      <div class="top-bar-links">
+        <div class="menu">
+          <%= link_to t("layouts.header.tabloid"), admin_root_path %>
+          <%= link_to t("layouts.header.advertisement"), admin_root_path %>
+          <%= link_to t("layouts.header.announces"), admin_root_path %>
+          <%= link_to t("layouts.header.attention"), admin_root_path %>
+          <%= link_to t("layouts.header.enroll"), admin_root_path %>
+          <%= link_to t("layouts.header.be_one"), admin_root_path %>
+          <%= link_to t("layouts.header.download"), admin_root_path %>
+          </div>
+        </div>
+
+    <span class="float-right">
+      <span class="menu-icon dark" data-toggle="offcanvas-full-screen"></span>
+    </span>
+
+
+  </div>
+</div>
+
+</div>
+
+
+</header>
