@@ -35,7 +35,7 @@
 
 @font-face {
   font-family: "Monument Grotesk";
-  font-style: normal;
+  font-style: italic;
   font-weight: 300;
   src: font-url("custom/MonumentGrotesk-Italic.ttf") format("truetype");
 }
@@ -114,11 +114,17 @@ body > .wrapper {
   width: 100%;
 }
 
+* {
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
 //  3. Header
 // ------
+
 body > header,
 .wrapper > header {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid black !important;
   background-color: transparent;
 }
 
@@ -167,7 +173,7 @@ body > header,
         vertical-align: top;
         color: black;
         padding: 5px 16px;
-        line-height: 24px;
+        line-height: 0.67;
         height: 25px;
       }
     }
@@ -332,4 +338,79 @@ body > header,
 
 .offcanvas-full-screen-close:hover {
   color: #b2b2b2;
+}
+
+.help-header,
+.section-header {
+  background: $primary;
+  border-bottom: none;
+
+  h1 {
+    font-size: rem-calc(48);
+    font-family: "Monument Grotesk" !important;
+    text-transform: none;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+  }
+
+  .title-subtitle {
+    p {
+      font-family: "Monument Grotesk" !important;
+      font-weight: 300;
+      font-size: rem-calc(20);
+      color: black;
+      border-bottom: none;
+    }
+  }
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  h2 {
+    font-family: "Monument Grotesk" !important;
+    font-weight: 300;
+    font-size: rem-calc(33);
+    color: black;
+    text-transform: uppercase;
+    span {
+      font-weight: 500;
+    }
+  }
+}
+.submenu {
+  border-bottom: 1px solid #5e5a5a !important;
+  clear: both;
+  margin-bottom: $line-height / 2;
+
+  .is-active {
+    @include brand-text;
+    border-bottom: 2px solid $brand !important;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  span {
+    font-family: "Monument Grotesk" !important;
+    font-weight: 300;
+    font-size: rem-calc(18);
+    color: black;
+  }
+  h2 {
+    font-family: "Monument Grotesk" !important;
+    font-weight: 500;
+    font-size: rem-calc(18);
+    color: black;
+  }
+}
+
+aside {
+  .button {
+    background-color: $accent;
+    background: $accent;
+    color: black;
+    padding-bottom: 1rem;
+  }
 }

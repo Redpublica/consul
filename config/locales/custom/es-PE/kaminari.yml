@@ -2,7 +2,7 @@ es-PE:
   helpers:
     page_entries_info:
       entry:
-        zero: entradas
+        zero: Entradas
         one: entrada
         other: entradas
       more_pages:
@@ -19,3 +19,4 @@ es-PE:
       last: Última
       next: Siguiente
       previous: Anterior
+      truncate: "&hellip;"
