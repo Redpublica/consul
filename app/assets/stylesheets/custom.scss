@@ -414,3 +414,14 @@ aside {
     padding-bottom: 1rem;
   }
 }
+
+footer {
+  background-color: white;
+  .logo {
+    color: chartreuse;
+  }
+  .footer-headers {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black !important;
+  }
+}

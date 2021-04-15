@@ -215,8 +215,22 @@ es-PE:
           one: 1 Apoyo
           other: "Apoyos"
     footer:
+      site: +RedPublica
+      info: +info
+      newsletter: Newsletter
+      social_media: Social media
+      tabloid: Pizarrón de contactos
+      advertisement: El Megáfono
+      announces: Los avances
+      attention: Ojo a esto
+      points: Puntos de encuentro
       accessibility: Accesibilidad
       conditions: Condiciones de uso
+      volunteering: Sé voluntario
+      team: Equipo
+      email: Correo
+      involve: Involúcrate
+      unsubscribe: Dejar de subscribirte
       consul: aplicación CONSUL
       consul_url: https://github.com/consul/consul
       contact_us: Para asistencia técnica entra en
