@@ -425,3 +425,9 @@ footer {
     border-bottom: 1px solid black !important;
   }
 }
+
+.in-favor {
+  .button {
+    background-color: $accent !important;
+  }
+}

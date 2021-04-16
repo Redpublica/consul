@@ -228,9 +228,13 @@ es-PE:
       conditions: Condiciones de uso
       volunteering: Sé voluntario
       team: Equipo
+      unsubscribe: Dejar de subscribirte
       email: Correo
       involve: Involúcrate
-      unsubscribe: Dejar de subscribirte
+      facebook: Facebook
+      instagram: Instagram
+      youtube: YouTube
+      twitter: Twitter
       consul: aplicación CONSUL
       consul_url: https://github.com/consul/consul
       contact_us: Para asistencia técnica entra en
@@ -352,6 +356,7 @@ es-PE:
         relevance: Más relevantes
         archival_date: Archivadas
         recommendations: Recomendaciones
+        map: Mapa
       recommendations:
         without_results: No existen propuestas relacionadas con tus intereses
         without_interests: Sigue propuestas para que podamos darte recomendaciones
