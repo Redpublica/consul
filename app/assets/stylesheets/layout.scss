@@ -1090,7 +1090,7 @@ form {
     }
   }
 
-  [type]:not(.close-button, [type=checkbox], [type=file], [type=radio], [type=submit]) {
+  [type]:not([type="button"], [type=checkbox], [type=file], [type=radio], [type=submit]) {
     background: #f8f8f8;
     height: $input-height;
     margin-bottom: rem-calc(16);
@@ -1940,6 +1940,20 @@ table {
     }
   }
 
+  .delete-comment {
+    @include has-fa-icon(trash-alt, regular);
+    color: $delete;
+
+    &:hover,
+    &:active {
+      color: $link-hover;
+    }
+
+    &::before {
+      transform: translateY(-1px);
+    }
+  }
+
   .comment-user {
     margin-top: $line-height / 4;
     padding: $line-height / 4 0;
@@ -2060,10 +2074,8 @@ table {
 
 .flag-content {
 
-  .button {
-    background: none;
-    margin-bottom: 0;
-    padding: 0;
+  button {
+    @include link;
   }
 }
 
