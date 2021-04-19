@@ -199,6 +199,7 @@ body > header,
   }
 }
 
+// Lateral menu
 .offcanvas-full-screen {
   position: fixed;
   z-index: 1;
@@ -335,6 +336,8 @@ body > header,
   max-width: 250px;
 }
 
+// 4. Proposals
+
 .help-header,
 .section-header {
   background: $primary;
@@ -424,5 +427,18 @@ footer {
 .in-favor {
   .button {
     background-color: $accent !important;
+  }
+}
+
+// 5. Sign In  / Sign Up
+.auth-form {
+  @include breakpoint(medium) {
+    padding-top: $line-height;
+  }
+
+  p,
+  a,
+  .checkbox {
+    font-size: $small-font-size;
   }
 }
