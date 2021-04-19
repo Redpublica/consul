@@ -13,11 +13,7 @@
       <%= t("layouts.footer.site") %>
       </small>
     </div>
-    <div class="small-3 large-3 columns">
-      <small>
-      <%= t("layouts.footer.info") %>
-      </small>
-    </div>
+
     <div class="small-3 large-3 columns">
       <small>
       <%= t("layouts.footer.newsletter") %>
@@ -42,14 +38,7 @@
         <li><%= link_to t("layouts.footer.points"), page_path("accessibility") %></li>
       </ul>
     </div>
-    <div class="small-3 large-3 columns">
-      <ul class="no-bullet">
-        <li><%= link_to t("layouts.footer.conditions"), page_path("privacy") %></li>
-        <li><%= link_to t("layouts.footer.volunteering"), page_path("conditions") %></li>
-        <li><%= link_to t("layouts.footer.team"), page_path("accessibility") %></li>
-        <li><%= link_to t("layouts.footer.unsubscribe"), page_path("accessibility") %></li>
-      </ul>
-    </div>
+
     <div class="small-3 large-3 columns">
       <input type="text" placeholder="<%= t("layouts.footer.email") %>">
       <button type="button"><%= t("layouts.footer.involve") %></button>
@@ -61,6 +50,8 @@
         <li><%= link_to t("layouts.footer.youtube"), page_path("accessibility") %></li>
         <li><%= link_to t("layouts.footer.twitter"), page_path("accessibility") %></li>
       </ul>
+    </div>
+    <div class="small-3 large-3 columns">
     </div>
   </div>
 

@@ -105,6 +105,7 @@
 
 //  2. Global
 // ------
+
 body {
   font-family: "Monument Grotesk", "Helvetica", "Arial", sans-serif !important;
   background-color: $header-color;
@@ -112,6 +113,15 @@ body {
 // Fix width page content
 body > .wrapper {
   width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black !important;
 }
 
 * {
@@ -413,6 +423,12 @@ aside {
   }
 }
 
+.footer {
+  background-color: white;
+  padding-top: 0;
+  margin-top: 72px;
+}
+
 footer {
   background-color: white;
   .logo {
@@ -428,6 +444,14 @@ footer {
   .button {
     background-color: $accent !important;
   }
+}
+
+.filter-subnav {
+  margin-bottom: 0 !important;
+}
+
+.tabs-content {
+  padding-top: 1.5rem;
 }
 
 // 5. Sign In  / Sign Up
