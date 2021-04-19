@@ -199,6 +199,7 @@ body > header,
   }
 }
 
+// Lateral menu
 .offcanvas-full-screen {
   position: fixed;
   z-index: 1;
@@ -207,7 +208,7 @@ body > header,
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background: #0a0a0a;
+  background: $secondary;
   top: 0;
   left: 0;
   width: 100%;
@@ -259,7 +260,6 @@ body > header,
 }
 
 .offcanvas-full-screen-inner {
-  padding: 1rem;
   text-align: center;
 }
 
@@ -323,22 +323,20 @@ body > header,
 }
 
 .offcanvas-full-screen-menu a {
-  color: #fefefe;
+  color: #0a0a0a;
 }
 
 .offcanvas-full-screen-menu a:hover {
-  color: #b2b2b2;
+  color: #fefefe;
 }
 
 .offcanvas-full-screen-close {
+  cursor: pointer;
   outline: none;
-  color: #fefefe;
-  font-size: 5rem;
+  max-width: 250px;
 }
 
-.offcanvas-full-screen-close:hover {
-  color: #b2b2b2;
-}
+// 4. Proposals
 
 .help-header,
 .section-header {
@@ -429,5 +427,18 @@ footer {
 .in-favor {
   .button {
     background-color: $accent !important;
+  }
+}
+
+// 5. Sign In  / Sign Up
+.auth-form {
+  @include breakpoint(medium) {
+    padding-top: $line-height;
+  }
+
+  p,
+  a,
+  .checkbox {
+    font-size: $small-font-size;
   }
 }
