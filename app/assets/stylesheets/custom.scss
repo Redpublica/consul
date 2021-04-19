@@ -124,7 +124,7 @@ h6 {
   color: black !important;
 }
 
-* {
+* :not(.button) :not(input) {
   border-bottom: none !important;
   border-top: none !important;
 }
