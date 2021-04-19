@@ -207,7 +207,7 @@ body > header,
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background: #0a0a0a;
+  background: $secondary;
   top: 0;
   left: 0;
   width: 100%;
@@ -259,7 +259,6 @@ body > header,
 }
 
 .offcanvas-full-screen-inner {
-  padding: 1rem;
   text-align: center;
 }
 
@@ -323,21 +322,17 @@ body > header,
 }
 
 .offcanvas-full-screen-menu a {
-  color: #fefefe;
+  color: #0a0a0a;
 }
 
 .offcanvas-full-screen-menu a:hover {
-  color: #b2b2b2;
+  color: #fefefe;
 }
 
 .offcanvas-full-screen-close {
+  cursor: pointer;
   outline: none;
-  color: #fefefe;
-  font-size: 5rem;
-}
-
-.offcanvas-full-screen-close:hover {
-  color: #b2b2b2;
+  max-width: 250px;
 }
 
 .help-header,
