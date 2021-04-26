@@ -40,19 +40,15 @@
     <%= render "shared/section_header", i18n_namespace: "proposals.index.section_header", image: "proposals" %>
   <% end %>
 
-  <% if show_recommended_proposals? %>
-    <%= render "shared/recommended_index", recommended: @recommended_proposals,
-                                           disable_recommendations_path: recommendations_disable_proposals_path,
-                                           namespace: "proposals" %>
-  <% end %>
-
   <div class="row">
     <div id="proposals" class="proposals-list small-12 medium-9 column">
 
         <div class="title small-12 column">
           <h2>
             <span><%= t("proposals.index.featured_proposals") %></span> <%= t("proposals.index.section_header.title") %>
+            <span><%= image_tag(image_path_for("flecha.png"), class: "", alt: setting["org_name"]) %></span>
           </h2>
+
         </div>
 
       <% unless params[:selected].present? %>

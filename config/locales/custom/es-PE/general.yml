@@ -229,7 +229,7 @@ es-PE:
       volunteering: Sé voluntario
       team: Equipo
       unsubscribe: Dejar de subscribirte
-      email: Correo
+      email: Correo electrónico
       involve: Involúcrate
       facebook: Facebook
       instagram: Instagram
@@ -238,7 +238,7 @@ es-PE:
       consul: aplicación CONSUL
       consul_url: https://github.com/consul/consul
       contact_us: Para asistencia técnica entra en
-      copyright: CONSUL, %{year}
+      copyright: "%{year} PNUD. All rights reserved. Designed by Alexandro Valcarcel & XY Studio"
       description: Este portal usa la %{consul} que es %{open_source}.
       open_source: software de código abierto
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html

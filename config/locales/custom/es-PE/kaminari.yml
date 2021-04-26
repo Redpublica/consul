@@ -17,6 +17,6 @@ es-PE:
       current: Estás en la página
       first: Primera
       last: Última
-      next: Siguiente
-      previous: Anterior
+      next: ">"
+      previous: "<"
       truncate: "&hellip;"

@@ -37,14 +37,15 @@
 <div class="off-canvas-content" data-off-canvas-content>
 
 <div class="row">
+<div class="small-12 column">
 <div class="top-bar">
 
-
-<h1 class="top-bar-title">
+<div class="top-bar-title">
 <%= link_to root_path, accesskey: "0" do %>
   <%= image_tag(image_path_for("logo_header.png"), class: "float-left", alt: setting["org_name"]) %>
+  <%= image_tag(image_path_for("logo_icon.png"), class: "float-left header-icon", alt: setting["org_name"]) %>
   <% end %>
-  </h1>
+  </div>
 
   <div class="top-bar-social">
   <%= link_to "https://www.facebook.com/Redpublica.pe", accesskey: "0" do %>
@@ -72,12 +73,13 @@
           <%= link_to t("layouts.header.download"), proposals_path %>
           </div>
         </div>
-
+    <div>
     <span class="float-right">
       <span class="menu-icon dark" data-toggle="offcanvas-full-screen"></span>
     </span>
+    </div>
 
-
+  </div>
   </div>
 </div>
 

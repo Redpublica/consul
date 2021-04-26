@@ -124,9 +124,9 @@ h6 {
   color: black !important;
 }
 
-* :not(.button) :not(input) {
-  border-bottom: none !important;
-  border-top: none !important;
+*
+  :not(.button):not(input):not(select):not(header):not(a):not(li):not(.pagination):not(button):not(.footer-headers) {
+  border: none !important;
 }
 
 //  3. Header
@@ -136,25 +136,69 @@ body > header,
 .wrapper > header {
   border-bottom: 2px solid black !important;
   background-color: transparent;
+  padding: 1.5rem 0;
+
+  .header-row {
+    padding: 0 1rem;
+  }
 }
 
 .top-bar {
   @extend %brand-background;
   width: 100%;
-  padding-bottom: 0;
-  padding-top: 0;
-  margin: 30px 0px;
   background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
   @include breakpoint(medium) {
     padding: 0;
   }
 
   .top-bar-title {
-    width: 50%;
     height: auto;
-    a img {
-      margin: 0;
+    max-width: 100%;
+    margin: 0;
+    a {
+      outline: none !important;
+      // a img {
+      //   height: rem-calc(48);
+      //   margin: 0;
+      //   width: auto;
+
+      //   @include breakpoint(medium up) {
+      //     height: auto;
+      //   }
+      // }
+      img {
+        max-height: 150px;
+        width: auto;
+
+        @include breakpoint(medium down) {
+          height: rem-calc(48);
+        }
+      }
+      .header-icon {
+        -webkit-animation: spin 5s linear infinite;
+        -moz-animation: spin 5s linear infinite;
+        animation: spin 5s linear infinite;
+      }
+      @-moz-keyframes spin {
+        100% {
+          -moz-transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes spin {
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @keyframes spin {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
     }
   }
 
@@ -183,8 +227,7 @@ body > header,
         vertical-align: top;
         color: black;
         padding: 5px 16px;
-        line-height: 0.67;
-        height: 25px;
+        height: auto;
       }
     }
     @include breakpoint(medium down) {
@@ -193,7 +236,6 @@ body > header,
   }
 
   .float-right {
-    margin-right: rem-calc(10);
     .menu-icon {
       &.dark {
         &:hover::after,
@@ -207,6 +249,16 @@ body > header,
       display: none;
     }
   }
+}
+
+a,
+button,
+.button {
+  border-radius: 0 !important;
+}
+
+a :not(.ssb-icon) {
+  color: black !important;
 }
 
 // Lateral menu
@@ -363,6 +415,9 @@ body > header,
   }
 
   .title-subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     p {
       font-family: "Monument Grotesk" !important;
       font-weight: 300;
@@ -370,23 +425,54 @@ body > header,
       color: black;
       border-bottom: none;
     }
-  }
-}
-
-.title {
-  margin: 0;
-  padding: 0;
-  h2 {
-    font-family: "Monument Grotesk" !important;
-    font-weight: 300;
-    font-size: rem-calc(33);
-    color: black;
-    text-transform: uppercase;
-    span {
-      font-weight: 500;
+    img {
+      max-width: 450px;
     }
   }
 }
+.proposals-list {
+  .title {
+    margin: 0;
+    padding: 0;
+    h2 {
+      font-family: "Monument Grotesk" !important;
+      font-weight: 300;
+      font-size: rem-calc(33);
+      color: black;
+      text-transform: uppercase;
+      span {
+        font-weight: 500;
+        img {
+          max-width: 20px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .show-for-small-only {
+    .button {
+      background-color: $accent;
+    }
+  }
+  a {
+    color: black;
+  }
+}
+
+.advanced-search {
+  float: left;
+  margin: $line-height 0;
+  position: inherit;
+
+  @include breakpoint(xlarge) {
+    float: right;
+    margin-bottom: 0;
+    margin-top: $line-height / 4;
+    position: absolute;
+    right: 0;
+  }
+}
+
 .submenu {
   border-bottom: 1px solid #5e5a5a !important;
   clear: both;
@@ -415,11 +501,31 @@ body > header,
 }
 
 aside {
+  .categories {
+    a {
+      border: 2px solid black;
+      background-color: transparent;
+      color: black;
+      &:hover {
+        background: black;
+      }
+    }
+  }
+  .button.hollow {
+    color: black;
+    border-color: black;
+  }
+
   .button {
     background-color: $accent;
     background: $accent;
     color: black;
     padding-bottom: 1rem;
+  }
+  p {
+    a {
+      color: black;
+    }
   }
 }
 
@@ -430,13 +536,30 @@ aside {
 }
 
 footer {
+  font-family: "Monument Grotesk Mono", "Helvetica", "Arial", sans-serif !important;
+  font-size: rem-calc(12);
   background-color: white;
-  .logo {
-    color: chartreuse;
-  }
   .footer-headers {
     padding-bottom: 1rem;
     border-bottom: 1px solid black !important;
+  }
+  .footer-links {
+    input {
+      font-size: rem-calc(12);
+      border: 1px solid black;
+    }
+    button {
+      height: 2.4375rem;
+      width: 100%;
+      border: 1px solid black;
+      padding: 0 8px;
+      text-align: left;
+    }
+  }
+
+  .subfooter {
+    padding-bottom: 20px;
+    font-size: rem-calc(8);
   }
 }
 
@@ -464,5 +587,43 @@ footer {
   a,
   .checkbox {
     font-size: $small-font-size;
+  }
+}
+
+// Paginator
+.pagination {
+  li {
+    border-radius: 0% !important;
+    font-size: rem-calc(30) !important;
+    min-width: 2.8125rem;
+    color: black !important;
+    background-color: transparent;
+    :hover {
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
+    }
+  }
+  .current {
+    background-color: transparent !important;
+    border-bottom: 2px solid black;
+  }
+  .pagination-next {
+    background-color: black !important;
+    a {
+      color: white !important;
+    }
+    ::after {
+      content: none;
+    }
+  }
+  .pagination-previous {
+    background-color: black !important;
+    a {
+      color: white !important;
+    }
+    ::before {
+      content: none;
+    }
   }
 }
