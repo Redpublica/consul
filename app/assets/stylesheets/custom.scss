@@ -125,7 +125,7 @@ h6 {
 }
 
 *
-  :not(.button):not(input):not(select):not(header):not(a):not(li):not(.pagination):not(button):not(.footer-headers) {
+  :not(.button):not(input):not(select):not(header):not(a):not(li):not(.pagination):not(button):not(.footer-headers):not(.admin-content) {
   border: none !important;
 }
 
@@ -626,4 +626,10 @@ footer {
       content: none;
     }
   }
+}
+
+// Admin
+.admin-content {
+  background-color: #fbfbfb;
+  border-left: 2px solid black !important;
 }
