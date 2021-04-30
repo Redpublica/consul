@@ -74,8 +74,8 @@ es-PE:
         one: Papeleta de votación
         other: Papeletas de votación
       proposal:
-        one: "Propuesta ciudadana"
-        other: "Propuestas ciudadanas"
+        one: "Demanda ciudadana"
+        other: "Demandas ciudadanas"
       sdg/goal:
         one: "objetivo"
         other: "objetivos"
@@ -104,8 +104,8 @@ es-PE:
         one: "Proceso"
         other: "Procesos"
       legislation/proposal:
-        one: "Propuesta"
-        other: "Propuestas"
+        one: "Demanda"
+        other: "Demandas"
       legislation/draft_versions:
         one: "Versión del borrador"
         other: "Versiones del borrador"
@@ -131,11 +131,11 @@ es-PE:
         one: "Votación"
         other: "Votaciones"
       proposal_notification:
-        one: "Notificación de propuesta"
-        other: "Notificaciones de propuestas"
+        one: "Notificación de demanda"
+        other: "Notificaciones de demandas"
       dashboard/action:
-        one: Acción del panel de control de propuestas
-        other: Acciones del panel de control de propuestas
+        one: Acción del panel de control de demandas
+        other: Acciones del panel de control de demandas
       dashboard/administrator_task:
         one: Tarea
         other: Tareas
@@ -250,15 +250,15 @@ es-PE:
         title: "Título"
         question: "Pregunta"
         description: "Descripción"
-        responsible_name: "Nombre y apellidos de la persona que hace esta propuesta"
-        retired_reason: "Razón por la que se retira la propuesta"
+        responsible_name: "Nombre y apellidos de la persona que hace esta demanda"
+        retired_reason: "Razón por la que se retira la demanda"
         selected: "Marcar como seleccionada"
         terms_of_service: "Términos de servicio"
         video_url: "Enlace a vídeo externo"
       proposal/translation:
-        title: "Título de la propuesta"
-        description: "Texto desarrollado de la propuesta"
-        summary: "Resumen de la propuesta"
+        title: "Título de la demanda"
+        description: "Texto desarrollado de la demanda"
+        summary: "Resumen de la demanda"
         retired_explanation: "Explicación"
       user:
         login: "Email o nombre de usuario"
@@ -267,8 +267,8 @@ es-PE:
         password_confirmation: "Confirmación de contraseña"
         password: "Contraseña"
         current_password: "Contraseña actual"
-        email_digest: "Recibir resumen de notificaciones sobre propuestas"
-        email_on_comment: "Recibir un email cuando alguien comenta en mis propuestas"
+        email_digest: "Recibir resumen de notificaciones sobre demandas"
+        email_on_comment: "Recibir un email cuando alguien comenta en mis demandas"
         email_on_comment_reply: "Recibir un email cuando alguien contesta a mis comentarios"
         email_on_direct_message: "Recibir emails con mensajes privados"
         newsletter: "Recibir emails con información interesante sobre la web"
@@ -279,7 +279,7 @@ es-PE:
         public_activity: "Mostrar públicamente mi lista de actividades"
         public_interests: "Mostrar públicamente las etiquetas de los elementos que sigo"
         recommended_debates: "Mostrar recomendaciones en el listado de debates"
-        recommended_proposals: "Mostrar recomendaciones en el listado de propuestas"
+        recommended_proposals: "Mostrar recomendaciones en el listado de demandas"
         redeemable_code: "Código de verificación por carta (opcional)"
       direct_message:
         title: "Título"
@@ -342,7 +342,7 @@ es-PE:
       signature_sheet:
         title: "Título"
         signable_type: "Tipo de hoja de firmas"
-        signable_id: "ID Propuesta ciudadana/Proyecto de gasto"
+        signable_id: "ID Demanda ciudadana/Proyecto de gasto"
         document_numbers: "Números de documentos"
       site_customization/page:
         content: Contenido
@@ -410,9 +410,9 @@ es-PE:
         homepage: "Descripción"
         milestones_summary: Seguimiento del proceso
       legislation/proposal:
-        description: "Texto desarrollado de la propuesta"
-        summary: "Resumen de la propuesta"
-        title: "Título de la propuesta"
+        description: "Texto desarrollado de la demanda"
+        summary: "Resumen de la demanda"
+        title: "Título de la demanda"
         video_url: "Enlace a vídeo externo"
       legislation/draft_version:
         title: Título de la versión
@@ -483,14 +483,14 @@ es-PE:
         description: Descripción
         link: Enlace externo
         request_to_administrators: Incluir en el recurso un botón para solicitar el recurso a los administradores
-        day_offset: "¿En cuántos días tras la creación de la propuesta quieres que se active?"
-        required_supports: "¿Cuántos apoyos tiene que conseguir la propuesta para que se active?"
+        day_offset: "¿En cuántos días tras la creación de la demanda quieres que se active?"
+        required_supports: "¿Cuántos apoyos tiene que conseguir la demanda para que se active?"
         order: Puedes introducir la posición en la que se mostrará al usuario esta acción en la lista de acciones
         active: Activa
         action_type: Tipo
-        action_type_proposed_action: "Acción propuesta"
+        action_type_proposed_action: "Acción demanda"
         action_type_resource: "Recurso"
-        published_proposal: "¿Para propuestas publicadas?"
+        published_proposal: "¿Para demandas publicadas?"
       dashboard/administrator_task:
         source: Fuente
         user: Ejecutado por
@@ -576,7 +576,7 @@ es-PE:
           attributes:
             document_number:
               not_in_census: "No verificado por Padrón"
-              already_voted: "Ya ha votado esta propuesta"
+              already_voted: "Ya ha votado esta demanda"
         site_customization/page:
           attributes:
             slug:

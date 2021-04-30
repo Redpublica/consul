@@ -57,9 +57,9 @@ es-PE:
       introduce_email: "Introduce el email con el que creó la cuenta:"
       send_email: Enviar email de verificación
     menu:
-      create_proposal: Crear propuesta
-      print_proposals: Imprimir propuestas
-      support_proposals: Apoyar propuestas
+      create_proposal: Crear demanda
+      print_proposals: Imprimir demandas
+      support_proposals: Apoyar demandas
       create_budget_investment: Crear proyectos de gasto
       print_budget_investments: Imprimir proyectos de gasto
       support_budget_investments: Apoyar proyectos de gasto
@@ -67,23 +67,23 @@ es-PE:
       user_invites: Enviar invitaciones
       select_user: Seleccionar usuario
     permissions:
-      create_proposals: Crear nuevas propuestas
+      create_proposals: Crear nuevas demandas
       debates: Participar en debates
-      support_proposals: Apoyar propuestas
+      support_proposals: Apoyar demandas
       vote_proposals: Participar en las votaciones finales
     print:
-      proposals_info: Haz tu propuesta en http://url.consul
-      proposals_title: "Propuestas:"
+      proposals_info: Haz tu demanda en http://url.consul
+      proposals_title: "Demandas:"
       budget_investments_info: Participa en http://url.consul
     print_info: Imprimir esta información
     proposals:
       alert:
         unverified_user: Usuario no verificado
-      create_proposal: Crear propuesta
+      create_proposal: Crear demanda
       print:
         print_button: Imprimir
       index:
-        title: Apoyar propuestas
+        title: Apoyar demandas
     budgets:
       create_new_investment: Crear proyectos de gasto
       print_investments: Imprimir proyectos de gasto

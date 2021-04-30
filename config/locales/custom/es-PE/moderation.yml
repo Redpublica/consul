@@ -47,8 +47,8 @@ es-PE:
       flagged_comments: Comentarios
       flagged_debates: Debates
       flagged_investments: Proyectos de gasto
-      proposals: Propuestas
-      proposal_notifications: Notificaciones de propuestas
+      proposals: Demandas
+      proposal_notifications: Notificaciones de demandas
       users: Bloquear usuarios
     proposals:
       index:
@@ -61,14 +61,14 @@ es-PE:
           with_ignored_flag: Marcadas como revisadas
         headers:
           moderate: Moderar
-          proposal: Propuesta
-        hide_proposals: Ocultar Propuestas
+          proposal: Demanda
+        hide_proposals: Ocultar Demandas
         ignore_flags: Marcar como revisadas
         order: Ordenar por
         orders:
           created_at: Más recientes
           flags: Más denunciadas
-        title: Propuestas
+        title: Demandas
     budget_investments:
       index:
         block_authors: Bloquear autores
@@ -99,14 +99,14 @@ es-PE:
           ignored: Marcadas como revisadas
         headers:
           moderate: Moderar
-          proposal_notification: Notificación de propuesta
+          proposal_notification: Notificación de demanda
         hide_proposal_notifications: Ocultar notificaciones
         ignore_flags: Marcar como revisadas
         order: Ordenar por
         orders:
           created_at: Más recientes
           moderated: Moderadas
-        title: Notificaciones de propuestas
+        title: Notificaciones de demandas
     users:
       index:
         hidden: Bloqueado

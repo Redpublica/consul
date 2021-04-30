@@ -48,7 +48,7 @@ es-PE:
         description: En qué consiste
         more_info: Más información y contexto
       proposals:
-        empty_proposals: No hay propuestas
+        empty_proposals: No hay demandas
         filters:
           random: Aleatorias
           winners: Seleccionadas
@@ -84,7 +84,7 @@ es-PE:
         allegations_dates: Comentarios
         result_publication_date: Publicación resultados
         milestones_date: Seguimiento
-        proposals_dates: Propuestas
+        proposals_dates: Demandas
     questions:
       comments:
         comment_button: Publicar respuesta
@@ -116,7 +116,7 @@ es-PE:
     proposals:
       form:
         tags_label: "Categorías"
-      not_verified: "Para votar propuestas %{verify_account}."
+      not_verified: "Para votar demandas %{verify_account}."
       process_title: Proceso de legislación colaborativa
     summary:
       title: "Resumen"
@@ -125,16 +125,16 @@ es-PE:
         one: "%{count} voto"
         other: "%{count} votos"
       debate_phase: "Fase de debate"
-      proposals_phase: "Fase de propuestas"
+      proposals_phase: "Fase de demandas"
       allegations_phase: "Fase de comentarios"
       debates:
         zero: "No hay debates"
         one: "%{count} debate"
         other: "%{count} debates"
       proposals:
-        zero: "No hay propuestas"
-        one: "%{count} propuesta"
-        other: "%{count} propuestas"
+        zero: "No hay demandas"
+        one: "%{count} demanda"
+        other: "%{count} demandas"
       comments:
         zero: "No hay comentarios"
         one: "%{count} comentario"
