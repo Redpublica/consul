@@ -10,16 +10,16 @@
 
     <ul class="offcanvas-full-screen-menu">
     <li>
-    <%= link_to t("layouts.header.tabloid"), "http://new.redpublica.pe/" %>
+    <%= link_to t("layouts.header.tabloid"), "http://new.redpublica.pe/pizarron/" %>
     </li>
     <li>
     <%= link_to t("layouts.header.advertisement"), "/" %>
     </li>
     <li>
-    <%= link_to t("layouts.header.attention"), "http://new.redpublica.pe/" %>
+    <%= link_to t("layouts.header.download"), "http://new.redpublica.pe/herramientas/" %>
     </li>
     <li>
-    <%= link_to t("layouts.header.download"), "http://new.redpublica.pe/" %>
+    <%= link_to t("layouts.header.attention"), "http://new.redpublica.pe/" %>
     </li>
     <li>
     <% if user_signed_in? %>
@@ -27,6 +27,9 @@
     <% else %>
     <%= link_to t("layouts.header.be_one"), "/users/sign_up" %>
     <% end %>
+    </li>
+    <li>
+    <%= link_to t("layouts.header.group"), "/" %>
     </li>
     </ul>
   </div>
@@ -62,15 +65,16 @@
 
       <div class="top-bar-links">
         <div class="menu">
-          <%= link_to t("layouts.header.tabloid"), "http://new.redpublica.pe/" %>
+          <%= link_to t("layouts.header.tabloid"), "http://new.redpublica.pe/pizarron/" %>
           <%= link_to t("layouts.header.advertisement"), "/" %>
+          <%= link_to t("layouts.header.download"), "http://new.redpublica.pe/herramientas/" %>
           <%= link_to t("layouts.header.attention"), "http://new.redpublica.pe/" %>
-          <%= link_to t("layouts.header.download"), "http://new.redpublica.pe/" %>
           <% if user_signed_in? %>
           <%= link_to t("layouts.header.logout"), destroy_user_session_path, method: :delete %>
           <% else %>
           <%= link_to t("layouts.header.be_one"), "/users/sign_up" %>
           <% end %>
+          <%= link_to t("layouts.header.group"), "/" %>
           </div>
         </div>
     <div>

@@ -246,14 +246,15 @@ es-PE:
       participation_title: Participación
       privacy: Política de privacidad
     header:
-      tabloid: El Pizarrón
-      advertisement: El Megáfono
+      tabloid: Pizarrón de contactos
+      advertisement: Megáfono de demandas
       announces: Los Avances
-      attention: Ojo A Esto
+      attention: Ojo a esto
       enroll: Inscribe Tu Iniciativa
       be_one: ¡Súmate!
+      group: ¡Suma a tu grupo!
       logout: Cerrar sesión
-      download: Descarga Herramientas
+      download: Herramientas
   notifications:
     index:
       empty_notifications: No tienes notificaciones nuevas.
