@@ -1,7 +1,7 @@
 <% provide :title do %><%= t("proposals.index.title") %><% end %>
 <% content_for :header_addon do %>
   <%= render "shared/search_form",
-             search_path: proposals_path(page: 1),
+             search_path: proposals_path(page:1),
              i18n_namespace: "proposals.index.search_form" %>
 <% end %>
 <% content_for :canonical do %>
@@ -75,19 +75,26 @@
         </div>
       <% end %>
 
+
       <div id="proposals-list">
-        <% if @proposals.any? || current_user.blank? %>
-          <% if proposals_default_view? %>
-            <%= render partial: "proposals/proposal", collection: @proposals %>
-          <% else %>
-            <% @proposals.each do |proposal| %>
-              <%= render "/proposals/proposal_minimal", proposal: proposal %>
-            <% end %>
-          <% end %>
+        <% if @proposals.present? && @current_order=="map" %>
+          <%= render Proposals::MapProposalsComponent.new(@proposals) %>
         <% else %>
-          <%= empty_recommended_proposals_message_text(current_user) %>
+          <% if @proposals.any? || current_user.blank? %>
+            <% if proposals_default_view? %>
+              <%= render partial: "proposals/proposal", collection: @proposals %>
+            <% else %>
+              <% @proposals.each do |proposal| %>
+                <%= render "/proposals/proposal_minimal", proposal: proposal %>
+              <% end %>
+            <% end %>
+            <%= paginate @proposals %>
+          <% else %>
+            <%= empty_recommended_proposals_message_text(current_user) %>
+          <% end %>
+
         <% end %>
-        <%= paginate @proposals %>
+
 
         <% unless @search_terms || @advanced_search_terms %>
           <div id="section_help" class="margin" data-magellan-target="section_help">
