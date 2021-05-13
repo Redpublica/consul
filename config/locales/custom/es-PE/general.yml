@@ -255,6 +255,8 @@ es-PE:
       group: ¡Suma a tu grupo!
       logout: Cerrar sesión
       download: Herramientas
+      my_account_link: Mi cuenta
+      my_activity_link: Mi actividad
   notifications:
     index:
       empty_notifications: No tienes notificaciones nuevas.

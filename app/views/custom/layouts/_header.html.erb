@@ -70,7 +70,12 @@
           <%= link_to t("layouts.header.download"), "http://new.redpublica.pe/herramientas/" %>
           <%= link_to t("layouts.header.attention"), "http://new.redpublica.pe/" %>
           <% if user_signed_in? %>
-          <%= link_to t("layouts.header.logout"), destroy_user_session_path, method: :delete %>
+          <%= layout_menu_link_to t("layouts.header.my_account_link"),
+            account_path,
+            controller_name == "account",
+            rel: "nofollow",
+            title: t("shared.go_to_page") +
+                  t("layouts.header.my_account_link") %>
           <% else %>
           <%= link_to t("layouts.header.be_one"), "/users/sign_up" %>
           <% end %>

@@ -654,3 +654,17 @@ footer {
     }
   }
 }
+
+//Account
+.account_navbar {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-bottom: 40px;
+  li {
+    margin-right: 30px;
+    a {
+      color: black !important;
+    }
+  }
+}
