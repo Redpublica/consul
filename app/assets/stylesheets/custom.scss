@@ -633,3 +633,24 @@ footer {
   background-color: #fbfbfb;
   border-left: 2px solid black !important;
 }
+
+// New proposal
+.icon-proposals {
+  color: $accent !important;
+  opacity: 1 !important;
+}
+.recommendations {
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: $line-height;
+
+  li {
+    font-size: $small-font-size;
+    margin: $line-height / 2 0;
+
+    &::before {
+      content: none !important;
+      font-family: "icons" !important;
+    }
+  }
+}

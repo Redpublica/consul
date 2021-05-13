@@ -92,7 +92,7 @@ es-PE:
     form:
       debate_title: Título del debate
       tags_instructions: Etiqueta este debate.
-      tags_placeholder: "Escribe las etiquetas que desees separadas por coma (',')"
+      tags_placeholder: "Escribe las etiquetas que desees separadas por coma."
     index:
       featured_debates: Destacar
       orders:
@@ -337,13 +337,16 @@ es-PE:
       done: Realizada
       other: Otra
     form:
+      not_required: No obligatorio
       proposal_responsible_name_note: "(individualmente o como representante de un colectivo; no se mostrará públicamente)"
-      proposal_summary_note: "(máximo 200 caracteres)"
-      proposal_video_url_note: Puedes añadir un enlace a YouTube o Vimeo
+      proposal_summary_note: "A continuación, escribe en un texto corto, de qué trata tu demanda (acá puedes enfocarte en escribir brevemente la petición o necesidad específica). Este texto será la cara principal de tu demanda en la portada de Megáfono. (máximo 200 caracteres)"
+      proposal_long_description: A continuación, puedes complementar tu demanda con información que consideres importante para argumentar la necesidad de solucionar el problema que has identificado. “Cuéntanos un poco más sobre tu demanda” (¿tengo algún link/enlace, estudio, documento, Ley, investigación, noticia, video, etc., que respalde mi demanda?). No obligatorio.
+      proposal_video_url_note: Puedes añadir un enlace a YouTube o Vimeo. No obligatorio.
+      proposal_image_note: Selecciona una imagen que represente tu demanda. (Considera que la altura mínima de la imagen debe ser 475px de alto)
       tag_category_label: "Categorías"
-      tags_instructions: "Etiqueta esta demanda. Puedes elegir entre las categorías demandas o introducir las que desees"
+      tags_instructions: "Etiqueta esta demanda. Puedes elegir entre las categorías demandas o introducir las que desees. No obligatorio."
       tags_label: Etiquetas
-      tags_placeholder: "Escribe las etiquetas que desees separadas por coma (',')"
+      tags_placeholder: "Escribe las etiquetas que desees separadas por coma"
       map_location: "Ubicación en el mapa"
       map_location_instructions: "Navega por el mapa hasta la ubicación y coloca el marcador."
       map_remove_marker: "Eliminar el marcador"
@@ -396,19 +399,22 @@ es-PE:
         icon_alt: Icono de Demandas
         title: El Megáfono
         help: |
-          ¡Que se escuche en todo Perú!
-          Los redpublicanos y redpublicanas construimos nuestros proyectos, acercamos nuestros intereses y demandas, y nos conectamos para innovar.
+          ¡Qué se escuche en todo el Perú!
+          Aquí se inicia la experiencia Redpública, aquí iniciamos nuestra primera fase. En este espacio los peruanos y peruanas primero expresaremos nuestras demandas ciudadanas, luego diseñaremos las soluciones en conjunto y juntos nos encargaremos de acercar nuestras soluciones al Estado y a los tomadores de decisiones.
+        help2: |
+          ¿Qué es una demanda?
+          Las demandas son peticiones que buscan la respuesta a un problema que identificamos en nuestro entorno; en este caso, en nuestro país, Perú. Las demandas pueden referirse a temas económicos, culturales, políticos y sociales.
       section_footer:
         title: Ayuda sobre las demandas
         description: Las demandas ciudadanas son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su ciudad, después de conseguir los apoyos suficientes y de someterse a votación ciudadana.
     new:
       form:
         submit_button: Crear demanda
-      more_info: "¿Cómo funcionan las demandas ciudadanas?"
-      recommendation_one: No escribas el título de la demanda o frases enteras en mayúsculas. En internet eso se considera gritar. Y a nadie le gusta que le griten.
+      more_info: Recuerda que las demandas son peticiones que buscan la respuesta a un problema que identificamos en nuestro entorno; en este caso, en nuestro país, Perú. Las demandas pueden referirse a temas económicos, culturales, políticos y sociales.
+      recommendation_one: Escribe ideas positivas, con respeto, no utilices insultos o groserías.
       recommendation_three: Disfruta de este espacio, de las voces que lo llenan, también es tuyo.
-      recommendation_two: Cualquier demanda o comentario que implique una acción ilegal será eliminada, también las que tengan la intención de sabotear los espacios de demanda, todo lo demás está permitido.
-      recommendations_title: Recomendaciones para crear una demanda
+      recommendation_two: "Acá va un ejemplo de lo que podría ser una demanda: Pensemos en un grupo de personas que llegan a vivir a un lugar nuevo, donde antes no había nada. Surgen problemas de vivienda y servicios básicos, y el grupo de personas afectadas pide a las autoridades algún tipo de solución."
+      recommendations_title: Tips básicos para ingresar tu demanda
       start_new: Crear una demanda
     notice:
       retired: Demanda retirada

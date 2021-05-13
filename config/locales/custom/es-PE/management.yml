@@ -125,7 +125,7 @@ es-PE:
     user_invites:
       new:
         label: Emails
-        info: "Introduce los emails separados por comas (',')"
+        info: "Introduce los emails separados por comas"
         submit: Enviar invitaciones
         title: Enviar invitaciones
       create:
