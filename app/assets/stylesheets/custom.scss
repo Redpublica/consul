@@ -27,87 +27,80 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 @font-face {
-  font-family: "Monument Grotesk";
+  font-family: "Archivo";
   font-style: normal;
   font-weight: 300;
-  src: font-url("custom/MonumentGrotesk-Regular.ttf") format("truetype");
+  src: font-url("custom/Archivo-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Monument Grotesk";
+  font-family: "Archivo";
   font-style: italic;
   font-weight: 300;
-  src: font-url("custom/MonumentGrotesk-Italic.ttf") format("truetype");
+  src: font-url("custom/Archivo-Italic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Monument Grotesk Mono";
-  font-style: normal;
-  font-weight: 300;
-  src: font-url("custom/MonumentGrotesk-Mono.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Monument Grotesk";
+  font-family: "Archivo";
   font-style: normal;
   font-weight: 400;
-  src: font-url("custom/MonumentGrotesk-Medium.ttf") format("truetype");
+  src: font-url("custom/Archivo-Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Monument Grotesk";
+  font-family: "Archivo";
   font-style: italic;
   font-weight: 400;
-  src: font-url("custom/MonumentGrotesk-MediumItalic.ttf") format("truetype");
+  src: font-url("custom/Archivo-MediumItalic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Monument Grotesk";
+  font-family: "Archivo";
   font-style: normal;
   font-weight: 500;
-  src: font-url("custom/MonumentGrotesk-Bold.ttf") format("truetype");
+  src: font-url("custom/Archivo-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Monument Grotesk";
+  font-family: "Archivo";
   font-style: italic;
   font-weight: 500;
-  src: font-url("custom/MonumentGrotesk-BoldItalic.ttf") format("truetype");
+  src: font-url("custom/Archivo-BoldItalic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Monument Grotesk";
+  font-family: "Archivo";
   font-style: normal;
   font-weight: 600;
-  src: font-url("custom/MonumentGrotesk-Heavy.ttf") format("truetype");
+  src: font-url("custom/Archivo-Heavy.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Monument Grotesk";
+  font-family: "Archivo";
   font-style: italic;
   font-weight: 600;
-  src: font-url("custom/MonumentGrotesk-HeavyItalic.ttf") format("truetype");
+  src: font-url("custom/Archivo-HeavyItalic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Monument Grotesk";
+  font-family: "Archivo";
   font-style: normal;
   font-weight: 700;
-  src: font-url("custom/MonumentGrotesk-Black.ttf") format("truetype");
+  src: font-url("custom/Archivo-Black.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Monument Grotesk";
+  font-family: "Archivo";
   font-style: italic;
   font-weight: 700;
-  src: font-url("custom/MonumentGrotesk-BlackItalic.ttf") format("truetype");
+  src: font-url("custom/Archivo-BlackItalic.ttf") format("truetype");
 }
 
 //  2. Global
 // ------
 
 body {
-  font-family: "Monument Grotesk", "Helvetica", "Arial", sans-serif !important;
+  font-family: "Archivo", "Helvetica", "Arial", sans-serif !important;
   background-color: $header-color;
 }
 // Fix width page content
@@ -222,7 +215,7 @@ body > header,
     .menu {
       display: block;
       text-transform: uppercase;
-      font-family: "Monument Grotesk Mono";
+      font-family: "Archivo";
       a {
         vertical-align: top;
         color: black;
@@ -357,7 +350,7 @@ a :not(.ssb-icon) {
   display: block;
   padding: 0.7rem 1rem;
   line-height: 1;
-  font-family: "Monument Grotesk Mono";
+  font-family: "Archivo";
   text-transform: uppercase;
 }
 
@@ -407,7 +400,7 @@ a :not(.ssb-icon) {
 
   h1 {
     font-size: rem-calc(48);
-    font-family: "Monument Grotesk" !important;
+    font-family: "Archivo" !important;
     text-transform: none;
     font-weight: 700;
     font-style: normal;
@@ -419,7 +412,7 @@ a :not(.ssb-icon) {
     flex-direction: row;
     align-items: center;
     p {
-      font-family: "Monument Grotesk" !important;
+      font-family: "Archivo" !important;
       font-weight: 300;
       font-size: rem-calc(20);
       color: black;
@@ -435,7 +428,7 @@ a :not(.ssb-icon) {
     margin: 0;
     padding: 0;
     h2 {
-      font-family: "Monument Grotesk" !important;
+      font-family: "Archivo" !important;
       font-weight: 300;
       font-size: rem-calc(33);
       color: black;
@@ -487,13 +480,13 @@ a :not(.ssb-icon) {
     }
   }
   span {
-    font-family: "Monument Grotesk" !important;
+    font-family: "Archivo" !important;
     font-weight: 300;
     font-size: rem-calc(18);
     color: black;
   }
   h2 {
-    font-family: "Monument Grotesk" !important;
+    font-family: "Archivo" !important;
     font-weight: 500;
     font-size: rem-calc(18);
     color: black;
@@ -536,8 +529,8 @@ aside {
 }
 
 footer {
-  font-family: "Monument Grotesk Mono", "Helvetica", "Arial", sans-serif !important;
-  font-size: rem-calc(12);
+  font-family: "Archivo", "Helvetica", "Arial", sans-serif !important;
+  font-size: rem-calc(14);
   background-color: white;
   .footer-headers {
     padding-bottom: 1rem;
@@ -545,7 +538,7 @@ footer {
   }
   .footer-links {
     input {
-      font-size: rem-calc(12);
+      font-size: rem-calc(14);
       border: 1px solid black;
     }
     button {
