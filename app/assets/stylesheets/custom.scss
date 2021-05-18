@@ -423,6 +423,73 @@ a :not(.ssb-icon) {
     }
   }
 }
+
+.breadcrumb {
+  font-size: 0px;
+}
+.date {
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  font-weight: 600;
+}
+.breadcrumb > * {
+  font-size: 16px;
+  color: #253e6a;
+  background: #c8f1fe;
+  display: inline-block;
+  padding: 10px 8px 10px 45px;
+  margin: 20px 10px 10px 0;
+  // height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+.breadcrumb > span {
+  background: #76cae6;
+}
+.breadcrumb > span:after {
+  border-color: transparent transparent transparent #76cae6;
+}
+
+.breadcrumb > :before {
+  position: absolute;
+  top: 0;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 0 30px 30px;
+  border-color: transparent transparent transparent #76a2f8;
+  z-index: 1;
+}
+
+.breadcrumb > :after {
+  position: absolute;
+  top: 0;
+  content: "";
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 0 30px 30px;
+  border-color: transparent transparent transparent #c8f1fe;
+  z-index: 2;
+}
+
+.breadcrumb :first-child {
+  padding-left: 20px;
+}
+.breadcrumb :first-child:before {
+  border: none;
+}
+.highlight {
+  background-color: #fbdd2c;
+}
+.highlight:after {
+  border-color: transparent transparent transparent #fbdd2c;
+}
+
 .proposals-list {
   .title {
     margin: 0;
