@@ -256,8 +256,8 @@ es-PE:
         terms_of_service: "Términos de servicio"
         video_url: "Enlace a vídeo externo"
       proposal/translation:
-        title: "Título de la demanda"
-        description: "Texto desarrollado de la demanda"
+        title: "Titula tu demanda"
+        description: "¿De qué trata tu demanda?"
         summary: "Resumen de la demanda"
         retired_explanation: "Explicación"
       user:
@@ -410,9 +410,9 @@ es-PE:
         homepage: "Descripción"
         milestones_summary: Seguimiento del proceso
       legislation/proposal:
-        description: "Texto desarrollado de la demanda"
+        description: "¿De qué trata tu demanda?"
         summary: "Resumen de la demanda"
-        title: "Título de la demanda"
+        title: "Titula tu demanda"
         video_url: "Enlace a vídeo externo"
       legislation/draft_version:
         title: Título de la versión

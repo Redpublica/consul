@@ -340,13 +340,15 @@ es-PE:
       other: Otra
     form:
       not_required: No obligatorio
+      title_hint: "Te proponemos una pregunta que te puede ayudar: ¿Qué problema nos afecta a todos y aún no es solucionado? ¿Mi problema es común a miles de peruanos?"
       proposal_responsible_name_note: "(individualmente o como representante de un colectivo; no se mostrará públicamente)"
       proposal_summary_note: "A continuación, escribe en un texto corto, de qué trata tu demanda (acá puedes enfocarte en escribir brevemente la petición o necesidad específica). Este texto será la cara principal de tu demanda en la portada de Megáfono. (máximo 200 caracteres)"
-      proposal_long_description: A continuación, puedes complementar tu demanda con información que consideres importante para argumentar la necesidad de solucionar el problema que has identificado. “Cuéntanos un poco más sobre tu demanda” (¿tengo algún link/enlace, estudio, documento, Ley, investigación, noticia, video, etc., que respalde mi demanda?). No obligatorio.
+      proposal_long_description: Te proponemos escribir primero de qué trata el problema; segundo, por qué es relevante para los peruanos; y, tercero, de ser el caso, contar si se está haciendo algo al respecto desde alguna institución o iniciativa ciudadana.
+      secondary_section: A continuación, puedes complementar tu demanda con información que consideres importante para argumentar la necesidad de solucionar el problema que has identificado. Cuéntanos un poco más sobre tu demanda (¿tengo algún link/enlace, estudio, documento, Ley, investigación, noticia, video, etc., que respalde mi demanda?). No obligatorio.
       proposal_video_url_note: Puedes añadir un enlace a YouTube o Vimeo. No obligatorio.
       proposal_image_note: Selecciona una imagen que represente tu demanda. (Considera que la altura mínima de la imagen debe ser 475px de alto)
       tag_category_label: "Categorías"
-      tags_instructions: "Etiqueta esta demanda. Puedes elegir entre las categorías demandas o introducir las que desees. No obligatorio."
+      tags_instructions: "Luego de haber descrito tu demanda, clasifica de acuerdo a las siguientes opciones. Puedes elegir entre las categorías propuestas o introducir las que desees. No obligatorio."
       tags_label: Etiquetas
       tags_placeholder: "Escribe las etiquetas que desees separadas por coma"
       map_location: "Ubicación en el mapa"

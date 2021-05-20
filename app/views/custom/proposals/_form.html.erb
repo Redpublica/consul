@@ -9,7 +9,8 @@
       <div class="small-12 column">
         <%= translations_form.text_field :title,
               maxlength: Proposal.title_max_length,
-              data: suggest_data(@proposal) %>
+              data: suggest_data(@proposal),
+              hint: t("proposals.form.title_hint") %>
       </div>
       <div class="js-suggest" data-locale="<%= translations_form.locale %>"></div>
 
@@ -17,7 +18,7 @@
         <%= translations_form.text_area :summary,
                                         rows: 4, maxlength: 200,
                                         hint: t("proposals.form.proposal_summary_note") %>
-        <span class="help-text float-right">Quedan <span id="summary_counter" data-maximum-length="200">200</span> carcteres</span>
+        <span class="help-text float-right">Quedan <span id="summary_counter" data-maximum-length="200">200</span> caracteres</span>
       </div>
 
       <div class="small-12 column">
@@ -29,6 +30,10 @@
     <% end %>
 
     <%= f.invisible_captcha :subtitle %>
+
+    <div class="small-12 column">
+        <h5><%= t("proposals.form.secondary_section") %></h5>
+    </div>
 
     <div class="small-12 column">
       <%= f.text_field :video_url, hint: t("proposals.form.proposal_video_url_note") %>
