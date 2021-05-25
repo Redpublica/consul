@@ -192,7 +192,7 @@ es-PE:
     site_customization/page: la página
     sdg/local_target: la meta localizada
   geozones:
-    none: Toda la ciudad
+    none: Todo el país
   layouts:
     application:
       chrome: Google Chrome
