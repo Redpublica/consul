@@ -63,6 +63,8 @@
         <%= render Shared::AdvancedSearchComponent.new %>
       <% end %>
 
+      <%= render Proposals::MapProposalsComponent.new(@proposals) %>
+        <br><br>
       <% unless params[:selected].present? %>
         <%= render "shared/order_links", i18n_namespace: "proposals.index" %>
       <% end %>
@@ -76,23 +78,20 @@
       <% end %>
 
 
-      <div id="proposals-list">
-        <% if @proposals.present? && @current_order=="map" %>
-          <%= render Proposals::MapProposalsComponent.new(@proposals) %>
-        <% else %>
-          <% if @proposals.any? || current_user.blank? %>
-            <% if proposals_default_view? %>
-              <%= render partial: "proposals/proposal", collection: @proposals %>
-            <% else %>
-              <% @proposals.each do |proposal| %>
-                <%= render "/proposals/proposal_minimal", proposal: proposal %>
-              <% end %>
-            <% end %>
-            <%= paginate @proposals %>
-          <% else %>
-            <%= empty_recommended_proposals_message_text(current_user) %>
-          <% end %>
 
+      <div id="proposals-list">
+
+        <% if @proposals.any? || current_user.blank? %>
+          <% if proposals_default_view? %>
+            <%= render partial: "proposals/proposal", collection: @proposals %>
+          <% else %>
+            <% @proposals.each do |proposal| %>
+              <%= render "/proposals/proposal_minimal", proposal: proposal %>
+            <% end %>
+          <% end %>
+          <%= paginate @proposals %>
+        <% else %>
+          <%= empty_recommended_proposals_message_text(current_user) %>
         <% end %>
 
 

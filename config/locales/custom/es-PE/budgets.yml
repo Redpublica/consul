@@ -69,7 +69,7 @@ es-PE:
       next_phase: Fase siguiente
       prev_phase: Fase anterior
       current_phase: Fase actual
-      map: Proyectos localizables geográficamente
+      map: Mapa de demandas
       finished_budgets: Presupuestos participativos terminados
       see_results: Ver resultados
       section_footer:
