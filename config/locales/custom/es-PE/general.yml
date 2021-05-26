@@ -279,8 +279,8 @@ es-PE:
       mark_as_unread: Marcar como no leída
       notifiable_hidden: Este elemento ya no está disponible.
   map:
-    title: "Distritos"
-    proposal_for_district: "Ingresa una demanda para tu distrito"
+    title: "Departamentos"
+    proposal_for_district: "Ingresa una demanda para tu departamento"
     start_proposal: Ingresa una demanda
   omniauth:
     facebook:
@@ -434,12 +434,12 @@ es-PE:
         zero: Sin comentarios
         one: 1 Comentario
         other: "%{count} Comentarios"
-      support: Apoyar
+      support: Me interesa
       support_title: Apoyar esta demanda
       supports:
         zero: Sin apoyos
-        one: 1 apoyo
-        other: "%{count} apoyos"
+        one: "1  \U0001f44d"
+        other: "%{count}  \U0001f44d"
       votes:
         zero: Sin votos
         one: 1 voto
@@ -629,7 +629,7 @@ es-PE:
       participate_button: "Participar en esta votación"
       participate_button_expired: "Votación terminada"
       no_geozone_restricted: "Toda la ciudad"
-      geozone_restricted: "Distritos"
+      geozone_restricted: "Departamentos"
       geozone_info: "Pueden participar las personas empadronadas en: "
       already_answer: "Ya has participado en esta votación"
       not_logged_in: "Necesitas iniciar sesión o registrarte para participar"
@@ -765,8 +765,8 @@ es-PE:
         see_all: "Ver todas"
     tags_cloud:
       tags: Tendencias
-      districts: "Distritos"
-      districts_list: "Listado de distritos"
+      districts: "Departamentos"
+      districts_list: "Listado de departamentos"
       categories: "Categorías"
     target_blank: " (se abre en ventana nueva)"
     you_are_in: "Estás en"
@@ -886,8 +886,8 @@ es-PE:
       unfeasible: No se pueden votar demandas inviables.
       not_voting_allowed: El periodo de votación está cerrado.
       different_heading_assigned:
-        one: "Sólo puedes apoyar proyectos de gasto de %{count} distrito. Ya has apoyado en %{supported_headings}."
-        other: "Sólo puedes apoyar proyectos de gasto de %{count} distritos. Ya has apoyado en %{supported_headings}."
+        one: "Sólo puedes apoyar proyectos de gasto de %{count} departamento. Ya has apoyado en %{supported_headings}."
+        other: "Sólo puedes apoyar proyectos de gasto de %{count} departamentos. Ya has apoyado en %{supported_headings}."
   welcome:
     feed:
       most_active:

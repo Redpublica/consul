@@ -7,9 +7,9 @@ es-PE:
       official_level_4_name: Cargo oficial 4
       official_level_5_name: Cargo oficial 5
     geozones:
-      north_district: Distrito Norte
-      west_district: Distrito Oeste
-      east_district: Distrito Este
+      north_district: Departamento Norte
+      west_district: Departamento Oeste
+      east_district: Departamento Este
       central_district: Districto Central
     organizations:
       human_rights: Derechos Humanos
@@ -35,7 +35,7 @@ es-PE:
       currency: "€"
       groups:
         all_city: Toda la Ciudad
-        districts: Distritos
+        districts: Departamentos
       valuator_groups:
         culture_and_sports: Cultura y Deportes
         gender_and_diversity: Políticas de Género y Diversidad
