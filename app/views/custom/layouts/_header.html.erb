@@ -19,17 +19,19 @@
     <%= link_to t("layouts.header.download"), "http://new.redpublica.pe/herramientas/" %>
     </li>
     <li>
-    <%= link_to t("layouts.header.attention"), "http://new.redpublica.pe/" %>
+    <%= link_to t("layouts.header.attention"), "http://new.redpublica.pe/ojo/" %>
     </li>
     <li>
     <% if user_signed_in? %>
-    <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %>
+    <%= layout_menu_link_to t("layouts.header.my_account_link"),
+      account_path,
+      controller_name == "account",
+      rel: "nofollow",
+      title: t("shared.go_to_page") +
+            t("layouts.header.my_account_link") %>
     <% else %>
     <%= link_to t("layouts.header.be_one"), "/users/sign_up" %>
     <% end %>
-    </li>
-    <li>
-    <%= link_to t("layouts.header.group"), "/" %>
     </li>
     </ul>
   </div>
@@ -42,7 +44,7 @@
 <div class="top-bar">
 
 <div class="top-bar-title">
-<%= link_to root_path, accesskey: "0" do %>
+<%= link_to "http://new.redpublica.pe/", accesskey: "0" do %>
   <%= image_tag(image_path_for("logo_header.png"), class: "float-left", alt: setting["org_name"]) %>
   <%= image_tag(image_path_for("logo_icon.png"), class: "float-left header-icon", alt: setting["org_name"]) %>
   <% end %>
@@ -68,7 +70,7 @@
           <%= link_to t("layouts.header.tabloid"), "http://new.redpublica.pe/pizarron/" %>
           <%= link_to t("layouts.header.advertisement"), "/" %>
           <%= link_to t("layouts.header.download"), "http://new.redpublica.pe/herramientas/" %>
-          <%= link_to t("layouts.header.attention"), "http://new.redpublica.pe/" %>
+          <%= link_to t("layouts.header.attention"), "http://new.redpublica.pe/ojo/" %>
           <% if user_signed_in? %>
           <%= layout_menu_link_to t("layouts.header.my_account_link"),
             account_path,
@@ -79,7 +81,6 @@
           <% else %>
           <%= link_to t("layouts.header.be_one"), "/users/sign_up" %>
           <% end %>
-          <%= link_to t("layouts.header.group"), "/" %>
           </div>
         </div>
     <div>
