@@ -31,7 +31,7 @@ es-PE:
         zero: Todavía no has votado ningún proyecto de gasto.
       reasons_for_not_balloting:
         not_logged_in: Necesitas %{signin} o %{signup} para continuar.
-        not_verified: Los proyectos de gasto sólo pueden ser apoyados por usuarios verificados, %{verify_account}.
+        not_verified: Los proyectos de gasto sólo pueden ser marcados por usuarios verificados, %{verify_account}.
         organization: Las organizaciones no pueden votar.
         not_selected: No se pueden votar proyectos inviables.
         not_enough_money: "Ya has asignado el presupuesto disponible.<br><small>Recuerda que puedes %{change_ballot} en cualquier momento</small>"
@@ -52,7 +52,7 @@ es-PE:
       informing: Información
       accepting: Presentación de proyectos
       reviewing: Revisión interna de proyectos
-      selecting: Fase de apoyos
+      selecting: Fase de captación de interés
       valuating: Evaluación de proyectos
       publishing_prices: Publicación de precios
       balloting: Votación final
@@ -111,7 +111,7 @@ es-PE:
             knapsack: "Puedes %{link} en cualquier momento hasta el %{phase_end_date}. No hace falta que gastes todo el dinero disponible."
             approval: "Puedes %{link} en cualquier momento hasta el %{phase_end_date}."
           change_vote_link: "cambiar tus votos"
-          different_heading_assigned: "Ya apoyaste proyectos de otra sección del presupuesto: %{heading_link}"
+          different_heading_assigned: "Ya mostraste interés por proyectos de otra sección del presupuesto: %{heading_link}"
           change_ballot: "Si cambias de opinión puedes borrar tus votos en %{check_ballot} y volver a empezar."
           check_ballot_link: "revisar y confirmar mis votos"
           zero: Todavía no has votado ningún proyecto de gasto en este ámbito del presupuesto.
@@ -140,7 +140,7 @@ es-PE:
         organization_name: "Propuesto en nombre de: <strong>%{name}</strong>"
         share: Compartir
         title: Proyecto de gasto
-        supports: Apoyos
+        supports: Personas interesadas
         votes: Votos
         price: Coste
         comments_tab: Comentarios
@@ -155,19 +155,19 @@ es-PE:
       investment:
         add: Votar
         already_added: Ya has añadido este proyecto de gasto
-        already_supported: Ya has apoyado este proyecto de gasto. ¡Compártelo!
-        support_title: Apoyar este proyecto
+        already_supported: Ya has mostrado interés este proyecto de gasto. ¡Compártelo!
+        support_title: Me interesa este proyecto
         confirm_group:
-          one: "Sólo puedes apoyar proyectos en %{count} departamento. Si sigues adelante no podrás cambiar la elección de este departamento. ¿Estás seguro/a?"
-          other: "Sólo puedes apoyar proyectos en %{count} departamentos. Si sigues adelante no podrás cambiar la elección de este departamento. ¿Estás seguro/a?"
+          one: "Sólo puedes mostrar interés por proyectos en %{count} departamento. Si sigues adelante no podrás cambiar la elección de este departamento. ¿Estás seguro/a?"
+          other: "Sólo puedes mostrar interés por proyectos en %{count} departamentos. Si sigues adelante no podrás cambiar la elección de este departamento. ¿Estás seguro/a?"
         supports:
-          zero: Sin apoyos
-          one: 1 apoyo
-          other: "%{count} apoyos"
-        give_support: Apoyar
+          zero: Sin personas interesadas
+          one: 1 "Me interesa"
+          other: "%{count} 'Me interesa'"
+        give_support: Me interesa
       header:
         check_ballot: Revisar y confirmar mis votos
-        different_heading_assigned: "Ya apoyaste proyectos de otra sección del presupuesto: %{heading_link}"
+        different_heading_assigned: "Ya mostraste interés por proyectos de otra sección del presupuesto: %{heading_link}"
         change_ballot: "Si cambias de opinión puedes borrar tus votos en %{check_ballot} y volver a empezar."
         check_ballot_link: "revisar y confirmar mis votos"
         price: "Presupuesto total"

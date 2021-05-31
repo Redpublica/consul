@@ -11,8 +11,8 @@ es-PE:
         proposal: Comunidad de la demanda
         investment: Comunidad del presupuesto participativo
       description:
-        proposal: Participa en la comunidad de esta demanda. Una comunidad activa puede ayudar a mejorar el contenido de la demanda así como a dinamizar su difusión para conseguir más apoyos.
-        investment: Participa en la comunidad de este proyecto de gasto. Una comunidad activa puede ayudar a mejorar el contenido del proyecto de gasto así como a dinamizar su difusión para conseguir más apoyos.
+        proposal: Participa en la comunidad de esta demanda. Una comunidad activa puede ayudar a mejorar el contenido de la demanda así como a dinamizar su difusión para conseguir más interés.
+        investment: Participa en la comunidad de este proyecto de gasto. Una comunidad activa puede ayudar a mejorar el contenido del proyecto de gasto así como a dinamizar su difusión para conseguir más interés.
       create_first_community_topic:
         first_theme_not_logged_in: No hay ningún tema disponible, participa creando el primero.
         first_theme: Crea el primer tema de la comunidad

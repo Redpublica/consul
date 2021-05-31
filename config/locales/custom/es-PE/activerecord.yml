@@ -150,7 +150,7 @@ es-PE:
         name: "Nombre"
         description_accepting: "Descripción durante la fase de presentación de proyectos"
         description_reviewing: "Descripción durante la fase de revisión interna"
-        description_selecting: "Descripción durante la fase de apoyos"
+        description_selecting: "Descripción durante la fase de captación de interés"
         description_valuating: "Descripción durante la fase de evaluación"
         description_balloting: "Descripción durante la fase de votación"
         description_reviewing_ballots: "Descripción durante la fase de revisión de votos"
@@ -484,7 +484,7 @@ es-PE:
         link: Enlace externo
         request_to_administrators: Incluir en el recurso un botón para solicitar el recurso a los administradores
         day_offset: "¿En cuántos días tras la creación de la demanda quieres que se active?"
-        required_supports: "¿Cuántos apoyos tiene que conseguir la demanda para que se active?"
+        required_supports: "¿Cuánta gente interesada tiene que conseguir la demanda para que se active?"
         order: Puedes introducir la posición en la que se mostrará al usuario esta acción en la lista de acciones
         active: Activa
         action_type: Tipo

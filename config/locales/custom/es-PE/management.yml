@@ -59,17 +59,17 @@ es-PE:
     menu:
       create_proposal: Crear demanda
       print_proposals: Imprimir demandas
-      support_proposals: Apoyar demandas
+      support_proposals: Mostrar interes en demandas
       create_budget_investment: Crear proyectos de gasto
       print_budget_investments: Imprimir proyectos de gasto
-      support_budget_investments: Apoyar proyectos de gasto
+      support_budget_investments: Mostrar interés en proyectos de gasto
       users: Gestión de usuarios
       user_invites: Enviar invitaciones
       select_user: Seleccionar usuario
     permissions:
       create_proposals: Crear nuevas demandas
       debates: Participar en debates
-      support_proposals: Apoyar demandas
+      support_proposals: Mostrar interés en demandas
       vote_proposals: Participar en las votaciones finales
     print:
       proposals_info: Haz tu demanda en http://url.consul
@@ -83,11 +83,11 @@ es-PE:
       print:
         print_button: Imprimir
       index:
-        title: Apoyar demandas
+        title: Mostra interés en demandas
     budgets:
       create_new_investment: Crear proyectos de gasto
       print_investments: Imprimir proyectos de gasto
-      support_investments: Apoyar proyectos de gasto
+      support_investments: Mostra interés en  proyectos de gasto
       table_name: Nombre
       table_phase: Fase
       table_actions: Acciones

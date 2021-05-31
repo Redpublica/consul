@@ -24,19 +24,19 @@ es-PE:
         figcaption: 'Botones "Estoy de acuerdo" y "No estoy de acuerdo" para valorar los debates.'
       proposals:
         title: "Demandas"
-        description: "En la sección de %{link} puedes plantear demandas para que el Ayuntamiento las lleve a cabo. Las demandas recaban apoyos, y si alcanzan los apoyos suficientes se someten a votación ciudadana. Las demandas aprobadas en estas votaciones ciudadanas son asumidas por el Ayuntamiento y se llevan a cabo."
+        description: "En la sección de %{link} puedes plantear demandas para que el Ayuntamiento las lleve a cabo. Las demandas captan interés, y si alcanzan las suficientes personas interesadas se someten a votación ciudadana. Las demandas aprobadas en estas votaciones ciudadanas son asumidas por el Ayuntamiento y se llevan a cabo."
         link: "demandas ciudadanas"
-        image_alt: "Botón para apoyar una demanda"
-        figcaption: 'Botón para "Apoyar" una demanda.'
+        image_alt: "Botón para interesarse por una demanda"
+        figcaption: 'Botón de "Me interesa" una demanda.'
       budgets:
         title: "Presupuestos participativos"
         description: "La sección de %{link} sirve para que la gente decida de manera directa a qué se destina una parte del presupuesto municipal."
         link: "presupuestos participativos"
         image_alt: "Diferentes fases de un presupuesto participativo"
-        figcaption: 'Fase de "Apoyos" y fase de "Votación" de los presupuestos participativos.'
+        figcaption: 'Fase de "Captación de interés" y fase de "Votación" de los presupuestos participativos.'
       polls:
         title: "Votaciones"
-        description: "La sección de %{link} se activa cada vez que una demanda alcanza el 1% de apoyos y pasa a votación o cuando el Ayuntamiento propone un tema para que la gente decida sobre él."
+        description: "La sección de %{link} se activa cada vez que una demanda alcanza el 1% de personas interesadas y pasa a votación o cuando el Ayuntamiento propone un tema para que la gente decida sobre él."
         link: "votaciones ciudadanas"
         feature_1: "Para participar en las votaciones tienes que %{link} y verificar tu cuenta."
         feature_1_link: "registrarte en %{org_name}"

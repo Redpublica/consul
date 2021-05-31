@@ -91,7 +91,7 @@ es-PE:
     user_permission_debates: Participar en debates
     user_permission_info: Al verificar tus datos podrás...
     user_permission_proposal: Crear nuevas demandas
-    user_permission_support_proposal: Apoyar demandas
+    user_permission_support_proposal: Mostrar interés en demandas
     user_permission_votes: Participar en las votaciones finales*
     verified_user:
       form:

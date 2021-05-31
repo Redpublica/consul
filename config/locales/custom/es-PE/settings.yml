@@ -14,18 +14,18 @@ es-PE:
     official_level_5_name_description: "Etiqueta que aparecerá en los usuarios marcados como Nivel 5 de cargo público"
     max_ratio_anon_votes_on_debates: "Porcentaje máximo de votos anónimos por Debate"
     max_ratio_anon_votes_on_debates_description: "Se consideran votos anónimos los realizados por usuarios registrados con una cuenta sin verificar"
-    max_votes_for_proposal_edit: "Número de apoyos en que una Demanda deja de poderse editar"
-    max_votes_for_proposal_edit_description: "A partir de este número de apoyos el autor de una Demanda ya no podrá editarla"
+    max_votes_for_proposal_edit: "Número de personas interesadas en que una Demanda deja de poderse editar"
+    max_votes_for_proposal_edit_description: "A partir de este número de personas interesadas el autor de una Demanda ya no podrá editarla"
     max_votes_for_debate_edit: "Número de votos en que un Debate deja de poderse editar"
     max_votes_for_debate_edit_description: "A partir de este número de votos el autor de un Debate ya no podrá editarlo"
     proposal_code_prefix: "Prefijo para los códigos de Demandas"
     proposal_code_prefix_description: "Este prefijo aparecerá en las Demandas delante de la fecha de creación y su ID"
     featured_proposals_number: "Número de demandas destacadas"
     featured_proposals_number_description: "Número de demandas destacadas que se mostrarán si la funcionalidad Demandas destacadas está activa"
-    votes_for_proposal_success: "Número de apoyos necesarios para aprobar una Demanda"
-    votes_for_proposal_success_description: "Cuando una demanda alcance este número de apoyos ya no podrá recibir más y se considera exitosa"
+    votes_for_proposal_success: "Número de personas interesadas para aprobar una Demanda"
+    votes_for_proposal_success_description: "Cuando una demanda alcance este número de personas interesadas ya no podrá recibir más y se considera exitosa"
     months_to_archive_proposals: "Meses para archivar las Demandas"
-    months_to_archive_proposals_description: "Pasado este número de meses las Demandas se archivarán y ya no podrán recoger apoyos"
+    months_to_archive_proposals_description: "Pasado este número de meses las Demandas se archivarán y ya no podrán captar más interés"
     email_domain_for_officials: "Dominio de email para cargos públicos"
     email_domain_for_officials_description: "Todos los usuarios registrados con este dominio tendrán su cuenta verificada al registrarse"
     twitter_handle: "Usuario de Twitter"
@@ -62,7 +62,7 @@ es-PE:
     min_age_to_participate_description: "Los usuarios mayores de esta edad podrán participar en todos los procesos donde se necesite una cuenta verificada"
     proposals:
       successful_proposal_id: Demanda exitosa
-      successful_proposal_id_description: Esta demanda se utiliza como referencia de una demanda exitosa en número de apoyos y se mostrará en el gráfico del panel de control
+      successful_proposal_id_description: Esta demanda se utiliza como referencia de una demanda exitosa en número de personas intersadas y se mostrará en el gráfico del panel de control
       poll_short_title: Encuestas
       poll_short_title_description: Breve descripción de la funcionalidad de encuestas. Permite a los usuarios crear encuestas sobre una demanda.
       poll_description: Descripción encuestas
@@ -175,7 +175,7 @@ es-PE:
       debates: "Debates"
       debates_description: "El espacio de debates ciudadanos está dirigido a que cualquier persona pueda exponer temas que le preocupan y sobre los que quiera compartir puntos de vista con otras personas"
       proposals: "Demandas"
-      proposals_description: "Las demandas ciudadanas son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su sociedad, después de conseguir los apoyos suficientes y de someterse a votación ciudadana"
+      proposals_description: "Las demandas ciudadanas son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su sociedad, después de conseguir el interés suficiente y de someterse a votación ciudadana"
       polls: "Votaciones"
       polls_description: "Las votaciones ciudadanas son un mecanismo de participación por el que la ciudadanía con derecho a voto puede tomar decisiones de forma directa"
       budgets: "Presupuestos participativos"

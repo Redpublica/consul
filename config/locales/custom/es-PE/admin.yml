@@ -146,7 +146,7 @@ es-PE:
       form:
         create: "Crear nuevo grupo"
         edit: "Editar grupo"
-        max_votable_headings_info: "Solo se aplica en la fase de apoyos. Durante la votación final un usuario solo puede votar en una partida por grupo."
+        max_votable_headings_info: "Solo se aplica en la fase de captación de interes. Durante la votación final un usuario solo puede votar en una partida por grupo."
         submit: "Guardar grupo"
       index:
         back: "Volver a presupuestos"
@@ -202,8 +202,8 @@ es-PE:
           selected: Seleccionados
           undecided: Sin decidir
           unfeasible: Inviables
-          min_total_supports: Apoyos mínimos
-          max_total_supports: Apoyos máximos
+          min_total_supports: Mínimo número de personas interesadas
+          max_total_supports: Máximo número de personas interesadas
           winners: Ganadores
           one_filter: "Filtros en uso: <b><em>%{filter}</em></b>"
           two_filters: "Filtros en uso: <b><em>%{filter}, %{advanced_filters}</em></b>"
@@ -225,7 +225,7 @@ es-PE:
         list:
           id: ID
           title: Título
-          supports: Apoyos
+          supports: Personas interesadas
           admin: Administrador
           valuator: Evaluador
           valuation_group: Grupos evaluadores
@@ -376,14 +376,14 @@ es-PE:
         description: Bienvenido al panel de administración de %{org}.
       actions:
         index:
-          description: "Cuando los usuarios crean demandas pueden acceder a un panel de progreso de su demanda, donde se le puede proponer recursos y recomendaciones para conseguir apoyos a su idea."
+          description: "Cuando los usuarios crean demandas pueden acceder a un panel de progreso de su demanda, donde se le puede proponer recursos y recomendaciones para conseguir interés en su idea."
           create: Crear recurso o acción
           active: "Si"
           inactive: "No"
           title: Recursos y acciones
           action_title: Título
           action_type: Tipo
-          required_supports: Apoyos necesarios
+          required_supports: Número necesario de personas interesadas
           day_offset: Días necesarios
           action_active: Activo
           order: Orden
@@ -525,7 +525,7 @@ es-PE:
           orders:
             id: Id
             title: Título
-            supports: Apoyos totales
+            supports: Número total de personas interesadas
         process:
           title: Proceso
           comments: Comentarios
@@ -550,7 +550,7 @@ es-PE:
           title: Título
           back: Volver
           id: Id
-          supports: Apoyos totales
+          supports: Número total de personas interesadas
         form:
           custom_categories: Categorías
           custom_categories_description: Categorías que el usuario puede seleccionar al crear la demanda. Máximo 160 caracteres.
@@ -746,7 +746,7 @@ es-PE:
       feasible_and_undecided_investment_authors: "Usuarios autores de algún proyecto de gasto en los actuales presupuestos que no cumpla: [evaluación finalizada inviable]"
       selected_investment_authors: Usuarios autores de proyectos de gasto seleccionadas en los actuales presupuestos
       winner_investment_authors: Usuarios autores de proyectos de gasto ganadoras en los actuales presupuestos
-      not_supported_on_current_budget: Usuarios que no han apoyado proyectos de los actuales presupuestos
+      not_supported_on_current_budget: Usuarios que no han mostrado interés en proyectos de los actuales presupuestos
       invalid_recipients_segment: "El segmento de destinatarios es inválido"
     newsletters:
       create_success: Newsletter creada correctamente
@@ -1405,7 +1405,7 @@ es-PE:
       budgets:
         no_data_before_balloting_phase: "No hay datos que mostrar hasta que la fase de votación no esté abierta."
         title: "Presupuestos participativos - Estadisticas de participación"
-        supporting_phase: Fase de apoyos
+        supporting_phase: Fase de captación de interés
         balloting_phase: Votación final
       budget_balloting:
         title: "Estadísticas votación final"
@@ -1414,7 +1414,7 @@ es-PE:
         votes_per_heading: Votos por partida
         participants_per_district: Participantes por departamento
       budget_supporting:
-        title: "Estadísticas fase de apoyos"
+        title: "Estadísticas fase de captación de interés"
         headings: Partidas
         users: Usuarios
         vote_count: Votos
