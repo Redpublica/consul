@@ -381,6 +381,8 @@ GEM
     nokogiri (1.11.2)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
+    nokogiri (1.11.2-x86_64-darwin)
+      racc (~> 1.4)
     nori (2.6.0)
     oauth (0.5.4)
     oauth2 (1.4.4)
@@ -674,6 +676,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-darwin-18
 
 DEPENDENCIES
   acts-as-taggable-on (~> 6.5.0)
@@ -780,4 +783,4 @@ DEPENDENCIES
   wkhtmltopdf-binary (~> 0.12.4)
 
 BUNDLED WITH
-   1.17.2
+   2.2.2
