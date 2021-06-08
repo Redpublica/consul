@@ -117,3 +117,7 @@ group :development do
 end
 
 eval_gemfile "./Gemfile_custom"
+
+gem "sentry-ruby", "~> 4.5"
+
+gem "sentry-rails", "~> 4.5"
