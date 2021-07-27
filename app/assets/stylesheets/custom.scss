@@ -101,20 +101,11 @@
 
 body {
   font-family: "Archivo", "Helvetica", "Arial", sans-serif !important;
-  background-color: $header-color;
+  background-color: $body-color;
 }
 // Fix width page content
 body > .wrapper {
   width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: black !important;
 }
 
 *
@@ -128,7 +119,7 @@ h6 {
 body > header,
 .wrapper > header {
   border-bottom: 2px solid black !important;
-  background-color: transparent;
+  background-color: $header-color;
   padding: 1.5rem 0;
 
   .header-row {
@@ -250,9 +241,6 @@ button,
   border-radius: 0 !important;
 }
 
-a :not(.ssb-icon) {
-  color: black !important;
-}
 
 // Lateral menu
 .offcanvas-full-screen {
@@ -395,7 +383,7 @@ a :not(.ssb-icon) {
 
 .help-header,
 .section-header {
-  background: $primary;
+  background: $body-color;
   border-bottom: none;
 
   h1 {
@@ -409,17 +397,69 @@ a :not(.ssb-icon) {
 
   .title-subtitle {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    h1 {
+      text-align: center;
+      color: $body-font-color-accent !important
+    }
     p {
       font-family: "Archivo" !important;
       font-weight: 300;
       font-size: rem-calc(20);
       color: black;
       border-bottom: none;
+      text-align: center;
+      color: $body-font-color-accent !important
     }
     img {
-      max-width: 450px;
+      max-width: 300px;
+    }
+    .btn {
+      text-align: center;
+      a {
+        justify-self: center;
+        background-color: $black;
+        border-radius: 30px !important;
+        text-transform: uppercase;
+      }
+    }
+    .help2 {
+      font-weight: 500;
+    }
+  }
+}
+
+.proposals-list {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: $body-font-color-accent !important;
+  }
+}
+
+.in-favor > .button-support {
+  background: $accent !important;
+}
+
+.panel {
+  background-color: $panel-color !important;
+  .proposal-content {
+    h3 > a {
+      color: $body-font-color-accent !important;
+    }
+    .proposal-info {
+      color: $black !important;
+    }
+    .proposal-description {
+      p {
+        color: $black !important;
+      }
     }
   }
 }
@@ -540,7 +580,7 @@ a :not(.ssb-icon) {
 
   .is-active {
     @include brand-text;
-    border-bottom: 2px solid $brand !important;
+    border-bottom: 2px solid $white !important;
 
     &:hover {
       text-decoration: none;
@@ -550,18 +590,41 @@ a :not(.ssb-icon) {
     font-family: "Archivo" !important;
     font-weight: 300;
     font-size: rem-calc(18);
-    color: black;
+    color: $body-font-color-accent;
   }
   h2 {
     font-family: "Archivo" !important;
     font-weight: 500;
     font-size: rem-calc(18);
-    color: black;
+    color: $body-font-color-accent;
   }
 }
 
+.related-content {
+  h2,
+  a {
+    color: $white;
+  }
+}
+
+// Sidebar
 aside {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: $black !important;
+  }
+  .sidebar-title {
+    color: $black !important;
+  }
   .categories {
+    .is-active {
+      background-color: black;
+    }
     a {
       border: 2px solid black;
       background-color: transparent;
@@ -588,6 +651,15 @@ aside {
     }
   }
 }
+
+// Comments
+.additional-content {
+  h3 {
+    color: $black !important;
+  }
+}
+
+// Footer
 
 .footer {
   background-color: white;
@@ -623,12 +695,6 @@ footer {
   }
 }
 
-.in-favor {
-  .button {
-    background-color: $accent !important;
-  }
-}
-
 .filter-subnav {
   margin-bottom: 0 !important;
 }
@@ -639,6 +705,9 @@ footer {
 
 // 5. Sign In  / Sign Up
 .auth-form {
+  h2 {
+    color: $body-font-color !important
+  }
   @include breakpoint(medium) {
     padding-top: $line-height;
   }
@@ -726,5 +795,20 @@ footer {
     a {
       color: black !important;
     }
+  }
+}
+
+// User account
+.account {
+  h1, h2 {
+    color: $white;
+  }
+}
+
+// User activity
+
+.activity {
+  h1, h2 {
+    color: $white;
   }
 }

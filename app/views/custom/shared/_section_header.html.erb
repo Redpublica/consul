@@ -1,24 +1,18 @@
 <div class="help-header">
   <div class="row">
     <div class="title-subtitle column">
-      <div class="small-6">
-        <h1 class="inline-block"><%= t("#{i18n_namespace}.title") %></h1>
-        <p><%= t("#{i18n_namespace}.help") %></p>
-        <p><%= t("#{i18n_namespace}.help2") %></p>
-      </div>
       <%= image_tag(image_path_for("megafono.png"), class: "small-6", alt: setting["org_name"]) %>
-    </div>
-    <div class="column breadcrumb">
-        <p><span class="date">Mayo - Junio</span>Suma de aliadxs</p>
-        <p class="highlight">
-            <span class="date">Julio - Septiembre</span>Recolección de
-            demandas
-        </p>
-        <p>Creación de Agenda Ciudadana</p>
-        <p>
-            <span class="date">Octubre - Diciembre</span>Gestión de Agenda
-            Ciudadana
-        </p>
+      <div class="small-12 medium-6">
+        <h1><%= t("#{i18n_namespace}.title") %></h1>
+        <p><%= t("#{i18n_namespace}.subtitle") %></p>
+        <div class="btn">
+          <%= link_to t("proposals.index.start_proposal"),
+                        new_proposal_path,
+                        class: "button" %>
+        </div>
+        <p><%= t("#{i18n_namespace}.help") %></p>
+        <p class="help2"><%= t("#{i18n_namespace}.help2") %></p>
+      </div>
     </div>
   </div>
 </div>

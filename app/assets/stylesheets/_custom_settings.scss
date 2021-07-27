@@ -18,10 +18,18 @@ $icons: #fde91e;
 $municipalities: #212d5d;
 $header-color: #77a2f8;
 $header-color-transparent: #77a2f8;
+$body-color: #7d6bc0;
+$body-font-color: $black;
+$body-font-color-accent: $white;
+$panel-color: #77a2f8;
 $button_bck: #73160d;
 $header-small-font-color: #273877;
 $text-summary: #273877;
 
-$primary: #77a2f8;
+$primary: $black;
 $secondary: #ff866c;
-$accent: #fcde2b;
+$accent: $white;
+
+$text: #222;
+$text-medium: $text;
+$text-light: #bfbfbf;

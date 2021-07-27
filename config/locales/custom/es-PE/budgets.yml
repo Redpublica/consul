@@ -69,7 +69,9 @@ es-PE:
       next_phase: Fase siguiente
       prev_phase: Fase anterior
       current_phase: Fase actual
-      map: Mapa de demandas
+      map:
+        title: Mapa interactivo
+        type: de nuestras propuestas
       finished_budgets: Presupuestos participativos terminados
       see_results: Ver resultados
       section_footer:

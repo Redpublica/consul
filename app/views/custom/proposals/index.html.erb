@@ -43,39 +43,22 @@
   <div class="row">
     <div id="proposals" class="proposals-list small-12 medium-9 column">
 
-        <div class="title small-12 column">
+        <div class="title small-12">
           <h2>
-            <span><%= t("proposals.index.featured_proposals") %></span> <%= t("proposals.index.section_header.title") %>
+            <span><%= t("proposals.index.featured_proposals") %></span> <%= t("proposals.index.featured_proposals2") %>
             <span><%= image_tag(image_path_for("flecha.png"), class: "", alt: setting["org_name"]) %></span>
           </h2>
 
         </div>
+        <% unless params[:retired].present? || params[:selected].present? %>
+          <%= render Shared::AdvancedSearchComponent.new %>
+        <% end %>
 
-      <% unless params[:selected].present? %>
-        <div class="row">
-          <div class="small-12 column">
-            <%= render "view_mode" %>
-          </div>
-        </div>
-      <% end %>
 
-      <% unless params[:retired].present? || params[:selected].present? %>
-        <%= render Shared::AdvancedSearchComponent.new %>
-      <% end %>
-
-      <%= render Proposals::MapProposalsComponent.new(@proposals) %>
-        <br><br>
       <% unless params[:selected].present? %>
         <%= render "shared/order_links", i18n_namespace: "proposals.index" %>
       <% end %>
 
-      <% if @proposals.any? %>
-        <div class="show-for-small-only">
-          <%= link_to t("proposals.index.start_proposal"),
-                      new_proposal_path,
-                      class: "button expanded" %>
-        </div>
-      <% end %>
 
 
 
@@ -104,16 +87,11 @@
           </div>
         <% end %>
       </div>
+      <%= render Proposals::MapProposalsComponent.new(@proposals) %>
     </div>
 
     <div class="small-12 medium-3 column">
       <aside class="margin-bottom">
-        <%= link_to t("proposals.index.start_proposal"),
-                    new_proposal_path,
-                    class: "button expanded" %>
-
-
-
         <% if params[:retired].blank? %>
           <%= render "categories" %>
           <%= render "shared/tag_cloud", taggable: "Proposal" %>

@@ -280,8 +280,8 @@ es-PE:
       notifiable_hidden: Este elemento ya no está disponible.
   map:
     title: "Departamentos"
-    proposal_for_district: "Ingresa una demanda para tu departamento"
-    start_proposal: Ingresa una demanda
+    proposal_for_district: "Haz una propuesta para tu departamento"
+    start_proposal: Haz tu propuesta aquí
   omniauth:
     facebook:
       sign_in: Entra con Facebook
@@ -356,7 +356,8 @@ es-PE:
       map_remove_marker: "Eliminar el marcador"
       map_skip_checkbox: "Esta demanda no tiene una ubicación concreta o no la conozco."
     index:
-      featured_proposals: Lo último en
+      featured_proposals: Nuestras propuestas
+      featured_proposals2: en el megáfono
       orders:
         confidence_score: Más interés
         created_at: Nuevas
@@ -395,19 +396,20 @@ es-PE:
         other: " que contienen <strong>'%{search_term}'</strong>"
       select_order: Ordenar por
       select_order_long: "Estas viendo las demandas"
-      start_proposal: Ingresa una demanda
+      start_proposal: Haz tu propuesta aquí
       title: Demandas ciudadanas
       top: Top semanal
       top_link_proposals: Demandas con más interés por categoría
       section_header:
         icon_alt: Icono de Demandas
-        title: El Megáfono de Demandas
+        title: El Megáfono
+        subtitle: ¡Amplifica tu voz!
         help: |
-          ¡Qué se escuche en todo el Perú!
-          Aquí se inicia la experiencia Redpública, aquí iniciamos nuestra primera fase. En este espacio los peruanos y peruanas primero expresaremos nuestras demandas ciudadanas, luego diseñaremos las soluciones en conjunto y juntos nos encargaremos de acercar nuestras soluciones al Estado y a los tomadores de decisiones.
+          Nadie mejor que tú para aportar ideas sobre cómo transformar el Perú.
+          Ingresa tu propuesta para solucionar o reducir algún problema local,
+          regional o nacional. Comenta y comparte para crear una comunidad que trabaje en conjunto por el Perú que queremos.
         help2: |
-          ¿Qué es una demanda?
-          Las demandas son peticiones que buscan la respuesta a un problema que identificamos en nuestro entorno; en este caso, en nuestro país, Perú. Las demandas pueden referirse a temas económicos, culturales, políticos y sociales.
+          ¡Propón, comenta y comparte!
       section_footer:
         title: Ayuda sobre las demandas
         description: Las demandas ciudadanas son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su ciudad, después de conseguir el interés suficientes y de someterse a votación ciudadana.
