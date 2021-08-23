@@ -8,7 +8,7 @@ class ProposalsController < ApplicationController
   include Translatable
 
   before_action :load_categories, only: [:index, :new, :create, :edit, :map, :summary]
-  before_action :load_geozones, only: [:edit, :map, :summary]
+  before_action :load_geozones, only: [:index, :edit, :map, :summary]
   before_action :authenticate_user!, except: [:index, :show, :map, :summary, :json_data]
   before_action :destroy_map_location_association, only: :update
   before_action :set_view, only: :index
@@ -46,6 +46,17 @@ class ProposalsController < ApplicationController
   end
 
   def created; end
+
+  def update
+    if @proposal.save
+      if @proposal.draft?
+        redirect_to created_proposal_path(@proposal), notice: I18n.t("flash.actions.update.proposal")
+      else
+        redirect_to proposal_path(@proposal), notice: I18n.t("flash.actions.update.proposal")
+      end
+    end
+  end
+
 
   def index_customization
     discard_draft

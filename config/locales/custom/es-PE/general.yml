@@ -16,8 +16,8 @@ es-PE:
       title: Mi cuenta
       user_permission_debates: Participar en debates
       user_permission_info: Con tu cuenta ya puedes...
-      user_permission_proposal: Crear nuevas demandas en EL MEGÁFONO
-      user_permission_support_proposal: Mostrar interés en demandas en EL MEGÁFONO
+      user_permission_proposal: Crear nuevas propuestas en EL MEGÁFONO
+      user_permission_support_proposal: Mostrar interés en propuestas en EL MEGÁFONO
       user_permission_title: Participación
       user_permission_verify: Para poder realizar todas las acciones, verifica tu cuenta.
       user_permission_verify_info: "* Sólo usuarios empadronados."
@@ -104,7 +104,7 @@ es-PE:
         recommendations: Recomendaciones
       recommendations:
         without_results: No existen debates relacionados con tus intereses
-        without_interests: Sigue demandas para que podamos darte recomendaciones
+        without_interests: Sigue propuestas para que podamos darte recomendaciones
         disable: "Si ocultas las recomendaciones para debates, no se volverán a mostrar. Puedes volver a activarlas en 'Mi cuenta'"
         actions:
           success: "Las recomendaciones de debates han sido desactivadas"
@@ -131,8 +131,8 @@ es-PE:
     new:
       form:
         submit_button: Empieza un debate
-      info: Si lo que quieres es hacer una demanda, esta es la sección incorrecta, entra en %{info_link}.
-      info_link: crear nueva demanda
+      info: Si lo que quieres es hacer una propuesta, esta es la sección incorrecta, entra en %{info_link}.
+      info_link: crear nueva propuesta
       more_info: Más información
       recommendation_four: Disfruta de este espacio, de las voces que lo llenan, también es tuyo.
       recommendation_one: No escribas el título del debate o frases enteras en mayúsculas. En internet eso se considera gritar. Y a nadie le gusta que le griten.
@@ -169,7 +169,7 @@ es-PE:
     not_saved: "impidieron guardar %{resource}. <br>Por favor revisa los campos marcados para saber cómo corregirlos:"
     policy: Política de privacidad
     banner: el banner
-    proposal: la demanda
+    proposal: la propuesta
     proposal_notification: "la notificación"
     budget/investment: el proyecto de gasto
     budget/group: el grupo de partidas presupuestarias
@@ -192,6 +192,7 @@ es-PE:
     site_customization/page: la página
     sdg/local_target: la meta localizada
   geozones:
+    placeholder: Región
     none: Todo el país
   layouts:
     application:
@@ -207,8 +208,8 @@ es-PE:
       proposal_totals:
         active_resources: Recursos activos
         community: Participantes en tu comunidad
-        show_proposal: Ver demanda
-        preview_proposal: Previsualizar demanda
+        show_proposal: Ver propuesta
+        preview_proposal: Previsualizar propuesta
         current_goal: Meta actual
         supports:
           zero: Sin personas interesadas
@@ -220,7 +221,7 @@ es-PE:
       newsletter: Newsletter
       social_media: Social media
       tabloid: Pizarrón de contactos
-      advertisement: El megáfono de demandas
+      advertisement: El megáfono de propuestas
       announces: Los avances
       attention: Ojo a esto
       points: Puntos de encuentro
@@ -247,7 +248,7 @@ es-PE:
       privacy: Política de privacidad
     header:
       tabloid: Pizarrón de contactos
-      advertisement: Megáfono de demandas
+      advertisement: Megáfono de propuestas
       announces: Los Avances
       attention: Ojo a esto
       enroll: Inscribe Tu Iniciativa
@@ -309,29 +310,31 @@ es-PE:
   proposals:
     create:
       form:
-        submit_button: Crear demanda
+        submit_button: Crear propuesta
     created:
-      title: "¡Enhorabuena! Has dado el primer paso."
-      motivation: "Es importante preparar la campaña de lanzamiento de tu demanda para que tenga éxito. Los primeros días son decisivos."
-      motivation_2: "<strong>Si quieres recomendaciones para preparar la publicación deja tu demanda como borrador y te guiaremos.</strong>"
-      publish: No, quiero publicar la demanda ya
+      title: "¡Listo, ya estás a punto de compartir!"
+      preview: Estás en vista previa.
+      motivation: "Revisa, y si es necesario, edita o actualiza tu propuesta antes de compartirla."
+      motivation_2: "¡Recuerda que este es el paso más importante!"
+      publish: Quiero compartirla ya
       dashboard: Si, quiero ayuda y publicaré mas tarde
-      preview_title: Así es como quedará tu demanda cuando la publiques
+      edit: Quiero volver a editarla
+      preview_title: Así es como quedará tu propuesta cuando la publiques
     share:
       improve_it: Mejora tu campaña y consigue mas interés.
       dashboard: Ver mas información
-      message: "Me interesa la demanda %{title} en %{handle}. Si te interesa, ¡clica tú también!"
+      message: "Me interesa la propuesta %{title} en %{handle}. Si te interesa, ¡clica tú también!"
     edit:
-      editing: Editar demanda
+      editing: Editar propuesta
       form:
         submit_button: Guardar cambios
-      show_link: Ver demanda
+      show_link: Ver propuesta
     retire_form:
-      title: Retirar demanda
-      warning: "Si sigues adelante tu demanda podrá seguir captando interés, pero dejará de ser listada en la lista principal, y aparecerá un mensaje para todos los usuarios avisándoles de que el autor considera que esta demanda no debe seguir captando interés."
+      title: Retirar propuesta
+      warning: "Si sigues adelante tu propuesta podrá seguir captando interés, pero dejará de ser listada en la lista principal, y aparecerá un mensaje para todos los usuarios avisándoles de que el autor considera que esta propuesta no debe seguir captando interés."
       retired_reason_blank: Selecciona una opción
-      retired_explanation_placeholder: Explica brevemente por que consideras que esta demanda no debe captar más interés
-      submit_button: Retirar demanda
+      retired_explanation_placeholder: Explica brevemente por que consideras que esta propuesta no debe captar más interés
+      submit_button: Retirar propuesta
     retire_options:
       duplicated: Duplicada
       started: En ejecución
@@ -339,47 +342,56 @@ es-PE:
       done: Realizada
       other: Otra
     form:
-      not_required: No obligatorio
+      not_required: |
+        *Este campo no es obligatorio.
       title_hint: "Te proponemos una pregunta que te puede ayudar: ¿Qué problema nos afecta a todos y aún no es solucionado? ¿Mi problema es común a miles de peruanos?"
       proposal_responsible_name_note: "(individualmente o como representante de un colectivo; no se mostrará públicamente)"
-      proposal_summary_note: "A continuación, escribe en un texto corto, de qué trata tu demanda (acá puedes enfocarte en escribir brevemente la petición o necesidad específica). Este texto será la cara principal de tu demanda en la portada de Megáfono. (máximo 200 caracteres)"
-      proposal_long_description: Te proponemos escribir primero de qué trata el problema; segundo, por qué es relevante para los peruanos; y, tercero, de ser el caso, contar si se está haciendo algo al respecto desde alguna institución o iniciativa ciudadana.
-      secondary_section: A continuación, puedes complementar tu demanda con información que consideres importante para argumentar la necesidad de solucionar el problema que has identificado. Cuéntanos un poco más sobre tu demanda (¿tengo algún link/enlace, estudio, documento, Ley, investigación, noticia, video, etc., que respalde mi demanda?). No obligatorio.
-      proposal_video_url_note: Puedes añadir un enlace a YouTube o Vimeo. No obligatorio.
-      proposal_image_note: Selecciona una imagen que represente tu demanda. (Considera que la altura mínima de la imagen debe ser 475px de alto)
+      proposal_summary_note: "A continuación, escribe en un texto corto, de qué trata tu propuesta (acá puedes enfocarte en escribir brevemente la petición o necesidad específica). Este texto será la cara principal de tu propuesta en la portada de Megáfono. (máximo 200 caracteres)"
+      proposal_long_description: No olvides incluir el resultado que se busca alcanzar con la propuesta, algunas acciones necesarias para su
+        realización y cuáles son los actores involucrados en la propuesta (estado, sociedad civil organizada, individuos).
+      secondary_section_title: Información complementaria
+      secondary_section: Si deseas puedes ofrecer más información sobre tu propuesta, a través de documentos, imágenes o video.
+      ubication_section_title: Ubica tu propuesta
+      ubication_section: Ubica en la lista desplegable o en el mapa el ámbito de actuación de tu propuesta (todo el país, región o departamento). Esto es importante para que tu propuesta sea ubicada de forma más fácil.
+      tag_section_title: Etiqueta tu propuesta
+      tag_section: |
+        Para que tu propuesta sea identificada de forma más fácil puedes etiquetarla con las categorías que te ofrecemos: temas y objetivos de desarrollo sostenible.
+      proposal_video_url_note: Coloca el enlace de YouTube o Vimeo de un video que ayude a entender tu propuesta.
+      proposal_image_note: Selecciona una imagen que represente tu propuesta. (Considera que la altura mínima de la imagen debe ser 475px de alto)
       tag_category_label: "Categorías"
-      tags_instructions: "Luego de haber descrito tu demanda, clasifica de acuerdo a las siguientes opciones. Puedes elegir entre las categorías propuestas o introducir las que desees. No obligatorio."
-      tags_label: Etiquetas
+      tags_instructions: "Elige entre las opciones que te ofrecemos o genera tus propias etiquetas temáticas. Puedes etiquetar tu propuesta en más de un tema."
+      tags_label: Temas
       tags_placeholder: "Escribe las etiquetas que desees separadas por coma"
       map_location: "Ubicación en el mapa"
       map_location_instructions: "Navega por el mapa hasta la ubicación y coloca el marcador."
       map_remove_marker: "Eliminar el marcador"
-      map_skip_checkbox: "Esta demanda no tiene una ubicación concreta o no la conozco."
+      map_skip_checkbox: "Esta propuesta no tiene una ubicación concreta o no la conozco."
     index:
       featured_proposals: Nuestras propuestas
       featured_proposals2: en el megáfono
       orders:
-        confidence_score: Más interés
-        created_at: Nuevas
-        hot_score: Más activas
+        confidence_score: Más likeadas
+        created_at: Las nuevas
+        hot_score: En tendencias
         most_commented: Más comentadas
         relevance: Más relevantes
         archival_date: Archivadas
         recommendations: Recomendaciones
         map: Mapa
       recommendations:
-        without_results: No existen demandas relacionadas con tus intereses
-        without_interests: Sigue demandas para que podamos darte recomendaciones
-        disable: "Si ocultas las recomendaciones para demandas, no se volverán a mostrar. Puedes volver a activarlas en 'Mi cuenta'"
+        without_results: No existen propuestas relacionadas con tus intereses
+        without_interests: Sigue propuestas para que podamos darte recomendaciones
+        disable: "Si ocultas las recomendaciones para propuestas, no se volverán a mostrar. Puedes volver a activarlas en 'Mi cuenta'"
         actions:
-          success: "Las recomendaciones de demandas han sido desactivadas"
+          success: "Las recomendaciones de propuestas han sido desactivadas"
           error: "Ha ocurrido un error. Por favor dirígete al apartado 'Mi cuenta' para desactivar las recomendaciones manualmente"
-      retired_proposals: Demandas retiradas
-      retired_proposals_link: "Demandas retiradas por sus autores"
-      selected_proposals: Demandas seleccionadas
-      selected_proposals_link: Ver demandas seleccionadas
-      archived_proposals: Demandas archivadas
-      proposals_lists: Listas de demandas
+      retired_proposals: Propuestas retiradas
+      retired_proposals_link: "Propuestas retiradas por sus autores"
+      selected_proposals: Propuestas seleccionadas
+      selected_proposals_link: Ver propuestas seleccionadas
+      archived_proposals: Propuestas archivadas
+      proposals_lists: Listas de propuestas
+      filter_title: Filtrar por
       retired_links:
         all: Todas
         duplicated: Duplicadas
@@ -389,19 +401,19 @@ es-PE:
         other: Otras
       search_form:
         button: Buscar
-        placeholder: Buscar demandas...
+        placeholder: Buscar propuestas...
         title: Buscar
       search_results:
         one: " que contiene <strong>'%{search_term}'</strong>"
         other: " que contienen <strong>'%{search_term}'</strong>"
       select_order: Ordenar por
-      select_order_long: "Estas viendo las demandas"
+      select_order_long: "Estas viendo las propuestas"
       start_proposal: Haz tu propuesta aquí
-      title: Demandas ciudadanas
+      title: Propuestas ciudadanas
       top: Top semanal
-      top_link_proposals: Demandas con más interés por categoría
+      top_link_proposals: Propuestas con más interés por categoría
       section_header:
-        icon_alt: Icono de Demandas
+        icon_alt: Icono de Propuestas
         title: El Megáfono
         subtitle: ¡Amplifica tu voz!
         help: |
@@ -411,33 +423,31 @@ es-PE:
         help2: |
           ¡Propón, comenta y comparte!
       section_footer:
-        title: Ayuda sobre las demandas
-        description: Las demandas ciudadanas son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su ciudad, después de conseguir el interés suficientes y de someterse a votación ciudadana.
+        title: Ayuda sobre las propuestas
+        description: Las propuestas ciudadanas son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su ciudad, después de conseguir el interés suficientes y de someterse a votación ciudadana.
     new:
       form:
-        submit_button: Crear demanda
-      more_info: Recuerda que las demandas son peticiones que buscan la respuesta a un problema que identificamos en nuestro entorno; en este caso, en nuestro país, Perú. Las demandas pueden referirse a temas económicos, culturales, políticos y sociales.
-      recommendation_one: Escribe ideas positivas, con respeto, no utilices insultos o groserías.
-      recommendation_three: Disfruta de este espacio, de las voces que lo llenan, también es tuyo.
-      recommendation_two: "Acá va un ejemplo de lo que podría ser una demanda: Pensemos en un grupo de personas que llegan a vivir a un lugar nuevo, donde antes no había nada. Surgen problemas de vivienda y servicios básicos, y el grupo de personas afectadas pide a las autoridades algún tipo de solución."
-      recommendations_title: Tips básicos para ingresar tu demanda
-      start_new: Crear una demanda
+        submit_button: ¡Publica mi propuesta!
+      more_info: Las propuestas buscan solucionar o reducir un problema local, regional o nacional en el Perú, acerca de temas sociales, económicos, culturales o políticos.
+      more_info_warning: |
+        *Escribe tus ideas con respeto, no utilices insultos o lenguaje inapropiado.
+      start_new: ¡Haz tu propuesta!
     notice:
-      retired: Demanda retirada
-      published: La demanda ha sido publicada
+      retired: Propuesta retirada
+      published: La propuesta ha sido publicada
     proposal:
-      created: "¡Has creado una demanda!"
+      created: "¡Has creado una propuesta!"
       share:
         guide: "Compártela para que la gente empiece a interesarse."
         edit: "Antes de que se publique podrás modificar el texto a tu gusto."
-        view_proposal: Ahora no, ir a mi demanda
-      already_supported: "¡Ya te has interesado por esta demanda, compártela!"
+        view_proposal: Ahora no, ir a mi propuesta
+      already_supported: "¡Ya te has interesado por esta propuesta, compártela!"
       comments:
         zero: Sin comentarios
         one: 1 Comentario
         other: "%{count} Comentarios"
       support: Me interesa
-      support_title: Me interesa esta demanda
+      support_title: Me interesa esta propuesta
       supports:
         zero: Sin personas interesadas
         one: "1  \U0001f44d"
@@ -449,36 +459,36 @@ es-PE:
       supports_necessary: "%{number} personas interesadas"
       reason_for_supports_necessary: ""
       total_percent: 100%
-      archived: "Esta demanda ha sido archivada y ya no puede captar más interés."
-      successful: "Esta demanda ha alcanzado las personas interesadas."
-      selected: "Demanda seleccionada"
+      archived: "Esta propuesta ha sido archivada y ya no puede captar más interés."
+      successful: "Esta propuesta ha alcanzado las personas interesadas."
+      selected: "Propuesta seleccionada"
     show:
       author_deleted: Usuario eliminado
-      code: "Código de la demanda:"
+      code: "Código de la propuesta:"
       comments:
         zero: Sin comentarios
         one: 1 Comentario
         other: "%{count} Comentarios"
       comments_tab: Comentarios
       dashboard_proposal_link: Panel de control
-      flag: Esta demanda ha sido marcada como inapropiada por varios usuarios.
+      flag: Esta propuesta ha sido marcada como inapropiada por varios usuarios.
       notifications_tab: Notificaciones
       milestones_tab: Seguimiento
-      retired_warning: "El autor de esta demanda considera que ya no debe seguir captando interés."
+      retired_warning: "El autor de esta propuesta considera que ya no debe seguir captando interés."
       retired_warning_link_to_explanation: Revisa su explicación antes de mostrar interés.
-      retired: Demanda retirada por el autor
+      retired: Propuesta retirada por el autor
       share: Compartir
-      no_notifications: "Esta demanda no tiene notificaciones."
+      no_notifications: "Esta propuesta no tiene notificaciones."
       embed_video_title: "Vídeo en %{proposal}"
       title_video_url: "Vídeo externo"
       author: Autor
-      draft: Demanda en borrador. Todavía no puede captar interés, ni aparece en la lista de demandas.
+      draft: Propuesta en borrador. Todavía no puede captar interés, ni aparece en la lista de propuestas.
     update:
       form:
         submit_button: Guardar cambios
   dashboard:
     menu:
-      my_proposal: Editar mi demanda
+      my_proposal: Editar mi propuesta
       progress: Progreso
       resources: Recursos
       community: Comunidad
@@ -492,7 +502,7 @@ es-PE:
       request: Solicitar
     create_request:
       success: La petición ha sido correctamente enviada. Te contactaremos lo antes posible para informarte al respecto.
-      archived: Esta demanda está archivada y no puede solicitar recursos.
+      archived: Esta propuesta está archivada y no puede solicitar recursos.
     progress:
       title: Gráfico
       group_by_month: Mensual
@@ -504,9 +514,9 @@ es-PE:
       new_action: Nuevo
     index:
       title: Edición
-      edit_proposal_link: Editar demanda
-      publish: Publicar demanda
-      retire: Retirar demanda
+      edit_proposal_link: Editar propuesta
+      publish: Publicar propuesta
+      retire: Retirar propuesta
     new_request:
       links: Enlaces
     resources:
@@ -535,8 +545,8 @@ es-PE:
       hide_course: Ocultar ruta
     goal:
       target_supports:
-        one: Consigue %{count} "Me interesa" para tu demanda
-        other: Consigue %{count} "Me interesa" para tu demanda
+        one: Consigue %{count} "Me interesa" para tu propuesta
+        other: Consigue %{count} "Me interesa" para tu propuesta
       days:
         one: "%{count} día"
         other: "%{count} días"
@@ -550,7 +560,7 @@ es-PE:
       comments: Comentarios
       latest_comments: Últimos mensajes
     messages:
-      send_notification: Enviar mensaje a los que siguen la demanda
+      send_notification: Enviar mensaje a los que siguen la propuesta
       previous_notifications: Ver notificaciones anteriores
     polls:
       index:
@@ -590,12 +600,12 @@ es-PE:
         title: Previsualización del poster
         poster_title: "No te quedes mirando,"
         poster_subtitle: "¡apóyame! ;)"
-        intro_text: "<strong>Estoy participando en %{org}</strong> con mi propia demanda ciudadana y sólo si tú también te sumas podré lograr el interés necesario para hacer la ciudad que todos queremos."
-        proposal_code: "Código de la demanda: %{code}"
-        support: Muestra interés por mi demanda
-        footer: "<strong>Entra en %{link} y muestra interés por esta demanda.</strong> Necesitamos ser muchos. Decide tu también. ¡Gracias!"
+        intro_text: "<strong>Estoy participando en %{org}</strong> con mi propia propuesta ciudadana y sólo si tú también te sumas podré lograr el interés necesario para hacer la ciudad que todos queremos."
+        proposal_code: "Código de la propuesta: %{code}"
+        support: Muestra interés por mi propuesta
+        footer: "<strong>Entra en %{link} y muestra interés por esta propuesta.</strong> Necesitamos ser muchos. Decide tu también. ¡Gracias!"
       new:
-        title: Póster de tu demanda
+        title: Póster de tu propuesta
       options:
         preview: Previsualizar
         download: Descargar
@@ -612,12 +622,12 @@ es-PE:
     mailer:
       forward:
         subtitle: "Si muestras tu interés, <br>lo conseguiremos."
-        support_button: Me interesa esta demanda
+        support_button: Me interesa esta propuesta
         share_in: Compartir en
         hi: "¡Hola!"
-        introduction: Te escribo para comunicarte que estoy participando en %{org}, la plataforma para que podamos decidir qué ciudad queremos. Y para ello, he creado mi propia demanda ciudadana y ahora, ¡voy a necesitar tu tu interés! Pero no te preocupes porque es muy sencillo.
-        support: "Tan sólo tienes que hacer clic en el botón que verás a continuación 'Me interesa esta demanda' y directamente podrás informarte acerca de ella antes de impulsarla. Sólo las demandas que consigan el máximo interés se llevarán a cabo por parte del Ayuntamiento, y he pensado que tú ¡seguro que me ayudas a lograrlo!"
-        share: "Y si además, me haces el gran favor de compartir mi demanda con tus amigos, familiares y contactos ¡sería perfecto!"
+        introduction: Te escribo para comunicarte que estoy participando en %{org}, la plataforma para que podamos decidir qué ciudad queremos. Y para ello, he creado mi propia propuesta ciudadana y ahora, ¡voy a necesitar tu tu interés! Pero no te preocupes porque es muy sencillo.
+        support: "Tan sólo tienes que hacer clic en el botón que verás a continuación 'Me interesa esta propuesta' y directamente podrás informarte acerca de ella antes de impulsarla. Sólo las propuestas que consigan el máximo interés se llevarán a cabo por parte del Ayuntamiento, y he pensado que tú ¡seguro que me ayudas a lograrlo!"
+        share: "Y si además, me haces el gran favor de compartir mi propuesta con tus amigos, familiares y contactos ¡sería perfecto!"
   polls:
     all: "Todas"
     no_dates: "sin fecha asignada"
@@ -678,7 +688,7 @@ es-PE:
         title: "Preguntas"
         most_voted_answer: "Respuesta más votada: "
     poll_header:
-      back_to_proposal: Volver a la demanda
+      back_to_proposal: Volver a la propuesta
   poll_questions:
     show:
       vote_answer: "Votar %{answer}"
@@ -687,8 +697,8 @@ es-PE:
     new:
       title: "Enviar mensaje"
       submit_button: "Enviar mensaje"
-      info_about_receivers: "Este mensaje se enviará a <strong>%{count} usuarios</strong> y se publicará en %{proposal_page}.<br> El mensaje no se enviará inmediatamente, los usuarios recibirán periódicamente un email con todas las notificaciones de demandas."
-      proposal_page: "la página de la demanda"
+      info_about_receivers: "Este mensaje se enviará a <strong>%{count} usuarios</strong> y se publicará en %{proposal_page}.<br> El mensaje no se enviará inmediatamente, los usuarios recibirán periódicamente un email con todas las notificaciones de propuestas."
+      proposal_page: "la página de la propuesta"
     show:
       back: "Volver a mi contenido"
   shared:
@@ -739,9 +749,9 @@ es-PE:
           notice: "¡Has dejado de seguir este proyecto de gasto! <br> Ya no recibirás más notificaciones relacionadas con este proyecto."
       proposal:
         create:
-          notice: "¡Ahora estás siguiendo esta demanda ciudadana! <br> Te notificaremos los cambios a medida que se produzcan para que estés al día."
+          notice: "¡Ahora estás siguiendo esta propuesta ciudadana! <br> Te notificaremos los cambios a medida que se produzcan para que estés al día."
         destroy:
-          notice: "¡Has dejado de seguir esta demanda ciudadana! <br> Ya no recibirás más notificaciones relacionadas con esta demanda."
+          notice: "¡Has dejado de seguir esta propuesta ciudadana! <br> Ya no recibirás más notificaciones relacionadas con esta propuesta."
     print:
       print_button: Imprimir esta información
     search: Buscar
@@ -761,15 +771,16 @@ es-PE:
         see_all: "Ver todos"
       proposal:
         found:
-          one: "Existe una demanda con el término '%{query}', puedes participar en ella en vez de abrir uno nuevo."
-          other: "Existen demandas con el término '%{query}', puedes participar en ellas en vez de abrir uno nuevo."
-        message: "Estás viendo %{limit} de %{count} demandas que contienen el término '%{query}'"
+          one: "Existe una propuesta con el término '%{query}', puedes participar en ella en vez de abrir uno nuevo."
+          other: "Existen propuestas con el término '%{query}', puedes participar en ellas en vez de abrir uno nuevo."
+        message: "Estás viendo %{limit} de %{count} propuestas que contienen el término '%{query}'"
         see_all: "Ver todas"
     tags_cloud:
       tags: Tendencias
-      districts: "Departamentos"
+      districts: "Ubicación"
+      select_district: "Selecciona una ubicación"
       districts_list: "Listado de departamentos"
-      categories: "Categorías"
+      categories: "Temas"
     target_blank: " (se abre en ventana nueva)"
     you_are_in: "Estás en"
     unflag: Deshacer denuncia
@@ -808,9 +819,9 @@ es-PE:
     index:
       visits: Visitas
       debates: Debates
-      proposals: Demandas ciudadanas
+      proposals: Propuestas ciudadanas
       comments: Comentarios
-      proposal_votes: Votos en demandas
+      proposal_votes: Votos en propuestas
       debate_votes: Votos en debates
       comment_votes: Votos en comentarios
       votes: Votos
@@ -837,9 +848,9 @@ es-PE:
     show:
       deleted: Eliminado
       deleted_debate: Este debate ha sido eliminado
-      deleted_proposal: Esta demanda ha sido eliminada
+      deleted_proposal: Esta propuesta ha sido eliminada
       deleted_budget_investment: Este proyecto de gasto ha sido eliminado
-      proposals: Demandas
+      proposals: Propuestas
       proposals_status: Estado
       debates: Debates
       budget_investments: Proyectos de presupuestos participativos
@@ -853,8 +864,8 @@ es-PE:
           one: 1 Debate
           other: "%{count} Debates"
         proposals:
-          one: 1 Demanda
-          other: "%{count} Demandas"
+          one: 1 Propuesta
+          other: "%{count} Propuestas"
         budget_investments:
           one: 1 Proyecto de presupuestos participativos
           other: "%{count} Proyectos de presupuestos participativos"
@@ -867,12 +878,12 @@ es-PE:
       send_private_message: "Enviar un mensaje privado"
       delete_alert: "¿Estás seguro de que deseas borrar tu proyecto de gasto? Esta acción no se puede deshacer"
     proposals:
-      retired: "Demanda retirada"
+      retired: "Propuesta retirada"
       draft: Borrador
       published: Publicada
-      see: "Ver demanda"
+      see: "Ver propuesta"
       actions: Acciones
-      retired_help_text: Dashboard no disponible para demandas retiradas
+      retired_help_text: Dashboard no disponible para propuestas retiradas
   votes:
     agree: Estoy de acuerdo
     anonymous: Demasiados votos anónimos, para poder votar %{verify_account}.
@@ -880,12 +891,12 @@ es-PE:
     disagree: No estoy de acuerdo
     organizations: Las organizaciones no pueden votar.
     supports: Personas interesadas
-    verified_only: Las demandas sólo pueden ser votadas por usuarios verificados, %{verify_account}.
+    verified_only: Las propuestas sólo pueden ser votadas por usuarios verificados, %{verify_account}.
     budget_investments:
       not_logged_in: Necesitas %{signin} o %{signup} para continuar.
       not_verified: Los proyectos de gasto sólo pueden captar interés de usuarios verificados, %{verify_account}.
       organization: Las organizaciones no pueden votar.
-      unfeasible: No se pueden votar demandas inviables.
+      unfeasible: No se pueden votar propuestas inviables.
       not_voting_allowed: El periodo de votación está cerrado.
       different_heading_assigned:
         one: "Sólo puedes interesarte por proyectos de gasto de %{count} departamento. Ya te has interesado en %{supported_headings}."
@@ -894,15 +905,15 @@ es-PE:
     feed:
       most_active:
         debates: "Debates más activos"
-        proposals: "Demandas más activas"
+        proposals: "Propuestas más activas"
         processes: "Procesos abiertos"
       see_all:
         debates: Ver todos los debates
-        proposals: Ver todas las demandas
+        proposals: Ver todas las propuestas
         processes: Ver todos los procesos
       no_items:
         debates: Ahora mismo no hay debates
-        proposals: Ahora mismo no hay demandas
+        proposals: Ahora mismo no hay propuestas
         processes: Ahora mismo no hay procesos abiertos
       process_label: Proceso
       see_process: Ver proceso
@@ -910,13 +921,13 @@ es-PE:
       title: Destacados
     recommended:
       title: Recomendaciones que te pueden interesar
-      help: "Estas recomendaciones se generan por las etiquetas de los debates y demandas que estás siguiendo."
+      help: "Estas recomendaciones se generan por las etiquetas de los debates y propuestas que estás siguiendo."
       debates:
         title: Debates recomendados
         btn_text_link: Todos los debates recomendados
       proposals:
-        title: Demandas recomendadas
-        btn_text_link: Todas las demandas recomendadas
+        title: Propuestas recomendadas
+        btn_text_link: Todas las propuestas recomendadas
       budget_investments:
         title: Presupuestos recomendados
       slide: "Ver %{title}"
@@ -931,8 +942,8 @@ es-PE:
       title: Empieza a participar
       user_permission_debates: Participar en debates
       user_permission_info: Con tu cuenta ya puedes...
-      user_permission_proposal: Crear nuevas demandas
-      user_permission_support_proposal: Mostrar interés en demandas*
+      user_permission_proposal: Crear nuevas propuestas
+      user_permission_support_proposal: Mostrar interés en propuestas*
       user_permission_verify: "Para poder realizar las siguientes acciones, verifica tu cuenta."
       user_permission_verify_info: "* Sólo usuarios empadronados."
       user_permission_verify_my_account: Verificar mi cuenta
@@ -954,7 +965,7 @@ es-PE:
     score_positive: "Sí"
     score_negative: "No"
     content_title:
-      proposal: "Demanda"
+      proposal: "Propuesta"
       debate: "Debate"
       budget_investment: "Proyecto de gasto"
   admin/widget:

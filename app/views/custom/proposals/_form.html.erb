@@ -4,20 +4,19 @@
 
   <%= render "shared/errors", resource: @proposal %>
 
-  <div class="row column">
+  <div class="row column white-form">
     <%= f.translatable_fields do |translations_form| %>
       <div class="small-12 column">
         <%= translations_form.text_field :title,
               maxlength: Proposal.title_max_length,
-              data: suggest_data(@proposal),
-              hint: t("proposals.form.title_hint") %>
+              data: suggest_data(@proposal) %>
       </div>
       <div class="js-suggest" data-locale="<%= translations_form.locale %>"></div>
+      <br>
 
       <div class="small-12 column">
         <%= translations_form.text_area :summary,
-                                        rows: 4, maxlength: 200,
-                                        hint: t("proposals.form.proposal_summary_note") %>
+                                        rows: 4, maxlength: 200 %>
         <span class="help-text float-right">Quedan <span id="summary_counter" data-maximum-length="200">200</span> caracteres</span>
       </div>
 
@@ -31,12 +30,11 @@
 
     <%= f.invisible_captcha :subtitle %>
 
-    <div class="small-12 column">
-        <h5><%= t("proposals.form.secondary_section") %></h5>
-    </div>
+    <br>
 
-    <div class="small-12 column">
-      <%= f.text_field :video_url, hint: t("proposals.form.proposal_video_url_note") %>
+    <div class="small-12 column margin-top">
+        <h2 class="white"><%= t("proposals.form.secondary_section_title") %></h2>
+        <p><%= t("proposals.form.secondary_section") %> <span class="warning"><%= t("proposals.form.not_required") %></span></p>
     </div>
 
     <% if feature?(:allow_images) %>
@@ -51,9 +49,21 @@
       </div>
     <% end %>
 
+    <div class="small-12 column">
+      <%= f.text_field :video_url, hint: t("proposals.form.proposal_video_url_note") %>
+    </div>
+
+    <br>
+
+    <div class="small-12 column margin-top">
+        <h2 class="white"><%= t("proposals.form.ubication_section_title") %></h2>
+        <p><%= t("proposals.form.ubication_section") %> <span class="warning"><%= t("proposals.form.not_required") %></span></p>
+    </div>
+
     <div class="small-12 medium-6 column">
       <%= f.select :geozone_id, geozone_select_options,
-        include_blank: t("geozones.none"), hint: t("proposals.form.not_required") %>
+        hint: nil,
+        include_blank: t("geozones.none") %>
     </div>
 
     <% if feature?(:map) %>
@@ -71,12 +81,18 @@
       </div>
     <% end %>
 
+    <br>
+
+    <div class="small-12 column margin-top">
+        <h2 class="white"><%= t("proposals.form.tag_section_title") %></h2>
+        <p><%= t("proposals.form.tag_section") %> <span class="warning"><%= t("proposals.form.not_required") %></span></p>
+    </div>
+
     <div class="small-12 column">
       <%= f.label :tag_list, t("proposals.form.tags_label") %>
       <p class="help-text" id="tag-list-help-text"><%= t("proposals.form.tags_instructions") %></p>
 
       <div id="category_tags" class="tags">
-        <%= f.label :category_tag_list, t("proposals.form.tag_category_label") %>
         <% @categories.each do |tag| %>
           <a class="js-add-tag-link"><%= tag.name %></a>
         <% end %>
@@ -100,7 +116,7 @@
 
     <%= render SDG::RelatedListSelectorComponent.new(f) %>
 
-    <div class="small-12 column">
+    <div class="small-12 column small-centered text-center margin-top">
       <% if @proposal.new_record? %>
         <%= f.check_box :terms_of_service,
           title: t("form.accept_terms_title"),
@@ -111,8 +127,18 @@
       <% end %>
     </div>
 
-    <div class="actions small-12 column">
-      <%= f.submit(class: "button", value: t("proposals.#{action_name}.form.submit_button")) %>
-    </div>
+    <% if @proposal.new_record? %>
+      <div class="actions small-12 column small-centered text-center margin-top btn">
+        <%= f.submit(class: "button", value: t("proposals.#{action_name}.form.submit_button"), data: {disable_with: t("proposals.#{action_name}.form.submit_button")}) %>
+      </div>
+    <% else %>
+      <div class="actions small-12 column small-centered text-center margin-top btn">
+        <%= f.submit(class: "button", value: t("proposals.#{action_name}.form.submit_button"), data: {disable_with: t("proposals.#{action_name}.form.submit_button")}) %>
+        <%= link_to t("dashboard.index.retire"),
+              retire_form_proposal_path(@proposal),
+              class: "button hollow alert",
+              target: "_blank" %>
+      </div>
+    <% end %>
   </div>
 <% end %>

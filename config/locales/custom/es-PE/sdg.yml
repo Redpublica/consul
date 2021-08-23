@@ -356,7 +356,7 @@ es-PE:
           target_15_6:
             title: "Promover la participación justa y equitativa en los beneficios que se deriven de la utilización de los recursos genéticos y promover el acceso adecuado a esos recursos, como se ha convenido internacionalmente."
           target_15_7:
-            title: "Adoptar medidas urgentes para poner fin a la caza furtiva y el tráfico de especies protegidas de flora y fauna y abordar la demanda y la oferta ilegales de productos silvestres."
+            title: "Adoptar medidas urgentes para poner fin a la caza furtiva y el tráfico de especies protegidas de flora y fauna y abordar la propuesta y la oferta ilegales de productos silvestres."
           target_15_8:
             title: "Para 2020, adoptar medidas para prevenir la introducción de especies exóticas invasoras y reducir de forma significativa sus efectos en los ecosistemas terrestres y acuáticos y controlar o erradicar las especies prioritarias."
           target_15_9:
@@ -443,7 +443,7 @@ es-PE:
             title: "De aquí a 2030, aprovechar las iniciativas existentes para elaborar indicadores que permitan medir los progresos en materia de desarrollo sostenible y complementen el producto interno bruto, y apoyar la creación de capacidad estadística en los países en desarrollo."
       help:
         title: "Ayuda Objetivos de Desarrollo Sostenible"
-        description: "Puedes alinear tus aportaciones a la comunidad (debates, demandas ciudadanas y proyectos de inversión) con los Objetivos de Desarrollo Sostenible de la Agenda 2030, esto nos permitirá tener una visión general de nuestra aportación en cada uno de los objetivos de desarrollo sostenible. A continuación puedes informarte de todos los objetivos, sus metas y las metas localizadas."
+        description: "Puedes alinear tus aportaciones a la comunidad (debates, propuestas ciudadanas y proyectos de inversión) con los Objetivos de Desarrollo Sostenible de la Agenda 2030, esto nos permitirá tener una visión general de nuestra aportación en cada uno de los objetivos de desarrollo sostenible. A continuación puedes informarte de todos los objetivos, sus metas y las metas localizadas."
       show:
         read_more: "Leer más sobre %{goal}"
         read_less: "Leer menos sobre %{goal}"
@@ -451,21 +451,22 @@ es-PE:
           no_local_targets: Este objetivo no tiene metas localizadas
       title: "Objetivos de Desarrollo Sostenible"
       filter:
-        heading: "Filtros por ODS"
+        heading: "ODS - Objetivos de Desarrollo Sostenible"
         link: "Ver %{resources} del objetivo %{code}"
         more:
           one: "Un objetivo más"
           other: "%{count} objetivos más"
     related_list_selector:
       goal_identifier: "ODS%{code}"
-      goal_list: "Puedes seleccionar uno o varios ODS con los que se alinea tu %{record}"
+      goal_list: "Los ODS son 17 objetivos globales para erradicar la pobreza, proteger el planeta y asegurar la prosperidad, y se esperan alcanzar el año 2030."
+      goal_list_warning: Elige los objetivos a los que aporta tu propuesta.
       help:
         title: "¿Qué ODS y metas se alinean con mi %{record}?"
         text: "página de ayuda de ODS"
       hint: Puedes introducir el código de un objetivo/meta específico o un texto para encontrar uno. Para más información visita la %{link}.
       placeholder: "Escribe las etiquetas que desees"
       remove_tag: "Eliminar"
-      title: "Objetivos de Desarrollo Sostenible y Metas"
+      title: "Objetivos de Desarrollo Sostenible (ODS)"
     targets:
       filter:
         link: "Ver %{resources} de la meta %{code}"

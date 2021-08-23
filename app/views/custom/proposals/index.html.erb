@@ -87,19 +87,26 @@
           </div>
         <% end %>
       </div>
-      <%= render Proposals::MapProposalsComponent.new(@proposals) %>
+      <% if params[:order] != 'recommendations' %>
+        <%= render Proposals::MapProposalsComponent.new(@proposals) %>
+      <% end %>
+      <div class="new-proposal-bottom-btn margin-top">
+        <%= link_to t("proposals.index.start_proposal"),
+                      new_proposal_path,
+                      class: "button" %>
+      </div>
     </div>
+
 
     <div class="small-12 medium-3 column">
       <aside class="margin-bottom">
         <% if params[:retired].blank? %>
+          <h3 class="uppercase"><%= t('proposals.index.filter_title') %></h3>
           <%= render "categories" %>
           <%= render "shared/tag_cloud", taggable: "Proposal" %>
-          <%= render "geozones" %>
+          <%= render "aside_geozones" %>
         <% end %>
-        <%= render "proposals_lists" %>
       </aside>
     </div>
-
   </div>
 </main>

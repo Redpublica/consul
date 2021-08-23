@@ -1,0 +1,9 @@
+<div class="sidebar-divider"></div>
+<h2 class="sidebar-title"><%= t("shared.tags_cloud.districts") %></h2>
+<br>
+<select onchange="window.location=this.value">
+<option value="proposals"><%= t("shared.tags_cloud.select_district") %></option>
+<% @geozones.each do |g| %>
+  <option <% if params[:search] == g.name %>selected<%end%> value="proposals?search=<%= g.name %>"><%= g.name %></option>
+<% end %>
+</select>

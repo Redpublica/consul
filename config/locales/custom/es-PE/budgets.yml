@@ -81,7 +81,7 @@ es-PE:
     investments:
       form:
         tag_category_label: "Categorías"
-        tags_instructions: "Etiqueta este proyecto. Puedes elegir entre las categorías demandas o introducir las que desees. No obligatorio"
+        tags_instructions: "Etiqueta este proyecto. Puedes elegir entre las categorías propuestas o introducir las que desees. No obligatorio"
         tags_label: Etiquetas
         tags_placeholder: "Escribe las etiquetas que desees separadas por coma."
         map_location: "Ubicación en el mapa"

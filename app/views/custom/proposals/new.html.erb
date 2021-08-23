@@ -1,21 +1,18 @@
 <div class="proposal-form row">
 
-  <div class="small-12 medium-9 column">
+  <div class="small-12 column">
     <%= back_link_to %>
-
-    <h1><%= t("proposals.new.start_new") %></h1>
-    <div data-alert class="callout primary">
-        <%= t("proposals.new.more_info") %>
+    <div class="small-12 medium-9 column small-centered white margin-top">
+      <div class="text-center">
+        <h1 class="white"><%= t("proposals.new.start_new") %></h1>
+        <div class="subtitle">
+            <%= t("proposals.new.more_info") %>
+            <br>
+            <span class="warning"><%= t("proposals.new.more_info_warning") %><span>
+        </div>
+      </div>
+      <br>
+      <%= render "proposals/form", form_url: proposals_path %>
     </div>
-    <%= render "proposals/form", form_url: proposals_path %>
-  </div>
-
-  <div class="small-12 medium-3 column">
-    <span class="icon-proposals float-right"></span>
-    <h2><%= t("proposals.new.recommendations_title") %></h2>
-    <ul class="recommendations">
-      <li><%= t("proposals.new.recommendation_one") %></li>
-      <li><%= t("proposals.new.recommendation_two") %></li>
-    </ul>
   </div>
 </div>

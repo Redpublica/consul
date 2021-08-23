@@ -8,7 +8,7 @@ es-PE:
       title_placeholder: Añade un título descriptivo para el documento
       delete_button: Eliminar documento
       cancel_button: Cancelar
-      note: "Puedes subir hasta un máximo de %{max_documents_allowed} documentos en los formatos: %{accepted_content_types}, y de hasta %{max_file_size} MB por archivo. No obligatorio"
+      note: "Leyes, estudios, informes, etc. (formatos: %{accepted_content_types}, y peso de hasta %{max_file_size} MB por archivo). Máx. %{max_documents_allowed} documentos."
       add_new_document: Añadir nuevo documento
     actions:
       destroy:

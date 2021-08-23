@@ -21,13 +21,13 @@ es-PE:
         flash:
           success: Antes de las votaciones recibirás una carta con las instrucciones para verificar tu cuenta.<br> Recuerda que puedes ahorrar el envío verificándote presencialmente en cualquiera de las Oficinas de Atención al Ciudadano.
       edit:
-        see_all: Ver demandas
+        see_all: Ver propuestas
         title: Carta solicitada
       errors:
         incorrect_code: Código de verificación incorrecto
       new:
         explanation: "Para participar en las votaciones finales puedes:"
-        go_to_index: Ver demandas
+        go_to_index: Ver propuestas
         office: Verificarte presencialmente en cualquier Oficina de Atención al Ciudadano
         send_letter: Solicitar una carta por correo postal
         title: "¡Felicidades!"
@@ -90,8 +90,8 @@ es-PE:
     step_3: Verificación final
     user_permission_debates: Participar en debates
     user_permission_info: Al verificar tus datos podrás...
-    user_permission_proposal: Crear nuevas demandas
-    user_permission_support_proposal: Mostrar interés en demandas
+    user_permission_proposal: Crear nuevas propuestas
+    user_permission_support_proposal: Mostrar interés en propuestas
     user_permission_votes: Participar en las votaciones finales*
     verified_user:
       form:

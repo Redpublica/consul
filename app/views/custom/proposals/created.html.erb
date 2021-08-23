@@ -1,0 +1,33 @@
+<div class="jumbo light created-proposal-banner">
+  <div id="<%= dom_id(@proposal) %>" class="row">
+    <div class="small-12 column text-center">
+      <br>
+      <span class="title"><strong><%= t("proposals.created.title") %></strong><br><%= t("proposals.created.preview") %></span>
+      <br><br>
+      <p><%= t("proposals.created.motivation") %><br><strong><%= sanitize(t("proposals.created.motivation_2")) %></strong></p>
+
+      <% if can?(:publish, @proposal) %>
+      <%= link_to t("proposals.created.publish"),
+      publish_proposal_path(@proposal),
+      method: :patch, class: "button" %>
+      <% end %>
+      &nbsp;
+      &nbsp;
+      <% if can?(:edit, @proposal) %>
+        <%= link_to t("proposals.created.edit"),
+                    edit_proposal_path(@proposal),
+                    class: "button" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="preview">
+<div class="row">
+  <div class="small-12 medium-9 medium-centered column preview-card margin-top margin-bottom">
+    <h3><%= t("proposals.created.preview_title") %></h3>
+    <%= render file: "proposals/show.html.erb", locals: { preview: true } %>
+  </div>
+</div>
+</div>
+

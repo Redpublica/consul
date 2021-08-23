@@ -1,0 +1,20 @@
+<fieldset class="sdg-related-list-selector">
+  <legend><%= t("sdg.related_list_selector.title") %></legend>
+
+  <div class="input-section">
+    <fieldset class="goals">
+      <legend><%= t("sdg.related_list_selector.goal_list") %> <span class="warning"><%= t("sdg.related_list_selector.goal_list_warning") %></span></legend>
+      <div class="goal-list">
+        <%= f.collection_check_boxes(:sdg_goal_ids, goals, :id, :code) do |checkbox_form| %>
+          <%= goal_field(checkbox_form) %>
+        <% end %>
+      </div>
+    </fieldset>
+
+  </div>
+
+  <div class="help-section callout primary hide">
+    <h3><%= t("sdg.related_list_selector.help.title", record: relatable_name) %></h3>
+    <ul class="selected-info"></ul>
+  </div>
+</fieldset>

@@ -113,6 +113,19 @@ body > .wrapper {
   border: none !important;
 }
 
+.white {
+  background-color: transparent;
+  color: $white;
+}
+
+.black {
+  color: $black;
+}
+
+.warning {
+  color: $text-warning;
+}
+
 //  3. Header
 // ------
 
@@ -145,15 +158,6 @@ body > header,
     margin: 0;
     a {
       outline: none !important;
-      // a img {
-      //   height: rem-calc(48);
-      //   margin: 0;
-      //   width: auto;
-
-      //   @include breakpoint(medium up) {
-      //     height: auto;
-      //   }
-      // }
       img {
         max-height: 150px;
         width: auto;
@@ -431,6 +435,22 @@ button,
   }
 }
 
+.new-proposal-bottom-btn {
+  width: 100%;
+  text-align: center;
+  a {
+    justify-self: center;
+    background-color: $black;
+    border-radius: 30px !important;
+    text-transform: uppercase;
+    color: $white !important;
+    &:hover {
+      background-color: $black;
+
+    }
+  }
+}
+
 .proposals-list {
   h1,
   h2,
@@ -445,6 +465,12 @@ button,
 
 .in-favor > .button-support {
   background: $accent !important;
+}
+
+.actions {
+  .button:disabled {
+    pointer-events: none;
+  }
 }
 
 .panel {
@@ -664,7 +690,7 @@ aside {
 .footer {
   background-color: white;
   padding-top: 0;
-  margin-top: 72px;
+  margin-top: 0;
 }
 
 footer {
@@ -781,6 +807,79 @@ footer {
       content: none !important;
       font-family: "icons" !important;
     }
+  }
+}
+.white-form {
+  label, .help-text, p {
+    color: $accent !important;
+  }
+}
+
+.callout.warning {
+  strong {
+    color: $black;
+  }
+}
+
+.proposal-form {
+  .btn {
+    text-align: center;
+    input {
+      justify-self: center;
+      background-color: $black;
+      border-radius: 30px !important;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Proposal Edit
+.proposal-edit {
+  h1 {
+    color: $black;
+  }
+  .float-right > a{
+    color: $black;
+  }
+  .actions {
+    .button {
+      justify-self: center;
+      background-color: $black;
+      border-radius: 30px !important;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Created proposal
+.created-proposal-banner {
+  background-color: $body-color !important;
+  color: $white;
+  .title{
+    font-size: rem-calc(28);
+  }
+  .button {
+    background: $white;
+    color: $black;
+    font-weight: 500;
+    border-radius: 30px !important;
+  }
+}
+.preview {
+  background-color: $header-color-transparent;
+  &-card {
+    padding-top: 30px;
+    background-color: $white;
+    h1, h2, h3 {
+      color: $black;
+    }
+  }
+}
+
+// Show proposal
+.proposal-show {
+  h1 {
+    color: $black;
   }
 }
 
