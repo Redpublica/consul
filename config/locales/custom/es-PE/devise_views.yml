@@ -121,6 +121,10 @@ es-PE:
           username_is_not_available: Nombre de usuario ya existente
           username_label: Nombre de usuario
           username_note: Nombre público que aparecerá en tus publicaciones
+          gender_label: Género
+          gender_blank: Indica tu género
+          date_of_birth_label: Fecha de nacimiento
+          educational_level_label: Nivel educativo
         success:
           back_to_index: Entendido, volver a la página principal
           instructions_1: Por favor <b>revisa tu correo electrónico</b> - te hemos enviado un <b>enlace para confirmar tu cuenta</b>.

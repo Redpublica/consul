@@ -245,7 +245,6 @@ button,
   border-radius: 0 !important;
 }
 
-
 // Lateral menu
 .offcanvas-full-screen {
   position: fixed;
@@ -406,7 +405,7 @@ button,
     justify-content: center;
     h1 {
       text-align: center;
-      color: $body-font-color-accent !important
+      color: $body-font-color-accent !important;
     }
     p {
       font-family: "Archivo" !important;
@@ -415,7 +414,7 @@ button,
       color: black;
       border-bottom: none;
       text-align: center;
-      color: $body-font-color-accent !important
+      color: $body-font-color-accent !important;
     }
     img {
       max-width: 300px;
@@ -446,7 +445,6 @@ button,
     color: $white !important;
     &:hover {
       background-color: $black;
-
     }
   }
 }
@@ -732,7 +730,7 @@ footer {
 // 5. Sign In  / Sign Up
 .auth-form {
   h2 {
-    color: $body-font-color !important
+    color: $body-font-color !important;
   }
   @include breakpoint(medium) {
     padding-top: $line-height;
@@ -810,7 +808,9 @@ footer {
   }
 }
 .white-form {
-  label, .help-text, p {
+  label,
+  .help-text,
+  p {
     color: $accent !important;
   }
 }
@@ -838,7 +838,7 @@ footer {
   h1 {
     color: $black;
   }
-  .float-right > a{
+  .float-right > a {
     color: $black;
   }
   .actions {
@@ -855,7 +855,7 @@ footer {
 .created-proposal-banner {
   background-color: $body-color !important;
   color: $white;
-  .title{
+  .title {
     font-size: rem-calc(28);
   }
   .button {
@@ -870,7 +870,9 @@ footer {
   &-card {
     padding-top: 30px;
     background-color: $white;
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
       color: $black;
     }
   }
@@ -899,7 +901,8 @@ footer {
 
 // User account
 .account {
-  h1, h2 {
+  h1,
+  h2 {
     color: $white;
   }
 }
@@ -907,7 +910,18 @@ footer {
 // User activity
 
 .activity {
-  h1, h2 {
+  h1,
+  h2 {
     color: $white;
+  }
+}
+
+// Registration
+.registration {
+  .date-of-birth {
+    select {
+      float: left;
+      width: 33.33%;
+    }
   }
 }

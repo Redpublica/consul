@@ -60,7 +60,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
     def sign_up_params
       params[:user].delete(:redeemable_code) if params[:user].present? && params[:user][:redeemable_code].blank?
-      params.require(:user).permit(:username, :email, :password,
+      params.require(:user).permit(:username, :gender, :date_of_birth, :educational_level, :email, :password,
                                    :password_confirmation, :terms_of_service, :locale,
                                    :redeemable_code)
     end

@@ -1,6 +1,20 @@
 es-PE:
   activemodel:
     models:
+      user:
+        gender:
+          male: "Masculino"
+          female: "Femenino"
+          undefined: "No especificado"
+        educational_levels:
+          values:
+            postgraduate: "Postgrado"
+            university: "Superior técnica o universitaria completa"
+            university_unfinished: "Superior técnica o universitaria incompleta"
+            secondary: "Secundaria completa"
+            secondary_unfinished: "Secundaria incompleta"
+            primary: "Primaria completa"
+            primary_unfinished: "Primaria incompleta"
       verification:
         residence: "Residencia"
         sms: "SMS"
