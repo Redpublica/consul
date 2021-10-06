@@ -306,7 +306,7 @@ es-PE:
     info:
       sign_in: "Entra con:"
       sign_up: "Regístrate con:"
-    or_fill: "O rellena el siguiente formulario:"
+    or_fill: "O completa el siguiente formulario:"
   proposals:
     create:
       form:
@@ -347,7 +347,8 @@ es-PE:
       title_hint: "Te proponemos una pregunta que te puede ayudar: ¿Qué problema nos afecta a todos y aún no es solucionado? ¿Mi problema es común a miles de peruanos?"
       proposal_responsible_name_note: "(individualmente o como representante de un colectivo; no se mostrará públicamente)"
       proposal_summary_note: "A continuación, escribe en un texto corto, de qué trata tu propuesta (acá puedes enfocarte en escribir brevemente la petición o necesidad específica). Este texto será la cara principal de tu propuesta en la portada de Megáfono. (máximo 200 caracteres)"
-      proposal_long_description: No olvides incluir el resultado que se busca alcanzar con la propuesta, algunas acciones necesarias para su
+      proposal_long_description:
+        No olvides incluir el resultado que se busca alcanzar con la propuesta, algunas acciones necesarias para su
         realización y cuáles son los actores involucrados en la propuesta (estado, sociedad civil organizada, individuos).
       secondary_section_title: Información complementaria
       secondary_section: Si deseas puedes ofrecer más información sobre tu propuesta, a través de documentos, imágenes o video.

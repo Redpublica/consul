@@ -102,6 +102,7 @@ es-PE:
           need_current: Necesitamos tu contraseña actual para confirmar los cambios
           password_confirmation_label: Confirmar contraseña nueva
           password_label: Contraseña nueva
+          password_hint: La contraseña debe tener una longitud mínima de 8 caracteres
           update_submit: Actualizar
           waiting_for: "Esperando confirmación de:"
         new:
@@ -111,6 +112,7 @@ es-PE:
           organization_signup_link: Regístrate aquí
           password_confirmation_label: Repite la contraseña anterior
           password_label: Contraseña que utilizarás para acceder a este sitio web
+          password_hint: La contraseña debe tener una longitud mínima de 8 caracteres
           redeemable_code: Tu código de verificación (si has recibido una carta con él)
           submit: Registrarse
           terms: Al registrarte aceptas las %{terms}
