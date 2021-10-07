@@ -216,15 +216,25 @@ es-PE:
           one: 1 "Me interesa"
           other: "Personas interesadas"
     footer:
-      site: +RedPublica
-      info: +info
-      newsletter: Newsletter
-      social_media: Social media
-      tabloid: Pizarrón de contactos
-      advertisement: El megáfono de propuestas
-      announces: Los avances
+      site: Menú Redpública
+      contact: Contáctanos
+      newsletter: Suscríbete
+      rules: Normas de publicación
+
+      home: Inicio
+      about: Sobre Redpública
+      create_profile: Crea tu perfil
+      megaphone: Megáfono de propuestas
       attention: Ojo a esto
-      points: Puntos de encuentro
+      tabloid: Pizarron de contactos
+
+      info: Para ayuda o información escríbenos aquí
+
+      subscribe: Déjanos tu correo para recibir nuestro boletín
+
+      privacy: Política de privacidad
+      terms: Términos de uso
+
       accessibility: Accesibilidad
       conditions: Condiciones de uso
       volunteering: Sé voluntario
@@ -245,18 +255,22 @@ es-PE:
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
       participation_text: Decide cómo debe ser la ciudad que quieres.
       participation_title: Participación
-      privacy: Política de privacidad
     header:
-      tabloid: Pizarrón de contactos
-      advertisement: Megáfono de propuestas
-      announces: Los Avances
+      home: Inicio
+      about: Sobre Redpública
+      signup: Regístrate
+      megaphone: Megáfono de propuestas
       attention: Ojo a esto
+      tabloid: Pizarrón de contactos
+      login: Entra
+      my_account_link: Mi cuenta
+
+      announces: Los Avances
       enroll: Inscribe Tu Iniciativa
       be_one: ¡Súmate!
       group: ¡Suma a tu grupo!
       logout: Cerrar sesión
       download: Herramientas
-      my_account_link: Mi cuenta
       my_activity_link: Mi actividad
   notifications:
     index:

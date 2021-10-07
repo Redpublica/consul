@@ -109,7 +109,7 @@ body > .wrapper {
 }
 
 *
-  :not(.button):not(input):not(select):not(header):not(a):not(li):not(.pagination):not(button):not(.footer-headers):not(.admin-content) {
+  :not(.button):not(input):not(select):not(header):not(a):not(li):not(.pagination):not(button):not(.footer-columns__header):not(.footer-header-wrapper):not(.subfooter-wrapper):not(.admin-content) {
   border: none !important;
 }
 
@@ -686,7 +686,7 @@ aside {
 // Footer
 
 .footer {
-  background-color: white;
+  background-color: black;
   padding-top: 0;
   margin-top: 0;
 }
@@ -694,26 +694,103 @@ aside {
 footer {
   font-family: "Archivo", "Helvetica", "Arial", sans-serif !important;
   font-size: rem-calc(14);
-  background-color: white;
+  background-color: black;
+  .footer-image {
+    padding-left: 0;
+    margin: 50px 0;
+  }
+  .footer-header-wrapper {
+    border-bottom: 1px solid white !important;
+  }
   .footer-headers {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid black !important;
+    color: $white;
   }
   .footer-links {
+    margin-top: 10px;
+    padding-bottom: 1rem;
+    color: $white;
+    li > a,
+    span {
+      color: $white;
+      font-weight: 600;
+      font-family: sans-serif;
+      text-decoration: none;
+    }
+    li > a:hover {
+      text-decoration: underline;
+    }
     input {
       font-size: rem-calc(14);
-      border: 1px solid black;
+      border: 1px solid white;
+      background-color: transparent;
+      &:focus {
+        outline-style: none;
+        box-shadow: none;
+        border: 1px solid white;
+        background-color: transparent;
+        caret-color: $white;
+      }
     }
     button {
       height: 2.4375rem;
       width: 100%;
-      border: 1px solid black;
+      border: 1px solid white;
+      background-color: $white;
       padding: 0 8px;
       text-align: left;
     }
   }
+  .footer-columns {
+    &__header {
+      border-bottom: 1px solid white !important;
+    }
+    padding-bottom: 1rem;
+    color: $white;
+    li > a,
+    span {
+      color: $white;
+      font-weight: 600;
+      font-family: sans-serif;
+      text-decoration: none;
+    }
+    li > a:hover {
+      text-decoration: underline;
+    }
+    input {
+      font-size: rem-calc(14);
+      border: 1px solid white;
+      background-color: transparent;
+      &:focus {
+        outline-style: none;
+        box-shadow: none;
+        border: 1px solid white;
+        background-color: transparent;
+        caret-color: $white;
+      }
+    }
+    button {
+      height: 2.4375rem;
+      width: 100%;
+      border: 1px solid white;
+      background-color: $white;
+      padding: 0 8px;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+  }
 
+  .footer-logos {
+    margin-bottom: 30px;
+    .coopesp {
+      margin-left: 20px;
+    }
+  }
+
+  .subfooter-wrapper {
+    border-top: 1px solid white !important;
+  }
   .subfooter {
+    color: $white;
     padding-bottom: 20px;
     font-size: rem-calc(8);
   }
