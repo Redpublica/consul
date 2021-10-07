@@ -29,6 +29,9 @@ es-PE:
     close: Cerrar
     menu: Menú
   comments:
+    actions:
+      confirm_delete: "¿Seguro? Esta acción borrará el comentario. No puedes deshacer esta acción."
+      delete: "Borrar comentario"
     comments_closed: Los comentarios están cerrados
     verified_only: Para participar %{verify_account}
     comment:
