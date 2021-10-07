@@ -330,6 +330,8 @@ es-PE:
       preview: Estás en vista previa.
       motivation: "Revisa, y si es necesario, edita o actualiza tu propuesta antes de compartirla."
       motivation_2: "¡Recuerda que este es el paso más importante!"
+      motivation_3: Por favor, toma en cuenta las %{link}, si se infringe se solicitará la modificación de la propuesta. El equipo de monitoreo tiene la potestad de remover una propuesta si esta incumple con las reglas establecidas.
+      terms: Normas de publicación
       publish: Quiero compartirla ya
       dashboard: Si, quiero ayuda y publicaré mas tarde
       edit: Quiero volver a editarla

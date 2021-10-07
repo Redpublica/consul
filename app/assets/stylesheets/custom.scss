@@ -941,6 +941,10 @@ footer {
     font-weight: 500;
     border-radius: 30px !important;
   }
+  .notice {
+    margin: auto;
+    max-width: 50rem;
+  }
 }
 .preview {
   background-color: $header-color-transparent;
