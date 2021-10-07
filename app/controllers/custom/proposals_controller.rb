@@ -48,7 +48,7 @@ class ProposalsController < ApplicationController
   def created; end
 
   def update
-    if @proposal.save
+    if @proposal.update(proposal_params)
       if @proposal.draft?
         redirect_to created_proposal_path(@proposal), notice: I18n.t("flash.actions.update.proposal")
       else
