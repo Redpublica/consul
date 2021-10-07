@@ -45,8 +45,8 @@ es-PE:
         other: "%{count} respuestas (mostrar)"
         zero: Sin respuestas
       responses_collapse:
-        one: "1 respuesta (colapsar)"
-        other: "%{count} respuestas (colapsar)"
+        one: "1 respuesta (ocultar)"
+        other: "%{count} respuestas (ocultar)"
         zero: Sin respuestas
       user_deleted: Usuario eliminado
       votes:
@@ -498,6 +498,8 @@ es-PE:
       title_video_url: "Vídeo externo"
       author: Autor
       draft: Propuesta en borrador. Todavía no puede captar interés, ni aparece en la lista de propuestas.
+      summary: Resumen de la propuesta
+      description: Desarrollo de la propuesta
     update:
       form:
         submit_button: Guardar cambios
