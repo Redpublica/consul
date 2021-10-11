@@ -857,6 +857,10 @@ es-PE:
     signin: "iniciar sesión"
     signup: "registrarte"
     verify_account: "verifica tu cuenta"
+    confirmed:
+      title: Has confirmado tu registro
+      subtitle: ¡Ya eres parte de Redpública!
+      button: Haz tu propuesta en el Megáfono ahora
     direct_messages:
       new:
         direct_messages_bloqued: "Este usuario ha decidido no recibir mensajes privados"

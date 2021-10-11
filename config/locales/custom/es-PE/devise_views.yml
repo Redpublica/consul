@@ -128,8 +128,6 @@ es-PE:
           date_of_birth_label: Fecha de nacimiento
           educational_level_label: Nivel educativo
         success:
-          back_to_index: Entendido, volver a la página principal
-          instructions_1: Por favor <b>revisa tu correo electrónico</b> - te hemos enviado un <b>enlace para confirmar tu cuenta</b>.
-          instructions_2: Una vez confirmado, podrás empezar a participar.
-          thank_you: Gracias por registrarte en la web. Ahora debes <b>confirmar tu correo</b>.
-          title: Revisa tu correo
+          contact_link: Tengo problemas para registrarme, necesito ayuda
+          instructions: Te hemos enviado a tu correo un enlace de confirmación, cuando hayas confirmado podrás subir tu propuesta por un Perú mejor.
+          title: ¡Solo falta un paso!

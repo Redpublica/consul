@@ -1,0 +1,12 @@
+<div class="row text-center">
+  <%= image_tag(image_path_for("saludos-genial.svg"), class: "small-4", alt: setting["org_name"]) %>
+  <div class="getting-started small-12">
+    <p><%= t("users.confirmed.title") %></p>
+    <h1><%= t("users.confirmed.subtitle") %></h1>
+    <div class="btn">
+      <%= link_to t("users.confirmed.button"),
+                    new_proposal_path,
+                    class: "button" %>
+    </div>
+  </div>
+</div>

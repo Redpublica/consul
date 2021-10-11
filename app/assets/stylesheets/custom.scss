@@ -1006,3 +1006,42 @@ footer {
     }
   }
 }
+
+// Getting started
+.getting-started {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  h1 {
+    text-align: center;
+    color: $body-font-color-accent !important;
+    font-family: "Archivo" !important;
+    font-weight: 700;
+  }
+  p {
+    font-family: "Archivo" !important;
+    font-weight: 300;
+    font-size: rem-calc(30);
+    color: black;
+    border-bottom: none;
+    text-align: center;
+    color: $body-font-color-accent !important;
+  }
+  img {
+    max-width: 300px;
+  }
+  .btn {
+    text-align: center;
+    a {
+      justify-self: center;
+      background-color: $black;
+      border-radius: 30px !important;
+      text-transform: uppercase;
+    }
+  }
+  .help2 {
+    font-weight: 500;
+  }
+}
