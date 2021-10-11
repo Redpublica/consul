@@ -92,11 +92,11 @@ es-PE:
           erase_reason_label: Razón de la baja
           info: Esta acción no se puede deshacer. Una vez que des de baja tu cuenta, no podrás volver a entrar con ella.
           info_reason: Si quieres, escribe el motivo por el que te das de baja (opcional).
-          submit: Darme de baja
-          title: Darme de baja
+          submit: Dar de baja a mi cuenta
+          title: Dar de baja a mi cuenta
         edit:
           current_password_label: Contraseña actual
-          edit: Editar propuesta
+          edit: Editar mis datos de registro y acceso
           email_label: Email
           leave_blank: Dejar en blanco si no deseas cambiarla
           need_current: Necesitamos tu contraseña actual para confirmar los cambios

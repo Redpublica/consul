@@ -1,8 +1,8 @@
 es-PE:
   account:
     show:
-      change_credentials_link: Cambiar mis datos de acceso
-      erase_account_link: Darme de baja
+      change_credentials_link: Cambiar mis datos de registro y acceso
+      erase_account_link: Dar de baja a mi cuenta
       finish_verification: Finalizar verificación
       notifications: Notificaciones
       organization_name_label: Nombre de la organización
