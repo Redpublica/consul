@@ -797,6 +797,7 @@ es-PE:
         see_all: "Ver todas"
     tags_cloud:
       tags: Tendencias
+      select_goal: "Selecciona un ODS"
       districts: "Ubicación"
       select_district: "Selecciona una ubicación"
       districts_list: "Listado de departamentos"

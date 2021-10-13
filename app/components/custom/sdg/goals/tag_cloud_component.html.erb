@@ -1,0 +1,11 @@
+<div class="sdg-goal-tag-cloud">
+  <div class="sidebar-divider"></div>
+  <h2 class="sidebar-title"><%= heading %></h2>
+  <%= render SDG::FilterLinksComponent.new(goals, class_name.constantize) %>
+  <select onchange="window.location=this.value">
+  <option value="proposals"><%= t("shared.tags_cloud.select_goal") %></option>
+  <% goals.order(:code).each do |sdg| %>
+    <option <% if params[:advanced_search] && params[:advanced_search]["goal"] == sdg.code.to_s %>selected<%end%> value="proposals?advanced_search%5Bgoal%5D=<%= sdg.code %>"><%= sdg.code.to_s + ". " + t("sdg.goals.goal_#{sdg.code}.title") %></option>
+  <% end %>
+  </select>
+</div>
