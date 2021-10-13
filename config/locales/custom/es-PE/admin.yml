@@ -1208,6 +1208,21 @@ es-PE:
         select: Seleccionar
         selected: Seleccionada
         no_proposals: No hay propuestas.
+        export: Exportar todas las propuestas
+        export_list:
+          id: ID
+          title: Título
+          author: Autor
+          date: Fecha
+          comments: Comentarios
+          votes: Votos
+          summary: Resumen
+          description: Descripción
+          url: URL
+          geozone: Geozona
+          categories: Categoría
+          tags: Tags
+          ods: ODS
       show:
         create_question: Añadir esta propuesta a una votación para ser votada
       form:
@@ -1472,6 +1487,20 @@ es-PE:
         filters:
           active: Activos
           erased: Borrados
+        export: Exportar todos los usuarios
+        export_list:
+          id: ID
+          email: Email
+          username: Nombre de usuario
+          created_at: Fecha de registro
+          confirmed_at: Fecha de validación de cuenta
+          last_sign_in: Último inicio de sesión
+          gender: Género
+          educational_level: Nivel educativo
+          date_of_birth: Fecha de nacimiento
+          proposals: Propuestas
+          comments: Comentarios
+          proposals_votes: Votos a propuestas
       search:
         placeholder: Buscar usuario por email, nombre o DNI
     verifications:

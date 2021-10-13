@@ -10,6 +10,13 @@ module UsersHelper
     end
   end
 
+  def csv_params
+    csv_params = params.clone.merge(format: :csv)
+    csv_params = csv_params.to_unsafe_h.map { |k, v| [k.to_sym, v] }.to_h
+    csv_params.delete(:page)
+    csv_params
+  end
+
   def comment_commentable_title(comment)
     commentable = comment.commentable
     if commentable.nil?
