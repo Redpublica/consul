@@ -102,7 +102,6 @@
       <aside class="margin-bottom">
         <% if params[:retired].blank? %>
           <h3 class="uppercase"><%= t('proposals.index.filter_title') %></h3>
-          <%= render "categories" %>
           <%= render "shared/tag_cloud", taggable: "Proposal" %>
           <%= render "aside_geozones" %>
         <% end %>
