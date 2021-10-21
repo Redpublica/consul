@@ -10,10 +10,10 @@
 
     <ul class="offcanvas-full-screen-menu">
     <li>
-    <%= link_to t("layouts.header.home"), "http://new.redpublica.pe/" %>
+    <%= link_to t("layouts.header.home"), "http://redpublica.pe/" %>
     </li>
     <li>
-    <%= link_to t("layouts.header.about"), "https://test.redpublica.pe/sobre-redpublica/" %>
+    <%= link_to t("layouts.header.about"), "https://redpublica.pe/contacto/" %>
     </li>
     <% if not user_signed_in? %>
     <li>
@@ -22,12 +22,6 @@
     <% end %>
     <li>
     <%= link_to t("layouts.header.megaphone"), root_path %>
-    </li>
-    <li>
-    <%= link_to t("layouts.header.attention"), "https://test.redpublica.pe/ojo/" %>
-    </li>
-    <li>
-    <%= link_to t("layouts.header.tabloid"), "https://test.redpublica.pe/pizarron/" %>
     </li>
     <li>
     <% if user_signed_in? %>
@@ -71,13 +65,11 @@
       <div class="top-bar-links">
         <div class="menu">
         <%= link_to t("layouts.header.home"), "http://new.redpublica.pe/" %>
-        <%= link_to t("layouts.header.about"), "https://test.redpublica.pe/sobre-redpublica/" %>
+        <%= link_to t("layouts.header.about"), "https://redpublica.pe/contacto/" %>
         <% if not user_signed_in? %>
         <%= link_to t("layouts.header.signup"), new_user_registration_path %>
         <% end %>
         <%= link_to t("layouts.header.megaphone"), root_path %>
-        <%= link_to t("layouts.header.attention"), "https://test.redpublica.pe/ojo/" %>
-        <%= link_to t("layouts.header.tabloid"), "https://test.redpublica.pe/pizarron/" %>
         <% if user_signed_in? %>
         <%= link_to t("layouts.header.my_account_link"), account_path %>
         <% else %>

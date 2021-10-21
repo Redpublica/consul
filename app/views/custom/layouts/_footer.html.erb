@@ -39,29 +39,34 @@
     <div class="row footer-links">
       <div class="small-3 large-3 columns">
         <ul class="no-bullet">
-        <li><%= link_to t("layouts.footer.home"), "https://test.redpublica.pe/" %></li>
-        <li><%= link_to t("layouts.footer.about"), "https://test.redpublica.pe/sobre-redpublica/" %></li>
+        <li><%= link_to t("layouts.footer.home"), "https://redpublica.pe/" %></li>
+        <li><%= link_to t("layouts.footer.about"), "https://redpublica.pe/contacto/" %></li>
         <li><%= link_to t("layouts.footer.create_profile"), new_user_registration_path %></li>
         <li><%= link_to t("layouts.footer.megaphone"), root_path %></li>
-        <li><%= link_to t("layouts.footer.attention"), "https://test.redpublica.pe/ojo/" %></li>
-        <li><%= link_to t("layouts.footer.tabloid"), "https://test.redpublica.pe/pizarron/" %></li>
+        <% if user_signed_in? %>
+        <li><%= link_to t("layouts.footer.my_account_link"), account_path %></li>
+        <% else %>
+        <li><%= link_to t("layouts.footer.login"), new_user_session_path %></li>
+        <% end %>
         </ul>
       </div>
 
       <div class="small-3 large-3 columns">
       <ul class="no-bullet">
-        <li><%= link_to t("layouts.footer.info"), "https://test.redpublica.pe/contacto/" %></li>
+        <li><%= link_to t("layouts.footer.info"), "https://redpublica.pe/contacto/" %></li>
       </ul>
       </div>
       <div class="small-3 large-3 columns">
         <span><%= t("layouts.footer.subscribe") %></span>
-        <input type="text" placeholder="<%= t("layouts.footer.email") %>">
+        <br><br>
+        <input id="subscriberEmail" type="text" placeholder="<%= t("layouts.footer.email") %>">
         <button type="button"><%= t("layouts.footer.involve") %></button>
       </div>
       <div class="large-3 columns">
       <ul class="no-bullet">
-        <li><%= link_to t("layouts.footer.privacy"), "https://test.redpublica.pe/politica-privacidad/" %></li>
-        <li><%= link_to t("layouts.footer.terms"), "https://test.redpublica.pe/terminos-de-uso/" %></li>
+        <li><%= link_to t("layouts.footer.privacy"), "https://redpublica.pe/politica-privacidad/" %></li>
+        <li><%= link_to t("layouts.footer.terms"), "https://redpublica.pe/terminos-de-uso/" %></li>
+        <li><%= link_to t("layouts.footer.faqs"), "https://redpublica.pe/preguntas-frecuentes/" %></li>
       </ul>
       </div>
     </div>
@@ -79,12 +84,10 @@
         </div>
         <div>
           <ul class="no-bullet">
-          <li><%= link_to t("layouts.footer.home"), "https://test.redpublica.pe/" %></li>
-          <li><%= link_to t("layouts.footer.about"), "https://test.redpublica.pe/sobre-redpublica/" %></li>
+          <li><%= link_to t("layouts.footer.home"), "https://redpublica.pe/" %></li>
+          <li><%= link_to t("layouts.footer.about"), "https://redpublica.pe/contacto/" %></li>
           <li><%= link_to t("layouts.footer.create_profile"), new_user_registration_path %></li>
           <li><%= link_to t("layouts.footer.megaphone"), root_path %></li>
-          <li><%= link_to t("layouts.footer.attention"), "https://test.redpublica.pe/ojo/" %></li>
-          <li><%= link_to t("layouts.footer.tabloid"), "https://test.redpublica.pe/pizarron/" %></li>
           </ul>
         </div>
       </div>
@@ -96,7 +99,7 @@
         </div>
         <div>
           <ul class="no-bullet">
-            <li><%= link_to t("layouts.footer.info"), "https://test.redpublica.pe/contacto/" %></li>
+            <li><%= link_to t("layouts.footer.info"), "https://redpublica.pe/contacto/" %></li>
           </ul>
         </div>
       </div>
@@ -108,7 +111,7 @@
         </div>
         <div>
           <span><%= t("layouts.footer.subscribe") %></span>
-          <input type="text" placeholder="<%= t("layouts.footer.email") %>">
+          <input id="subscriberEmail" type="text" placeholder="<%= t("layouts.footer.email") %>">
           <button type="button"><%= t("layouts.footer.involve") %></button>
         </div>
       </div>
@@ -120,20 +123,15 @@
         </div>
         <div>
           <ul class="no-bullet">
-          <li><%= link_to t("layouts.footer.privacy"), "https://test.redpublica.pe/politica-privacidad/" %></li>
-          <li><%= link_to t("layouts.footer.terms"), "https://test.redpublica.pe/terminos-de-uso/" %></li>
+          <li><%= link_to t("layouts.footer.privacy"), "https://redpublica.pe/politica-privacidad/" %></li>
+          <li><%= link_to t("layouts.footer.terms"), "https://redpublica.pe/terminos-de-uso/" %></li>
+          <li><%= link_to t("layouts.footer.faqs"), "https://redpublica.pe/preguntas-frecuentes/" %></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="footer-logos row">
-    <div class="small-12">
-      <%= image_tag(image_path_for("ods-footer.png"), class: "ods", alt: setting["org_name"]) %>
-      <%= image_tag(image_path_for("coopesp-footer.png"), class: "coopesp", alt: setting["org_name"]) %>
-    </div>
-  </div>
 
 <div class="subfooter-wrapper">
   <div class="subfooter row">

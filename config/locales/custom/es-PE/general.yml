@@ -228,8 +228,8 @@ es-PE:
       about: Sobre Redpública
       create_profile: Crea tu perfil
       megaphone: Megáfono de propuestas
-      attention: Ojo a esto
-      tabloid: Pizarron de contactos
+      login: Entrar
+      my_account_link: Mi cuenta
 
       info: Para ayuda o información escríbenos aquí
 
@@ -237,6 +237,7 @@ es-PE:
 
       privacy: Política de privacidad
       terms: Términos de uso
+      faqs: Preguntas frecuentes
 
       accessibility: Accesibilidad
       conditions: Condiciones de uso
@@ -265,7 +266,7 @@ es-PE:
       megaphone: Megáfono de propuestas
       attention: Ojo a esto
       tabloid: Pizarrón de contactos
-      login: Entra
+      login: Entrar
       my_account_link: Mi cuenta
 
       announces: Los Avances
