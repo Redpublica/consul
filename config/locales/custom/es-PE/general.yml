@@ -502,7 +502,7 @@ es-PE:
       title_video_url: "Vídeo externo"
       author: Autor
       draft: Propuesta en borrador. Todavía no puede captar interés, ni aparece en la lista de propuestas.
-      summary: Resumen de la propuesta
+      summary: Problema que busca solucionar o reducir la propuesta
       description: Desarrollo de la propuesta
     update:
       form:

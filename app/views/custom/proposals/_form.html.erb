@@ -121,8 +121,8 @@
         <%= f.check_box :terms_of_service,
           title: t("form.accept_terms_title"),
           label: t("form.accept_terms",
-                   policy: link_to(t("form.policy"), "/privacy", target: "blank"),
-                   conditions: link_to(t("form.conditions"), "/conditions", target: "blank")
+                   policy: link_to(t("form.policy"), "https://redpublica.pe/politica-privacidad/", target: "blank"),
+                   conditions: link_to(t("form.conditions"), "https://redpublica.pe/terminos-de-uso/", target: "blank")
                   ) %>
       <% end %>
     </div>

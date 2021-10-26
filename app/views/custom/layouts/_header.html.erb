@@ -41,7 +41,7 @@
 <div class="top-bar">
 
 <div class="top-bar-title">
-<%= link_to "http://new.redpublica.pe/", accesskey: "0" do %>
+<%= link_to "http://redpublica.pe/", accesskey: "0" do %>
   <%= image_tag(image_path_for("logo_header.png"), class: "float-left", alt: setting["org_name"]) %>
   <%= image_tag(image_path_for("logo_icon.png"), class: "float-left header-icon", alt: setting["org_name"]) %>
   <% end %>
@@ -64,7 +64,7 @@
 
       <div class="top-bar-links">
         <div class="menu">
-        <%= link_to t("layouts.header.home"), "http://new.redpublica.pe/" %>
+        <%= link_to t("layouts.header.home"), "http://redpublica.pe/" %>
         <%= link_to t("layouts.header.about"), "https://redpublica.pe/contacto/" %>
         <% if not user_signed_in? %>
         <%= link_to t("layouts.header.signup"), new_user_registration_path %>
