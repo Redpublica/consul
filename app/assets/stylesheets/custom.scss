@@ -462,7 +462,9 @@ button,
 }
 
 .in-favor > .button-support {
-  background: $accent !important;
+  background: $black !important;
+  color: $white !important;
+  border-radius: 30px !important;
 }
 
 .actions {
@@ -627,7 +629,7 @@ button,
 .related-content {
   h2,
   a {
-    color: $white;
+    color: $black;
   }
 }
 
@@ -688,7 +690,7 @@ aside {
 .footer {
   background-color: black;
   padding-top: 0;
-  margin-top: 100px;
+  margin-top: 0;
 }
 
 footer {
@@ -900,6 +902,7 @@ footer {
 }
 
 .proposal-form {
+  padding-bottom: rem-calc(100px);
   .btn {
     text-align: center;
     input {
@@ -913,9 +916,6 @@ footer {
 
 // Proposal Edit
 .proposal-edit {
-  h1 {
-    color: $black;
-  }
   .float-right > a {
     color: $black;
   }
@@ -962,6 +962,9 @@ footer {
 
 // Show proposal
 .proposal-show {
+  background-color: $white;
+  margin-top: -1.5rem;
+  padding-top: 1.5rem;
   h1 {
     color: $black;
   }

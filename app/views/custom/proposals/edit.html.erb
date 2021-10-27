@@ -1,0 +1,19 @@
+<div class="proposal-edit row">
+
+  <div class="small-12 column">
+    <%= back_link_to %>
+    <div class="float-right">
+    <%= link_to t("proposals.edit.show_link"), @proposal %>
+    </div>
+    <br>
+
+    <div class="small-12 medium-9 column small-centered white margin-top">
+    <div class="text-center">
+    <h1 class="white"><%= t("proposals.edit.editing") %></h1>
+    </div>
+    <br>
+    <%= render "form", form_url: proposal_path(@proposal) %>
+    <br>
+    </div>
+  </div>
+</div>

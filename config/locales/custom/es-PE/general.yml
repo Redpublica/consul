@@ -334,8 +334,8 @@ es-PE:
       preview: Estás en vista previa.
       motivation: "Revisa, y si es necesario, edita o actualiza tu propuesta antes de compartirla."
       motivation_2: "¡Recuerda que este es el paso más importante!"
-      motivation_3: Por favor, toma en cuenta las %{link}, si se infringe se solicitará la modificación de la propuesta. El equipo de monitoreo tiene la potestad de remover una propuesta si esta incumple con las reglas establecidas.
-      terms: Normas de publicación
+      motivation_3: Por favor, toma en cuenta los %{link}, si se infringe se solicitará la modificación de la propuesta. El equipo de monitoreo tiene la potestad de remover una propuesta si esta incumple con las reglas establecidas.
+      terms: Términos y condiciones
       publish: Quiero compartirla ya
       dashboard: Si, quiero ayuda y publicaré mas tarde
       edit: Quiero volver a editarla
@@ -363,7 +363,7 @@ es-PE:
       other: Otra
     form:
       not_required: |
-        *Este campo no es obligatorio.
+        (Este campo no es obligatorio).
       title_hint: "Te proponemos una pregunta que te puede ayudar: ¿Qué problema nos afecta a todos y aún no es solucionado? ¿Mi problema es común a miles de peruanos?"
       proposal_responsible_name_note: "(individualmente o como representante de un colectivo; no se mostrará públicamente)"
       proposal_summary_note: "A continuación, escribe en un texto corto, de qué trata tu propuesta (acá puedes enfocarte en escribir brevemente la petición o necesidad específica). Este texto será la cara principal de tu propuesta en la portada de Megáfono. (máximo 200 caracteres)"
@@ -376,11 +376,11 @@ es-PE:
       ubication_section: Ubica en la lista desplegable o en el mapa el ámbito de actuación de tu propuesta (todo el país, región o departamento). Esto es importante para que tu propuesta sea ubicada de forma más fácil.
       tag_section_title: Etiqueta tu propuesta
       tag_section: |
-        Para que tu propuesta sea identificada de forma más fácil puedes etiquetarla con las categorías que te ofrecemos: temas y objetivos de desarrollo sostenible.
+        Para que tu propuesta sea identificada de forma más fácil puedes etiquetarla por temas y/o por Objetivos de Desarrollo Sostenible.
       proposal_video_url_note: Coloca el enlace de YouTube o Vimeo de un video que ayude a entender tu propuesta.
       proposal_image_note: Selecciona una imagen que represente tu propuesta. (Considera que la altura mínima de la imagen debe ser 475px de alto)
       tag_category_label: "Categorías"
-      tags_instructions: "Elige entre las opciones que te ofrecemos o genera tus propias etiquetas temáticas. Puedes etiquetar tu propuesta en más de un tema."
+      tags_instructions: "Genera tus propias etiquetas temáticas. Puedes etiquetar tu propuesta en más de un tema."
       tags_label: Temas
       tags_placeholder: "Escribe las etiquetas que desees separadas por coma"
       map_location: "Ubicación en el mapa"

@@ -78,14 +78,6 @@
         <% end %>
 
 
-        <% unless @search_terms || @advanced_search_terms %>
-          <div id="section_help" class="margin" data-magellan-target="section_help">
-            <p class="lead">
-              <strong><%= t("proposals.index.section_footer.title") %></strong>
-            </p>
-            <p><%= t("proposals.index.section_footer.description") %></p>
-          </div>
-        <% end %>
       </div>
       <% if params[:order] != 'recommendations' %>
         <%= render Proposals::MapProposalsComponent.new(@proposals) %>
