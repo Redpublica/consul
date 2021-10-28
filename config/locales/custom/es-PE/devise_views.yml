@@ -115,9 +115,9 @@ es-PE:
           password_hint: La contraseña debe tener una longitud mínima de 8 caracteres
           redeemable_code: Tu código de verificación (si has recibido una carta con él)
           submit: Registrarse
-          terms: Al registrarte aceptas las %{terms}
-          terms_link: condiciones de uso
-          terms_title: Al registrarte aceptas las condiciones de uso
+          terms: Al registrarte aceptas los %{terms}
+          terms_link: Términos y condiciones
+          terms_title: Al registrarte aceptas los Términos y condiciones
           title: Registrarse
           username_is_available: Nombre de usuario disponible
           username_is_not_available: Nombre de usuario ya existente
