@@ -18,9 +18,6 @@
   <% end %>
 
 </div>
-
-<%= render_image(@proposal.image, :large, true) if @proposal.image.present? %>
-
 <br>
 <% unless @proposal.selected? %>
   <p>
@@ -28,6 +25,8 @@
     <strong><%= @proposal.code %></strong>
   </p>
 <% end %>
+<%= render_image(@proposal.image, :large, true) if @proposal.image.present? %>
+<br>
 <h4 style="color: #000"><%= t("proposals.show.summary") %></h4>
 <blockquote><%= @proposal.summary %></blockquote>
 
