@@ -13,7 +13,7 @@
     <%= link_to t("layouts.header.home"), "http://redpublica.pe/" %>
     </li>
     <li>
-    <%= link_to t("layouts.header.about"), "https://redpublica.pe/contacto/" %>
+    <%= link_to t("layouts.header.about"), "https://redpublica.pe/sobre-redpublica/" %>
     </li>
     <% if not user_signed_in? %>
     <li>
@@ -65,7 +65,7 @@
       <div class="top-bar-links">
         <div class="menu">
         <%= link_to t("layouts.header.home"), "http://redpublica.pe/" %>
-        <%= link_to t("layouts.header.about"), "https://redpublica.pe/contacto/" %>
+        <%= link_to t("layouts.header.about"), "https://redpublica.pe/sobre-redpublica/" %>
         <% if not user_signed_in? %>
         <%= link_to t("layouts.header.signup"), new_user_registration_path %>
         <% end %>
