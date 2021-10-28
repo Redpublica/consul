@@ -108,7 +108,7 @@ body > .wrapper {
   width: 100%;
 }
 
-*
+body
   :not(.button):not(input):not(select):not(header):not(a):not(li):not(.pagination):not(button):not(.footer-columns__header):not(.footer-header-wrapper):not(.subfooter-wrapper):not(.admin-content) {
   border: none !important;
 }
