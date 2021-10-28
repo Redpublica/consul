@@ -343,7 +343,7 @@ es-PE:
     share:
       improve_it: Mejora tu campaña y consigue mas interés.
       dashboard: Ver mas información
-      message: "Me interesa la propuesta %{title} en %{handle}. Si te interesa, ¡clica tú también!"
+      message: "Me interesa la propuesta %{title} en %{handle}. Si te interesa, haz click aquí:"
     edit:
       editing: Editar propuesta
       form:
