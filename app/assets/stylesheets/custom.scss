@@ -459,6 +459,9 @@ button,
   p {
     color: $body-font-color-accent !important;
   }
+  .empty-results {
+    padding: 30px;
+  }
 }
 
 .in-favor > .button-support {

@@ -74,7 +74,9 @@
           <% end %>
           <%= paginate @proposals %>
         <% else %>
-          <%= empty_recommended_proposals_message_text(current_user) %>
+        <div class="empty-results text-center">
+          <h5><%= empty_recommended_proposals_message_text(current_user) %></h5>
+        </div>
         <% end %>
 
 

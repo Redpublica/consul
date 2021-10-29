@@ -238,7 +238,6 @@ class Proposal < ApplicationRecord
 
   def self.proposals_orders(user)
     orders = %w[created_at confidence_score hot_score relevance archival_date]
-    orders << "recommendations" if Setting["feature.user.recommendations_on_proposals"] && user&.recommended_proposals
     orders
   end
 

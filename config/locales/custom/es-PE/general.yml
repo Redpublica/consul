@@ -406,6 +406,8 @@ es-PE:
         actions:
           success: "Las recomendaciones de propuestas han sido desactivadas"
           error: "Ha ocurrido un error. Por favor dirígete al apartado 'Mi cuenta' para desactivar las recomendaciones manualmente"
+      without_results: Todavía no hemos recibido ninguna propuesta
+
       retired_proposals: Propuestas retiradas
       retired_proposals_link: "Propuestas retiradas por sus autores"
       selected_proposals: Propuestas seleccionadas
