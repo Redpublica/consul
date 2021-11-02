@@ -979,10 +979,21 @@ footer {
   flex-direction: row;
   list-style-type: none;
   margin-bottom: 40px;
+  justify-content: center;
   li {
+    border: $white solid 1px;
+    border-radius: 5px;
+    text-align: center;
     margin-right: 30px;
+    overflow: hidden;
     a {
-      color: black !important;
+      text-decoration: none;
+      padding: 5px 8px;
+      color: $white !important;
+    }
+    .is-active {
+      background-color: $white !important;
+      color: $body-color !important;
     }
   }
 }
@@ -994,6 +1005,7 @@ footer {
   border-radius: 10px;
   margin: auto;
   width: fit-content;
+  margin-bottom: 80px;
   h1,
   h2 {
     color: $black;

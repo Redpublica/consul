@@ -38,7 +38,7 @@ module ProposalsHelper
     Proposal::RETIRE_OPTIONS.map { |option| [t("proposals.retire_options.#{option}"), option] }
   end
 
-  def empty_recommended_proposals_message_text(user)
+  def empty_recommended_proposals_message_text
     t("proposals.index.without_results")
   end
 

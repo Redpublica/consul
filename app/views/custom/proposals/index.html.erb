@@ -64,7 +64,7 @@
 
       <div id="proposals-list">
 
-        <% if @proposals.any? || current_user.blank? %>
+        <% if @proposals.any? %>
           <% if proposals_default_view? %>
             <%= render partial: "proposals/proposal", collection: @proposals %>
           <% else %>
@@ -75,7 +75,7 @@
           <%= paginate @proposals %>
         <% else %>
         <div class="empty-results text-center">
-          <h5><%= empty_recommended_proposals_message_text(current_user) %></h5>
+          <h5><%= empty_recommended_proposals_message_text %></h5>
         </div>
         <% end %>
 
