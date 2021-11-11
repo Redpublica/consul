@@ -17,7 +17,7 @@
   </td>
 
   <% if proposal.retired? %>
-    <td class="help-text"><%= t("users.proposals.retired_help_text") %></td>
+    <td class="small-2 help-text"><%= t("users.proposals.retired_help_text") %></td>
   <% elsif can?(:dashboard, proposal) %>
     <td>
       <%= link_to edit_proposal_path(proposal), class: "button hollow expanded" do %>

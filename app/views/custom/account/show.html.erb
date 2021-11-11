@@ -1,9 +1,11 @@
 <div>
+<% if current_user==@user %>
 <div class="row">
   <div class="small-12 column">
     <%= render "layouts/account_navbar" %>
   </div>
 </div>
+<% end %>
 <div class="row account">
   <div class="small-12 column account-content">
 

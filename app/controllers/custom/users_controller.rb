@@ -12,12 +12,21 @@ class UsersController < ApplicationController
   private
 
     def set_activity_counts
-      @activity_counts = ActiveSupport::HashWithIndifferentAccess.new(
-                          proposals: Proposal.where(author_id: @user.id).count,
-                          debates: (Setting["process.debates"] ? Debate.where(author_id: @user.id).count : 0),
-                          budget_investments: (Setting["process.budgets"] ? Budget::Investment.where(author_id: @user.id).count : 0),
-                          comments: only_active_commentables.count,
-                          follows: @user.follows.map(&:followable).compact.count)
+      if authorized_current_user?
+        @activity_counts = ActiveSupport::HashWithIndifferentAccess.new(
+                            proposals: Proposal.where(author_id: @user.id).count,
+                            debates: (Setting["process.debates"] ? Debate.where(author_id: @user.id).count : 0),
+                            budget_investments: (Setting["process.budgets"] ? Budget::Investment.where(author_id: @user.id).count : 0),
+                            comments: only_active_commentables.count,
+                            follows: @user.follows.map(&:followable).compact.count)
+      else
+        @activity_counts = ActiveSupport::HashWithIndifferentAccess.new(
+                            proposals: Proposal.where(author_id: @user.id).not_retired.published.count,
+                            debates: (Setting["process.debates"] ? Debate.where(author_id: @user.id).count : 0),
+                            budget_investments: (Setting["process.budgets"] ? Budget::Investment.where(author_id: @user.id).count : 0),
+                            comments: only_active_commentables.where(hidden_at: nil).count,
+                            follows: @user.follows.map(&:followable).compact.count)
+      end
     end
 
     def load_filtered_activity
@@ -52,7 +61,11 @@ class UsersController < ApplicationController
     end
 
     def load_proposals
-      @proposals = Proposal.created_by(@user).order(created_at: :desc).page(params[:page])
+      if authorized_current_user?
+        return @proposals = Proposal.created_by(@user).order(created_at: :desc).page(params[:page])
+      else
+        return @proposals = Proposal.created_by(@user).not_retired.published.order(created_at: :desc).page(params[:page])
+      end
     end
 
     def load_debates
@@ -60,7 +73,11 @@ class UsersController < ApplicationController
     end
 
     def load_comments
-      @comments = only_active_commentables.includes(:commentable).order(created_at: :desc).page(params[:page])
+      if authorized_current_user?
+        @comments = only_active_commentables.includes(:commentable).order(created_at: :desc).page(params[:page])
+      else
+        @comments = only_active_commentables.where(hidden_at: nil).includes(:commentable).order(created_at: :desc).page(params[:page])
+      end
     end
 
     def load_budget_investments

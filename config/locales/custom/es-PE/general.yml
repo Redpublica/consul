@@ -906,7 +906,7 @@ es-PE:
       send_private_message: "Enviar un mensaje privado"
       delete_alert: "¿Estás seguro de que deseas borrar tu proyecto de gasto? Esta acción no se puede deshacer"
     proposals:
-      retired: "Propuesta retirada"
+      retired: "Retirada"
       draft: Borrador
       published: Publicada
       see: "Ver propuesta"

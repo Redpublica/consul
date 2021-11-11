@@ -973,6 +973,18 @@ footer {
   }
 }
 
+.clickable-flag {
+  display: inline-block;
+  .icon-flag {
+    color: $color-alert;
+    vertical-align: middle;
+  }
+  a {
+    vertical-align: middle;
+    color: $color-alert !important;
+  }
+}
+
 //Account
 .account_navbar {
   display: flex;
@@ -981,21 +993,29 @@ footer {
   margin-bottom: 40px;
   justify-content: center;
   li {
-    border: $white solid 1px;
-    border-radius: 5px;
-    text-align: center;
-    margin-right: 30px;
-    overflow: hidden;
     a {
+      border: $white solid 1px;
+      border-radius: 5px;
+      text-align: center;
+      margin-right: 30px;
+      overflow: hidden;
       text-decoration: none;
-      padding: 5px 8px;
+      padding: 5px 8px !important;
       color: $white !important;
+      margin: 0px !important;
+      background: transparent !important;
     }
     .is-active {
       background-color: $white !important;
       color: $body-color !important;
     }
   }
+}
+.menu.simple li:not(.is-active) {
+  margin-bottom: 0;
+}
+.menu.simple li.is-active {
+  padding-bottom: 0;
 }
 
 .account,
@@ -1009,6 +1029,23 @@ footer {
   h1,
   h2 {
     color: $black;
+  }
+  table .label {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 436px) {
+  .account,
+  .activity {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .activity table {
+    th,
+    td {
+      padding-left: 0;
+    }
   }
 }
 
