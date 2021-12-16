@@ -56,7 +56,10 @@
 
 
       <% unless params[:selected].present? %>
-        <%= render "shared/order_links", i18n_namespace: "proposals.index" %>
+        <div class="submenu-wrapper">
+          <span>Ordenar por:</span>
+          <%= render "shared/order_links", i18n_namespace: "proposals.index" %>
+        </div>
       <% end %>
 
 

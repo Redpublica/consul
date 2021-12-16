@@ -602,30 +602,39 @@ button,
   }
 }
 
-.submenu {
-  border-bottom: 1px solid #5e5a5a !important;
-  clear: both;
-  margin-bottom: $line-height / 2;
-
-  .is-active {
-    @include brand-text;
-    border-bottom: 2px solid $white !important;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
+.submenu-wrapper {
   span {
     font-family: "Archivo" !important;
     font-weight: 300;
-    font-size: rem-calc(18);
+    font-size: rem-calc(14);
     color: $body-font-color-accent;
   }
-  h2 {
-    font-family: "Archivo" !important;
-    font-weight: 500;
-    font-size: rem-calc(18);
-    color: $body-font-color-accent;
+  .submenu {
+    border-bottom: 1px solid #5e5a5a !important;
+    clear: both;
+    margin-top: 5px;
+    margin-bottom: $line-height / 2;
+
+    .is-active {
+      @include brand-text;
+      border-bottom: 2px solid $white !important;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    span {
+      font-family: "Archivo" !important;
+      font-weight: 300;
+      font-size: rem-calc(18);
+      color: $body-font-color-accent;
+    }
+    h2 {
+      font-family: "Archivo" !important;
+      font-weight: 500;
+      font-size: rem-calc(18);
+      color: $body-font-color-accent;
+    }
   }
 }
 
