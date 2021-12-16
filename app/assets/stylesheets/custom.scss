@@ -746,13 +746,19 @@ footer {
         caret-color: $white;
       }
     }
-    button {
-      height: 2.4375rem;
-      width: 100%;
-      border: 1px solid white;
-      background-color: $white;
-      padding: 0 8px;
-      text-align: left;
+    .register-button {
+      background-color: white;
+      font-family: monospace;
+      font-weight: 500;
+      font-size: rem-calc(18);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      color: #000;
+      border: 1px solid #fff;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
   }
   .footer-columns {
@@ -761,6 +767,9 @@ footer {
     }
     padding-bottom: 1rem;
     color: $white;
+    &__content {
+      padding-top: 10px;
+    }
     li > a,
     span {
       color: $white;
@@ -783,14 +792,19 @@ footer {
         caret-color: $white;
       }
     }
-    button {
-      height: 2.4375rem;
-      width: 100%;
-      border: 1px solid white;
-      background-color: $white;
-      padding: 0 8px;
-      text-align: left;
-      margin-bottom: 10px;
+    .register-button {
+      background-color: white;
+      font-family: monospace;
+      font-weight: 500;
+      font-size: rem-calc(18);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      color: #000;
+      border: 1px solid #fff;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
   }
 
