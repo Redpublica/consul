@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
 
   before_action :authenticate_http_basic, if: :http_basic_auth_site?
 
-  before_action :ensure_signup_complete
+  # before_action :ensure_signup_complete
   before_action :set_locale
   before_action :track_email_campaign
   before_action :set_return_url
