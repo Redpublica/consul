@@ -1,6 +1,10 @@
 <% provide :title do %><%= t("devise_views.users.registrations.new.title") %><% end %>
 <h2><%= t("devise_views.users.registrations.new.title") %></h2>
 
+<p style="color: orange; font-weight: 700;">
+  El registro a través de Redes Sociales está en periodo de pruebas y puede dar errores
+</p>
+
 <%= render "devise/omniauth_form", action: "sign_up" %>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
