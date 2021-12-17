@@ -71,7 +71,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     end
 
     def configure_permitted_parameters
-      devise_parameter_sanitizer.permit(:account_update, keys: [:username, :email, :gender, :educational_level])
+      devise_parameter_sanitizer.permit(:account_update, keys: [:email])
     end
 
     def erase_params
