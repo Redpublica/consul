@@ -976,8 +976,9 @@ footer {
 .preview {
   background-color: $header-color-transparent;
   &-card {
-    padding-top: 30px;
+    padding: 30px;
     background-color: $white;
+    border-radius: 8px;
     h1,
     h2,
     h3 {
@@ -987,12 +988,32 @@ footer {
 }
 
 // Show proposal
-.proposal-show {
-  background-color: $white;
+.proposal-show-custom {
+  background-color: $header-color-transparent;
   margin-top: -1.5rem;
   padding-top: 1.5rem;
   h1 {
     color: $black;
+  }
+  .padded-column {
+    padding-right: 10px;
+  }
+  &-card {
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: $white;
+    border-radius: 8px;
+    h1,
+    h2,
+    h3 {
+      color: $black;
+    }
+  }
+  .aside {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
   }
 }
 

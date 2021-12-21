@@ -19,9 +19,10 @@
           Flag.flagged?(current_user, @proposal),
           @proposal.followed_by?(current_user),
           @proposal_votes] do %>
-  <div class="proposal-show">
-    <div id="<%= dom_id(@proposal) %>" class="row">
-      <div class="small-12 medium-9 column">
+  <div class="proposal-show proposal-show-custom">
+    <div id="<%= dom_id(@proposal) %>" class="row grid-margin-x">
+      <div class="small-12 medium-8 column padded-column">
+      <div class="proposal-show-custom-card">
         <%= back_link_to proposals_path unless preview %>
 
         <h1><%= @proposal.title %></h1>
@@ -46,9 +47,11 @@
           <%= render "proposals/actions", proposal: @proposal %>
         </div>
       </div>
+    </div>
 
       <% unless preview %>
-        <aside class="small-12 medium-3 column">
+      <aside class="small-12 medium-4 column padded-column">
+        <div class="aside">
           <% if can?(:dashboard, @proposal) %>
             <div class="sidebar-divider"></div>
             <h2><%= t("proposals.show.author") %></h2>
@@ -65,7 +68,7 @@
           <%= render "proposals/support_status", proposal: @proposal %>
 
           <%= render "proposals/social_share", proposal: @proposal, share_title: t("proposals.show.share") %>
-
+        </div>
         </aside>
       <% end %>
     </div>
