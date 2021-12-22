@@ -1,8 +1,12 @@
 <% if oauth_logins.any? %>
   <div class="row">
     <div class="small-12 column">
-      <div class="margin-bottom">
+      <div class="margin-bottom text-center">
         <strong><%= t("omniauth.info.#{action}") %></strong>
+        <p><%= t("omniauth.info.with_sn") %></p>
+        <p style="color: orange; font-weight: 700;">
+  El registro a través de redes sociales (Google, Facebook y Twitter) está en periodo de prueba y podría presentar problemas. Se sugiere, por el momento, realizar el registro vía formulario.
+</p>
       </div>
     </div>
 
@@ -14,9 +18,5 @@
                     method: :post %>
       </div>
     <% end %>
-
-    <div class="small-12 column auth-divider" style="margin-bottom: 50px">
-      <span><%= t("omniauth.or_fill") %></span>
-    </div>
   </div>
 <% end %>

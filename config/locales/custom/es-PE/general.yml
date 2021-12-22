@@ -322,8 +322,9 @@ es-PE:
       sign_up: Regístrate con Twitter
       name: Twitter
     info:
-      sign_in: "Entra con:"
-      sign_up: "Regístrate con:"
+      sign_in: "Ingresa"
+      sign_up: "Regístrate"
+      with_sn: "con tus redes sociales:"
     or_fill: "O completa el siguiente formulario:"
   proposals:
     create:

@@ -1,17 +1,16 @@
 <% provide :title do %><%= t("devise_views.users.registrations.new.title") %><% end %>
-<h2><%= t("devise_views.users.registrations.new.title") %></h2>
-
-<p style="color: orange; font-weight: 700;">
-  El registro a través de Redes Sociales está en periodo de pruebas y puede dar errores
-</p>
 
 <%= render "devise/omniauth_form", action: "sign_up" %>
+
+<br>
+<div class="separator">o</div>
+<br>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "shared/errors", resource: resource %>
 
 
-  <div class="row">
+
     <div class="registration small-12 column">
 
       <%= f.hidden_field :use_redeemable_code %>
@@ -61,12 +60,13 @@
                                 title: t("shared.target_blank"),
                                 target: "_blank")
                 ) %>
-
-      <div class="small-12 medium-6 small-centered">
-        <%= f.submit t("devise_views.users.registrations.new.submit"), class: "button expanded" %>
+      <br>
+      <div class="small-12 medium-12 small-centered">
+        <%= f.submit t("devise_views.users.registrations.new.submit"), class: "button expanded classic-submit" %>
       </div>
     </div>
-  </div>
 <% end %>
+<div class="text-center">
+    <%= link_to t("devise_views.shared.links.login"), new_session_path(resource_name) %><br>
+</div>
 
-<%= render "devise/shared/links" %>
