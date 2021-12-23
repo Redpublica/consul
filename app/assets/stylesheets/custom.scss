@@ -834,6 +834,150 @@ footer {
 }
 
 // 5. Sign In  / Sign Up
+.social-login-button {
+  margin-bottom: 10px;
+}
+
+.button-google {
+  $white: #fff;
+  $google-blue: #4285f4;
+  $button-active-blue: #1669f2;
+  $button-border-black: #0a0a0a1f;
+
+  .google-btn {
+    height: 42px;
+    background-color: $google-blue;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .google-icon-wrapper {
+      margin-left: 1px;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+      background-color: $white;
+    }
+    .google-icon {
+      margin-top: 11px;
+      margin-left: 11px;
+      width: 18px;
+      height: 18px;
+    }
+    .btn-text {
+      float: left;
+      margin-left: 11px;
+      color: $white;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      font-family: "Roboto";
+    }
+    &:focus {
+      box-shadow: 0 0 6px $google-blue;
+      outline: none;
+    }
+    &:active {
+      background: $button-active-blue;
+    }
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:500);
+}
+
+.button-facebook {
+  $white: #fff;
+  $facebook-blue: #395697;
+  $button-active-blue: #395697;
+
+  .facebook-btn {
+    height: 42px;
+    background-color: $facebook-blue;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .facebook-icon-wrapper {
+      margin-left: 1px;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+      background-color: $facebook-blue;
+    }
+    .facebook-icon {
+      margin-top: 11px;
+      margin-left: 11px;
+      width: 18px;
+      height: 18px;
+    }
+    .btn-text {
+      float: left;
+      margin-left: 11px;
+      color: $white;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      font-family: "Roboto";
+    }
+    &:focus {
+      box-shadow: 0 0 6px $facebook-blue;
+      outline: none;
+    }
+    &:active {
+      background: $button-active-blue;
+    }
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:500);
+}
+
+.button-twitter {
+  $white: #fff;
+  $twitter-blue: #1da1f2;
+  $button-active-blue: #1da1f2;
+
+  .twitter-btn {
+    height: 42px;
+    background-color: $twitter-blue;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .twitter-icon-wrapper {
+      margin-left: 1px;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+    }
+    .twitter-icon {
+      color: $white;
+      line-height: 1;
+      margin-top: 11px;
+      margin-left: 11px;
+      width: 18px;
+      height: 18px;
+    }
+    .btn-text {
+      float: left;
+      margin-left: 11px;
+      color: $white;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      font-family: "Roboto";
+    }
+    &:focus {
+      box-shadow: 0 0 6px $twitter-blue;
+      outline: none;
+    }
+    &:active {
+      background: $button-active-blue;
+    }
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:500);
+}
+
 .auth-page {
   background-color: $header-color;
   .wrapper {
