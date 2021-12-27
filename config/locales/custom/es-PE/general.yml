@@ -308,7 +308,7 @@ es-PE:
       name: Facebook
     finish_signup:
       title: "Detalles adicionales de tu cuenta"
-      username_warning: "Debido a que hemos cambiado la forma en la que nos conectamos con redes sociales y es posible que tu nombre de usuario aparezca como 'ya en uso', incluso si antes podías acceder con él. Si es tu caso, por favor elige un nombre de usuario distinto."
+      username_warning: "Al registrarte te enviaremos un email para confirmar tu cuenta a la dirección que se muestra. Si tu dirección ya existe en Redpública, inicia sesión con la red social que usaste la primera vez. Si prefieres seguir con este registro, tendrás que utilizar otra dirección de correo electrónico que se asociará a una cuenta nueva."
     google_oauth2:
       sign_in: Entra con Google
       sign_up: Regístrate con Google
