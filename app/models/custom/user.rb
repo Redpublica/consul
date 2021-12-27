@@ -367,10 +367,10 @@ class User < ApplicationRecord
   end
 
   def send_oauth_confirmation_instructions
-    if oauth_email != email
-      update(confirmed_at: nil)
-      send_confirmation_instructions
-    end
+    # if oauth_email != email
+    update(confirmed_at: nil)
+    send_confirmation_instructions
+    # end
     update(oauth_email: nil) if oauth_email.present?
   end
 
