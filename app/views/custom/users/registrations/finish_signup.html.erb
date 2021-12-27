@@ -16,7 +16,7 @@
   <% if current_user.errors.include? :email %>
     <%= f.email_field :email, placeholder: t("devise_views.users.registrations.new.email_label") %>
   <% else %>
-    <%= f.email_field :email, placeholder: t("devise_views.users.registrations.new.email_label"), class: "disabled" %>
+    <%= f.email_field :email, placeholder: t("devise_views.users.registrations.new.email_label"), disabled: true %>
   <% end %>
 
   <%= f.submit t("devise_views.users.registrations.new.submit"), class: "button expanded" %>

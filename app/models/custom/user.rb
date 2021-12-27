@@ -390,6 +390,9 @@ class User < ApplicationRecord
     rescue ActiveRecord::RecordNotUnique
       self.email = nil
       save!(validate: false)
+    rescue ActiveRecord::ActiveRecordError
+      self.email = nil
+      save!(validate: false)
     end
     true
   end
