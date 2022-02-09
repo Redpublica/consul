@@ -24,6 +24,9 @@
     <%= link_to t("layouts.header.megaphone"), root_path %>
     </li>
     <li>
+    <%= link_to t("layouts.header.tabloid"), "https://redpublica.pe/pizarron/" %>
+    </li>
+    <li>
     <% if user_signed_in? %>
     <%= link_to t("layouts.header.my_account_link"), account_path %>
     <% else %>
@@ -70,6 +73,7 @@
         <%= link_to t("layouts.header.signup"), new_user_registration_path %>
         <% end %>
         <%= link_to t("layouts.header.megaphone"), root_path %>
+        <%= link_to t("layouts.header.tabloid"), "https://redpublica.pe/pizarron/" %>
         <% if user_signed_in? %>
         <%= link_to t("layouts.header.my_account_link"), account_path %>
         <% else %>
