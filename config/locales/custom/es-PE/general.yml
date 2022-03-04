@@ -458,7 +458,7 @@ es-PE:
       retired: Propuesta retirada
       published: La propuesta ha sido publicada
     proposal:
-      created: "¡Has creado una propuesta!"
+      created: "¡Has creado la propuesta!"
       share:
         guide: "Compártela para que la gente empiece a interesarse."
         edit: "Antes de que se publique podrás modificar el texto a tu gusto."

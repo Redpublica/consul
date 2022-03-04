@@ -1268,8 +1268,8 @@ footer {
   margin-bottom: 40px;
   justify-content: center;
   li {
+    border-right: $white solid 1px;
     a {
-      border: $white solid 1px;
       border-radius: 5px;
       text-align: center;
       margin-right: 30px;
@@ -1279,6 +1279,9 @@ footer {
       color: $white !important;
       margin: 0px !important;
       background: transparent !important;
+    }
+    &:last-of-type {
+      border-right: none;
     }
     .is-active {
       background-color: $white !important;
@@ -1303,7 +1306,27 @@ footer {
   margin-bottom: 80px;
   h1,
   h2 {
-    color: $black;
+    color: $text-auth;
+  }
+  .button {
+    background-color: $text-auth;
+    border-radius: 7px !important;
+    color: $white;
+    border: none;
+    &:hover {
+      background-color: $text-auth;
+      border-radius: 7px !important;
+      color: $white;
+      border: none;
+    }
+  }
+  .delete-button {
+    background-color: lightgray;
+    color: red;
+    &:hover {
+      background-color: lightgray;
+      color: red;
+    }
   }
   table .label {
     white-space: normal;
