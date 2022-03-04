@@ -11,7 +11,7 @@
 
 
 
-    <div class="registration small-12 column">
+    <div class="registration small-12 column auth-field">
 
       <%= f.hidden_field :use_redeemable_code %>
       <%= f.hidden_field :locale, value: I18n.locale %>
@@ -66,7 +66,7 @@
       </div>
     </div>
 <% end %>
-<div class="text-center">
+<div class="text-center auth-text">
     <%= link_to t("devise_views.shared.links.login"), new_session_path(resource_name) %><br>
 </div>
 
